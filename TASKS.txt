@@ -3,8 +3,9 @@ This file tracks ongoing tasks for the MiraiDB platform - a system to create and
 
 ## Progress Overview
 - ✅ Initial project structure and GitHub setup completed (see COMPLETED_TASKS.txt)
-- 🔄 Currently working on development environment setup
-- 📋 Pending tasks include website migration, API setup, and dashboard implementation
+- ✅ Development environment setup completed
+- 🔄 Currently working on website migration and API setup
+- 📋 Pending tasks include dashboard implementation
 
 ## Project Structure
 /apps

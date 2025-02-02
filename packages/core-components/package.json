@@ -1,0 +1,32 @@
+{
+  "name": "@miraidb/core-components",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "dev": "vite build --watch",
+    "build": "vue-tsc && vite build",
+    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore"
+  },
+  "dependencies": {
+    "vue": "^3.4.15"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.0",
+    "@typescript-eslint/eslint-plugin": "^6.19.1",
+    "@typescript-eslint/parser": "^6.19.1",
+    "@vitejs/plugin-vue": "^5.0.3",
+    "@vue/tsconfig": "^0.5.1",
+    "eslint": "^8.56.0",
+    "eslint-plugin-vue": "^9.20.1",
+    "typescript": "^5.3.3",
+    "vite": "^5.0.12",
+    "vue-tsc": "^1.8.27"
+  },
+  "peerDependencies": {
+    "vue": "^3.4.15"
+  }
+}
