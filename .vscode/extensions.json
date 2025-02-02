@@ -1,0 +1,10 @@
+{
+  "recommendations": [
+    "vue.volar",
+    "saoudrizwan.claude-dev",
+    "supermaven.supermaven",
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
+    "editorconfig.editorconfig"
+  ]
+}

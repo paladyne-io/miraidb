@@ -1,0 +1,25 @@
+{
+  "name": "miraidb",
+  "version": "0.0.1",
+  "private": true,
+  "description": "Platform to create and manage business websites",
+  "scripts": {
+    "build": "pnpm -r build",
+    "dev": "pnpm -r dev",
+    "lint": "pnpm -r lint",
+    "format": "prettier --write \"**/*.{js,vue,json,md}\"",
+    "prepare": "husky && husky install"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "UNLICENSED",
+  "engines": {
+    "node": ">=18.0.0",
+    "pnpm": ">=8.0.0"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^19.6.1",
+    "@commitlint/config-conventional": "^19.6.0",
+    "husky": "^8.0.0"
+  }
+}

@@ -1,0 +1,236 @@
+PROJECT STRUCTURE:
+Copy/web-platform
+  /apps
+    /platform          # Main management platform
+    /clients          # Client websites
+    /marketing        # My business website
+  /packages
+    /core-components  # Shared components
+    /themes          # Website templates
+  /tools             # Development scripts
+
+#1 Initial Project Structure Setup/ GitHub/VS Code Setup:
+
+Using the project context provided above, help me:
+1. Set up a new workspace with the recommended folder structure
+2. Create necessary configuration files (package.json, pnpm-workspace.yaml, etc.)
+3. Configure VS Code workspace settings
+4. Set up basic Git configuration and .gitignore
+
+Please provide step-by-step commands and file contents, optimized for a pnpm monorepo structure.
+
+#2 Development Environment Setup:
+Help me set up a development environment that:
+
+1. Uses pnpm for package management
+2. Configures shared dependencies across projects
+3. Sets up development scripts for running multiple services
+4. Implements hot reloading for development, using Vite
+5. Configures environment variables for local development
+
+Please provide configuration files and CLI commands.
+
+#3 Help me set up GitHub integration in VS Code for this project:
+
+1. Configure VS Code for optimal Git workflow:
+   - Recommend essential Git-related extensions
+   - Set up source control settings
+   - Configure useful keyboard shortcuts
+
+2. Set up the initial repository:
+   - Initialize the repo
+   - Create .gitignore for a Node.js/Vue monorepo
+   - Configure branch protection rules
+   - Set up commit message templates
+
+3. Establish commit workflow:
+   - Configure commit signing
+   - Set up commit message validation
+   - Create PR templates
+   - Configure automatic branch cleanup
+
+4. Set up workspace-specific Git settings:
+   - Configure multiple remotes if needed
+   - Set up Git hooks for the monorepo
+   - Configure file-specific Git attributes
+
+Please provide:
+- Exact commands to run
+- VS Code settings.json snippets
+- Git configuration files
+- Example commit workflow
+
+#4 Migrate Existing Website:
+
+I have an existing Nuxt website currently hosted on NameCheap. Help me:
+
+1. Create appropriate folder structure in the monorepo for this website
+2. Update the Nuxt configuration for the new environment
+3. Create a Dockerfile and fly.toml for Fly.io deployment
+4. Set up GitHub Actions for automated deployment
+5. Configure domain and SSL settings
+
+Please provide specific configuration files and deployment scripts.
+
+#5 Move Existing apps to Monorepo:
+
+I have existing nodejs projects that I'd like to move to the monorepo. These projects  hav Express backends and Vue 3 frontends. Help me:
+
+1. Create appropriate folder structure in the monorepo for these projects
+2. Update the configurations for the new environment
+3. Create Dockerfiles and fly.toml for Fly.io deployment
+4. Set up GitHub Actions for automated deployment
+5. Configure domain and SSL settings
+
+Please provide specific configuration files and deployment scripts.
+
+#6 Set Up Analysis API:
+
+Help me create the initial Express API for website analysis:
+
+1. Set up the basic Express server structure
+2. Implement the Claude API integration
+3. Create the website analysis endpoint
+4. Add error handling and logging
+5. Set up environment variables
+
+Please include code examples and testing instructions.
+
+#7 Initial Platform Dashboard:
+
+Help me create a basic Vue 3 dashboard that:
+1. Shows a list of websites
+2. Provides basic analysis controls
+3. Displays analysis results
+4. Implements basic authentication
+5. Connects to the Express backend
+
+Please provide component structure and code examples.
+Detailed Example for Initial Setup:
+<Copy>
+I'm ready to start the project. Using pnpm, help me:
+1. Initialize the monorepo structure
+2. Set up the basic folder hierarchy
+3. Configure initial dependencies
+4. Create necessary configuration files
+
+Please provide the exact commands to run and the content of each configuration file, including:
+- Root package.json
+- pnpm-workspace.yaml
+- VS Code workspace settings
+- Basic README.md
+- Initial .gitignore
+- Environment variable templates
+
+#8 For Incremental Implementation:
+
+I've created the basic project structure. Now help me:
+
+1. Move my existing website into the /apps/marketing directory
+2. Update its configuration to work in the monorepo
+3. Set up the first API endpoint for website analysis
+4. Create a basic test script
+
+Please provide specific steps and code examples, considering the existing project context.
+
+#9 For Testing the Setup:
+
+Help me create a test workflow that:
+
+1. Verifies the monorepo structure is working
+2. Tests the website analysis functionality
+3. Validates the deployment process
+4. Checks environment configurations
+
+Please provide test scripts and validation steps.
+
+#10 Documentation Generation Prompt:
+
+Based on the work completed in each task, please generate:
+
+1. Task Documentation:
+   - Summary of what was implemented
+   - Key files created or modified
+   - Configuration changes made
+   - Dependencies added
+
+2. Technical Documentation:
+   - Architecture decisions
+   - API endpoints created
+   - Environment variables required
+   - Security considerations
+
+3. Next Steps:
+   - Immediate next tasks
+   - Required improvements
+   - Potential issues to address
+   - Dependencies to be added
+
+4. Important Considerations:
+   - Security warnings
+   - Performance implications
+   - Scalability concerns
+   - Maintenance requirements
+
+Please format the documentation in Markdown and include:
+- Directory tree of affected files
+- Configuration snippets
+- Example usage
+- Troubleshooting tips
+
+Store this documentation in: /docs/tasks/[TASK_NAME]/README.md
+Example Usage Pattern:
+CopyAfter completing a task, use this prompt:
+
+"I've just completed [TASK_NAME], which involved:
+[Brief description of what was done]
+
+Please generate comprehensive documentation following our standard format:
+1. Task summary
+2. Technical details
+3. Next steps
+4. Important considerations
+
+Include any warnings, gotchas, or special notes for future reference.
+
+The following files were modified:
+[List of main files changed]
+
+The following configurations were added:
+[List of configurations]
+
+Please format this as a Markdown file suitable for our /docs directory."
+Example Task Completion Documentation Request:
+<Copy>I've just set up the initial monorepo structure with pnpm. Please document:
+
+1. What was implemented:
+   - Directory structure created
+   - Configurations added
+   - Dependencies installed
+
+2. Current project state:
+   - Working features
+   - Pending configurations
+   - Known issues
+
+3. Next steps:
+   - Required configurations
+   - Missing dependencies
+   - Future integrations
+
+4. Reference information:
+   - Important commands
+   - Configuration locations
+   - Common issues and solutions
+
+Please format this documentation to be saved in /docs/tasks/initial-setup/README.md
+Would you like me to provide:
+
+-- Comments:
+More specific documentation templates?
+Additional Git workflow configurations?
+Example documentation for a specific task?
+VS Code workspace-specific settings for better Git integration?
+
+The key is to establish these documentation and Git practices early in the project to maintain good organization as it grows.
+-- END --
