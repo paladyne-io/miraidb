@@ -56,7 +56,7 @@ Closes #123
 1. **Local Backups**:
    - Use the provided backup script before major changes:
      ```bash
-     ./backup_script.sh
+     ./tools/backup_script.sh
      ```
    - This creates a timestamped backup of your working directory
 
@@ -89,7 +89,7 @@ Closes #123
    ```bash
    git add .                     # Stage changes
    git commit -m "type: message" # Commit changes
-   ./backup_script.sh           # Create backup if making major changes
+   ./tools/backup_script.sh     # Create backup if making major changes
    ```
 
 3. **End of Day**:
