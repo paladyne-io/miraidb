@@ -1,0 +1,85 @@
+/* Global Styles */
+:root {
+  --primary-orange: #f57c00;
+  --dark-bg: #121212;
+  --dark-card: #1E1E1E;
+  --dark-surface: #272727;
+}
+
+/* Typography */
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Noto Sans', 'Noto Sans JP','Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.6;
+}
+
+/* Dark Mode Optimizations */
+.body--dark {
+  background: var(--dark-bg);
+  color: #ffffff;
+}
+
+.body--dark .q-card {
+  background: var(--dark-card);
+}
+
+/* Transitions */
+.q-card {
+  transition: all 0.3s ease;
+}
+
+/* Typography Enhancements */
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.2;
+  margin: 0;
+}
+
+.text-h3 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+.text-subtitle1 {
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+/* Responsive Typography */
+@media (max-width: 599px) {
+  .text-h3 {
+    font-size: 2rem;
+  }
+  
+  .text-subtitle1 {
+    font-size: 1rem;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary-orange);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #e65100;
+}
+
+/* Utility Classes */
+.text-orange-accent {
+  color: var(--primary-orange) !important;
+}
+
+.bg-orange-accent {
+  background: var(--primary-orange) !important;
+}

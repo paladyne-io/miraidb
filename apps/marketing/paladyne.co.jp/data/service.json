@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "title": "service_page_service1_title",
+        "text": "service_page_service1_text",
+        "iconSrc": "/images/svg/linea/linea-basic-target.svg"
+    },
+    {
+        "id": 2,
+        "title": "service_page_service2_title",
+        "text": "service_page_service2_text",
+        "iconSrc": "/images/svg/linea/linea-basic-picture-multiple.svg"
+    },
+    {
+        "id": 3,
+        "title": "service_page_service3_title", 
+        "text": "service_page_service3_text",
+        "iconSrc": "/images/svg/linea/linea-weather-variable-sun.svg"
+    },
+    {
+        "id": 4,
+        "title": "service_page_service4_title",
+        "text":  "service_page_service4_text",
+        "iconSrc": "/images/svg/linea/linea-basic-compass.svg"
+    },
+    {
+        "id": 5,
+        "title": "service_page_service5_title",
+        "text": "service_page_service5_text",
+        "iconSrc": "/images/svg/linea/linea-basic-display.svg"
+    },
+    {
+        "id": 6,
+        "title": "service_page_service6_title",
+        "text": "service_page_service6_text",
+        "iconSrc": "/images/svg/linea/linea-basic-gear.svg"
+    }
+]

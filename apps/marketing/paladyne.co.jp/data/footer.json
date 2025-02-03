@@ -1,0 +1,54 @@
+{
+    "footerAboutWidget": {
+        "logoSrc": "/images/logo/footer-logo.png",
+        "telephone": "contact_tel",
+        "email": "contact_email",
+        "fbUrl": "#",
+        "twitterUrl": "#",
+        "instagramUrl": "#"
+    },
+    "footerLinkTitleOne": "services_label",
+    "navListOne": [
+       {
+        "navTitle": "design_direction_project_management_label",
+        "navUrl": "/design"
+       },
+       {
+            "navTitle": "programming_label",
+            "navUrl": "/software"
+        },
+        {
+          "navTitle": "programming_school_label",
+          "navUrl": "/programming_school"
+      }
+    ],
+    "footerLinkTitleTwo": "products_label",
+    "navListTwo": [
+        {
+            "navTitle": "virtag",
+            "navUrl": "/virtag"
+        },
+        {
+          "navTitle": "make_a_web_app_label",
+            "navUrl": "/learn_quasar"
+        }
+    ],
+    "footerLinkTitleThree": "about_label",
+    "navListThree": [
+        {
+            "navTitle": "company_name",
+            "navUrl": "/about-paladyne"
+        },
+        {
+          "navTitle": "meet_team_btn_label",
+          "navUrl": "/team"
+      }
+    ],
+    "footerLinkTitleFour": "contact_us_label",
+    "navListFour": [
+        {
+            "navTitle": "support_label",
+            "navUrl": "/contact-us"
+        }
+    ]
+}

@@ -1,0 +1,38 @@
+{
+  "name": "paladyne",
+  "version": "1.0.0",
+  "author": "Darren Saunders",
+  "private": true,
+  "engines": {
+    "node": "^20.10.0",
+    "npm": ">=10.2.4"
+  },
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "dependencies": {
+    "@nuxtjs/i18n": "^9.1.5",
+    "aos": "^2.3.4",
+    "bootstrap": "^5.3.3",
+    "core-js": "^3.40.0",
+    "mixitup": "^3.3.2",
+    "npm": "^11.1.0",
+    "swiper": "^11.2.2",
+    "vue": "^3.5.13",
+    "vue-router": "^4.5.0",
+    "vue-silentbox": "^3.0.4"
+  },
+  "devDependencies": {
+    "@nuxt/devtools": "latest",
+    "autoprefixer": "^10.4.20",
+    "nuxt": "^3.15.4",
+    "postcss": "^8.5.1",
+    "sass": "^1.83.4",
+    "sass-loader": "^16.0.4",
+    "tailwindcss": "^4.0.3"
+  }
+}

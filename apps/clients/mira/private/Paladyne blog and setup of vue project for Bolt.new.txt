@@ -1,0 +1,327 @@
+
+Stackblitz/Bolt.new account
+
+stackblitz.com
+paladyne
+fnR2Z.SGHNNapYX
+
+-------------------
+Paladyne_blog
+
+Supabase account
+darren@paladyne.co
+doKrup-7qoswa-gonjaq
+
+-------------------------------
+ncu // check for updates
+ncu -u  // update
+npm install
+-------------------------------
+SMTP Server:  mail.smtp2go.com
+SMTP Port: 2525
+Alternative ports: 8025, 587, 80 or 25. TLS is available on the same ports.
+SSL is available on ports 465, 8465 and 443.
+
+supa-base$_try
+mj2X4DzNPnXJuBsf
+
+-------------------------------
+Using Bolt.new (local version)
+
+Name: Simple Blog Frontend with Vue.js
+
+https://www.npmjs.com/package/vite
+https://stackoverflow.com/questions/77538589/the-cjs-build-of-vites-node-api-is-deprecated
+
+If you use JS, then change the vite.config.js file name to vite.config.mjs
+If you use TS, change the file name to vite.config.mts instead of vite.config.ts
+
+Note: Upcoming Supabase changes 
+https://github.com/orgs/supabase/discussions/29260
+
+The anon key will be renamed to publishable key and the service_role key will be renamed to secret key. 
+publishable api keys are meant to be used along with Supabase Auth users and secret api keys are for use from the server side and bypasses all row level security policies.
+
+Update your .env file to contain the new API key
+# the legacy anon key
+SUPABASE_ANON_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...w6PYobnC7Ep7EnDd9DG25qBFDsBGn0iqSmL28Zeg8f0 
+
+# the new publishable key
+SUPABASE_PUBLISHABLE_KEY=sb_publishable_123abc
+Instantiate the supabase client with the new API Keys.
+import { createClient } from 'supabase/supabase-js' 
+
+const supabase = createClient(VITE_SUPABASE_URL, VITE_SUPABASE_PUBLISHABLE_KEY)
+
+-------------------------------
+Stage 1 Prompt
+
+Create a simple blog front end with Vue.js, Vite, Javascript and Supabase for authentication and post storage
+Use V2 of Supabase
+Add a vue.config.mjs file
+Use the <script setup> syntax for scripts
+Create a .env file with Supabase credentials
+Create a .git-ignore file with .env and node_modules included
+Create SQL for Supabase to create necessary tables (blog posts, comments, 
+// include roles for Administator, managers/moderators
+
+In supabase project
+
+Create a new user
+Set up the SMTP server
+Add and test tables
+Enable RLS
+Set up roles
+
+
+Supbase setup
+
+https://github.com/supabase/supabase/tree/master/examples/user-management/vue3-user-management
+
+-------------------------------
+Stage 2 Prompt
+
+I have completed the Supabase setup. Tables for blog_posts, comments and likes exist. Can you please create a useSupabase composable file with common API functions to create a new blog post, upload and save and retrieve an image for the post, and add comments using the Supabase (v2) backend. Then create a BlogPage.vue file that uses useSupabase composable to use the API to load and add new blog posts. Please use some dummy text to fill out the sample blog posts.
+
+Response:
+Let's create a useSupabase composable file with common API functions for creating a new blog post, uploading and retrieving images, and adding comments. Then, we'll create a BlogPage.vue file that utilizes this composable to load and add new blog posts.
+
+-------------------------
+I don't want to  think too far ahead but I think this has the potential to work with swarms too (referring to one of your other recent videos). For example, you could have a director agent that hands out task assignments to other 'coder' agents. You could have one agent in charge of the back-end, and one on the front-end. Then you expand it to have an agent in charge of beta testing, one for setting up a web site landing page etc.
+
+
+The terminal shoudl include a way to stop or force. I expereince when CTRL-C would not owrk. In this case I had to ask to generate the project but some cahnges were lost.
+
+-------------------------
+
+Great job. Really good work. I am using it for hours everyday with ChatGPT-4o-mini and so far it's working well. I have found (with the commercial version as well) is that it takes some time to get to a working stable first iteration for a vue app. The preview screen is sometimes white or there is an error about not loading the vite vue plugin. I found that it helps to ask to add a vue.config.mjs file. 
+
+So my suggestion is to be able to provide a starting project template that is stable and pre-tested. Or it may just be a pre-crafted prompt. These prompts and/or template projects should include best practices and instrtuctions to use the latest versions of node librarires.
+
+
+​ @ColeMedin Electron is basically a Chromium browser shell within which you can run web content but access the local files etcs ince it is an app. It should be signed with a developer certificate for Macs and also runs on Winodws and Android.) 
+
+If you are going that route you should definitely look at Quasar which can build an Electron app from a Vuejs codebase. I could contribute to this. You can get Bolt to help. It struggles a bit with Quasar CLI but you can install the vite quasar plugin into a regular project ithout too much trouble. (Bolt seems to use Vite by default for web apps) Make sure to tell Bolt to add a vite.cofig.ts/js/mjs file as this seems to help get it working.
+
+-------------------------
+
+Comments: October 29. My aim was investigate whether Bolt can help to generate an Electon app (with Quasar)
+Made progress but couldnt get it to successuly build a hyrbrid app that works with both Quasar CLI and vite CLI
+
+Prompt for Electron app
+Create a basic app front-end that will be built as a standalone Electron app. 
+
+References:
+https://capacitor-community.github.io/electron/docs/gettingstarted
+https://quasar.dev/start/vite-plugin/
+
+The objective is to proceed in stages with each stage including some new functionality. 
+The app should be usable at the end of each stage. This is stage 1.
+
+Development stack:
+
+Vuejs
+Vitejs and vite cli
+Javascript
+Quasar and Quasar cli
+vitejs vue plugin
+Quasar Vite plugin
+Capacitor and Capacitor cli
+
+Use the <script setup> syntax for scripts
+
+Use these dependencies
+
+"dependencies": {
+            "@capacitor-community/electron": "^5.0.1",
+ 	    "@capacitor/preferences": "^6.0.2" // Optional to suppot saving app and user settings locally
+            "@capacitor/app": "^6.0.0",
+            "@capacitor/cli": "^6.0.0",
+            "@capacitor/core": "^6.1.2",
+            "quasar": "^2.17.1",
+            "@quasar/extras": "^1.16.12",
+            "chokidar": "^4.0.1", // required by Electron 
+            "vue": "^3.5.12",
+            "vue-router": "^4.4.5"
+   	    "@vitejs/plugin-vue": "^5.1.4",  // required by Vite
+    	    "vue-i18n": "^9.14.1"
+},
+	"devDependencies": {
+            "@quasar/vite-plugin": "^1.8.0",  // required by Quasar 
+            "electron": "^33.0.2",
+            "sass-embedded": "^1.80.4",
+            "vite": "^5.4.10"
+      }
+}
+
+Add a src folder containing an App.vue file
+
+include an index.html file as the entry point (Make sure the link to the main.js file is correct
+Add a vite.config.mjs file
+Add a quasar.config.js file
+
+--------------
+
+FILE: main.js 
+(This file is used by vite but should be ignored by Quasar)
+
+import { createApp } from 'vue'
+import { Quasar } from 'quasar'
+import quasarLang from 'quasar/lang/ja'
+import quasarIconSet from 'quasar/icon-set/fontawesome-v6'
+
+// Import icon libraries
+import '@quasar/extras/material-icons/material-icons.css'
+// ..required because of selected iconSet:
+import '@quasar/extras/fontawesome-v6/fontawesome-v6.css'
+
+// Import Quasar css
+import 'quasar/src/css/index.sass'
+
+// Assumes your root component is App.vue
+// and placed in same folder as main.js
+import App from './App.vue'
+
+const myApp = createApp(App)
+
+myApp.use(Quasar, {
+  plugins: {}, // import Quasar plugins and add here
+  lang: quasarLang,
+  iconSet: quasarIconSet,
+  /*
+  config: {
+    brand: {
+      // primary: '#e46262',
+      // ... or all other brand colors
+    },
+    notify: {...}, // default set of options for Notify Quasar plugin
+    loading: {...}, // default set of options for Loading Quasar plugin
+    loadingBar: { ... }, // settings for LoadingBar Quasar plugin
+    // ..and many more (check Installation card on each Quasar component/directive/plugin)
+  }
+  */
+})
+
+// Assumes you have a <div id="app"></div> in your index.html
+myApp.mount('#app')
+
+-------------------------
+
+Instructions to Run the App
+Create a New Directory: Create a new directory for your project and navigate into it.
+Copy the Above Code: Create the files as specified in the artifact above.
+Install Dependencies: Run npm install to install all the required packages.
+
+Run the Development Server: Use npm run dev to start the Vite development server.
+
+Launch Electron: In a separate terminal, run npm run electron to launch the Electron app.
+This setup will give you a basic Electron app with Vue.js and Quasar, ready for further development in subsequent stages.
+
+-----------
+
+Stage 2 Prompt (Basic app setup 2)
+
+Reference: https://quasar.dev/quasar-cli-webpack/directory-structure/
+
+Minimum is the /quasar.config file (Quasar App Config file), /src/router, /src/layouts, /src/pages and optionally /src/assets
+
+Add a vite.config.mjs file
+Add a quasar.config.js file
+include an index.html file as the entry point
+(make sure the main.js link is correct)
+
+Add a src folder containing an App.vue and main.js files
+In the src folder add directories: components, layouts, pages, i18n
+
+Add Pages "main window" and "Setings"
+Add a main layout (vue) file with a header and side panel that can be revealed and hidden. The pages should belong to the main layout.
+The side panel should include navigation for the main pages in the app and log-in and log-out menus.
+
+Add a vue router and a routes.js file containing the pages
+
+---------------------
+
+Stage 3 Capacitor and electon setup (Basic app setup 3)
+
+It is necessary to run these commands to initialize the Electron project
+
+npx cap add @capacitor-community/electron
+npx cap open @capacitor-community/electron
+
+Please add a READ ME file with expalanataion for how to use tehe various CLIs and to lauch teh apps in varius ways (e.g, quasar dev, npm run dev and npm run electron
+
+-------------------------  ------------------------- -------------------------
+-------------------------  ------------------------- -------------------------
+
+Stage 1 Prompt (Basic app setup)
+Create a simple blog front end with Vue.js, Vite and Javascript. The objective is to proceed in stages with each stage including some new functionality. The app should be usable at the end of each stage. This is stage 1.
+
+Add a vite.config.mjs file
+Use the <script setup> syntax for scripts
+Add a ayout file with a header and side panel that can be revealed and hidden.
+The side panel should include navigation for the main pages in the app and a log in and log out menus.
+
+Use Pages instead of views
+Add a BlogPage to display a list of blog previews
+Add a vue router with a routes.js file containing the Blog page
+Blog posts will contain a title, text content and an optional image and other users will be able to add their comments which will be  displayed in date order from newest to oldest, below the post.
+
+-------------------------
+
+Prompt example
+Stage 1 Prompt (Basic app setup)
+Create a simple blog front end with Vue.js, Vite and Javascript. The objective is to proceed in stages with each stage including some new functionality. The app should be usable at the end of each stage. This is stage 1.
+
+Add a vite.config.mjs file
+Use the <script setup> syntax for scripts
+Add a ayout file with a header and side panel that can be revealed and hidden.
+The side panel should include navigation for the main pages in the app and a log in and log out menus.
+
+Use Pages instead of views
+Add a BlogPage to display a list of blog previews
+Add a vue router with a routes.js file containing the Blog page
+Blog posts will contain a title, text content and an optional image and other users will be able to add their comments which will be  displayed in date order from newest to oldest, below the post.
+
+Stage 1b
+Add vue i18n
+Add the vue i18n V9 library syntax for localizations.
+Add the global instance  of vue-i18n to app
+add some default translations for Japanese, french and spanish in JSON format in a folder named i18n and export them in an index.js file in the same folder.
+
+Stage 2 Prompt (Add Supabase)
+Add  V2 of the Supabase javascript client for authentication, image and post storage.
+Place the initialization for the Supabase client into a separate ‘supabase.js’ file and import this where necessary.
+Create a .env file with the Supabase credentials
+Create a .git-ignore file with .env and node_modules included
+Create SQL for Supabase to create necessary tables (blog posts, comments, likes, users)
+Include SQL to create a folder in storage for blog images
+// include roles for Administrator, managers/moderators (future)
+
+Error Handling
+If any errors occur during setup they should be caught and shown to the user to help them understand what they need to do to resolve the issue. For example, if the connection to supabase fails because the URL or anon keys are empty, or they are the same as their placeholder values, please provide a helpful explanation, such as 'Please enter the supabase variables in the .env file and if necessary, create a Supabase project at supabase.com. After doing so, In your Supabase project go to the SQL tab and enter the SQL commands generated." 
+Please try to offer similar instructions if other errors occur.
+
+Stage 3 Prompt (Improve blog UI front end and implement API connection with Supabase)
+The Supabase project setup has been competed. Tables for blog_posts, comments and likes exist. 
+Create and use a useSupabase composable with  common API functions to create a new blog post, upload and retrieve an image for the post, and to add comments using the Supabase (v2) backend
+Update the BlogPage.vue file to use the useSupabase composable APIs to load and add new blog posts. Please use some dummy text to fill out the sample blog posts.
+
+Stage 4 Prompt (Improve the UI)
+Please add a UI Library (choose your favorite, i.e, Tailwind, Vuetify or Quasar) 
+Improve the design of the BlogPage.
+
+Stage 5 Prompt (Add an admin and authentications pages)
+Add sign-in and password reset pages to sign in to Supabase.
+Add an AdminDashboard page that lists all blog posts
+
+-------------
+To update dependencies
+
+npm i -g npm-check-updates
+ncu -u
+npm i
+
+-------------
+To run on network
+npm run dev -- --host
+

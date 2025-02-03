@@ -1,0 +1,97 @@
+[
+    {
+        "imgSrc": "/images/team/team-1.jpg",
+        "name": "team_page_name1",
+        "position": "team_page_title1",
+        "role": "team_page_title1",
+        "languages": "team_page_langs1",
+        "socialList": [
+            {
+                "name": "Facebook",
+                "iconName": "fab fa-facebook-f",
+                "url": "#"
+            },
+            {
+                "name": "Twitter",
+                "iconName": "fab fa-twitter",
+                "url": "#"
+            },
+            {
+                "name": "Instagram",
+                "iconName": "fab fa-instagram",
+                "url": "#"
+            }
+        ]
+    },
+    {
+        "imgSrc": "/images/team/team-2.jpg",
+        "name": "team_page_name2",
+        "position": "team_page_title2",
+        "languages": "team_page_langs2",
+        "role": "team_page_title2",
+        "socialList": [
+            {
+                "name": "Facebook",
+                "iconName": "fab fa-facebook-f",
+                "url": "#"
+            },
+            {
+                "name": "Twitter",
+                "iconName": "fab fa-twitter",
+                "url": "#"
+            },
+            {
+                "name": "Instagram",
+                "iconName": "fab fa-instagram",
+                "url": "#"
+            }
+        ]
+    },
+    {
+        "imgSrc": "/images/team/team-3.jpg",
+        "name": "team_page_name3",
+        "position": "team_page_title3",
+        "role": "team_page_title3",
+        "languages": "team_page_langs3",
+        "socialList": [
+            {
+                "name": "Facebook",
+                "iconName": "fab fa-facebook-f",
+                "url": "#"
+            },
+            {
+                "name": "Twitter",
+                "iconName": "fab fa-twitter",
+                "url": "#"
+            },
+            {
+                "name": "Instagram",
+                "iconName": "fab fa-instagram",
+                "url": "#"
+            }
+        ]
+    },
+    {
+        "imgSrc": "/images/team/team-4.jpg",
+        "name": "Mr X",
+        "position": "Marketing Manager",
+        "role": "employee",
+        "socialList": [
+            {
+                "name": "Facebook",
+                "iconName": "fab fa-facebook-f",
+                "url": "#"
+            },
+            {
+                "name": "Twitter",
+                "iconName": "fab fa-twitter",
+                "url": "#"
+            },
+            {
+                "name": "Instagram",
+                "iconName": "fab fa-instagram",
+                "url": "#"
+            }
+        ]
+    }
+]

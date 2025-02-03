@@ -1,0 +1,121 @@
+
+.profile {
+  /* https://blog.prototypr.io/css-only-multi-color-backgrounds-4d96a5569a20 */
+  /* background: linear-gradient(<angle>, color1 color1-stop-at, color2 color2-start-at); */
+  /* background: linear-gradient(110deg, #fdcd3b 60%, #ffed4b 60%); */
+
+   /*  background: linear-gradient(180deg, #3ba6fd 50%, hsl(199, 30%, 90%) 50%); */
+  background-color:#7eb3df;
+  border-radius: 20px, 20px, 0px, 0px;
+  height: 100px;
+   /* background-size: contain; */
+   /* background-repeat: no-repeat;  */
+  /* offset-x | offset-y | blur-radius | spread-radius | color */
+  /* box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.2); */
+  font-family: 'Noto Sans JP', 'Nunito', sans-serif;
+  text-align: center;
+  max-width: 500px;
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 20); */
+  padding: 20px;
+}
+.profile__image {
+  width: 170px;
+  height: 170px;
+  object-fit: cover;
+  border-radius: 90px;
+  display: block;
+  margin: 0 auto 20px auto;
+  text-align: center;
+}
+.profile__name {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+.profile__org{
+  font-size: 1.0em;
+  font-weight: bold;
+}
+.profile__item {
+  margin-bottom: 6px;
+}
+.profile__details {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9em;
+}
+.profile__social_media {
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9em;
+}
+span {
+  vertical-align:middle;
+  line-height: 24px;
+}
+.profile__download {
+  background-color: blue;
+  color: white !important;
+  margin-top: 20px;
+  margin-left: 40px;
+  margin-right: 40px;
+  font-size: 1.0em;
+  padding: 6px;
+  border-radius: 6px;
+}
+.lang__switcher {
+  font-family: 'Nunito', 'Noto Sans JP', sans-serif;
+  background-color: green;
+  color: white !important;
+  display: inline-block;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  margin-right: 40px;
+  font-size: 0.8em;
+  padding: 6px 10px;
+  border-radius: 6px;
+}
+a {
+  /* Specify non-transparent defaults to certain properties,
+     allowing them to be styled with the :visited state */
+  background-color: white;
+  color: white;
+}
+
+a:link {
+  color: white; 
+  background-color: transparent; 
+  text-decoration: none;
+}
+
+a:link:visited {
+  color: white; 
+  background-color: transparent; 
+  text-decoration: none;
+}
+
+a:link:active {
+  color: white; 
+  background-color: transparent; 
+  text-decoration: none;
+}
+
+a[href^="tel"] {
+  color: blue; /* Inherit text color of parent element. */
+  text-decoration: none; /* Remove underline. */
+  /* Additional css `propery: value;` pairs here */
+}
+a[href^="tel"]:visited  {
+  color: blue; /* Inherit text color of parent element. */
+  text-decoration: none; /* Remove underline. */
+  /* Additional css `propery: value;` pairs here */
+}
+
+.profile__linkedin a {
+  color: blue !important;
+}
+

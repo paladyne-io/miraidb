@@ -1,0 +1,3 @@
+// Empty JS
+(function() {
+})

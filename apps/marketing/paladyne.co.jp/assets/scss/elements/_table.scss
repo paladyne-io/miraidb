@@ -1,0 +1,32 @@
+@charset "utf-8";
+
+/*===================================================
+テーブル
+=================================================--*/
+table.company_profile{
+	width:620px;
+	margin:10px 0px 0px 30px;
+	font-size:14px;
+/*	border-collapse:collapse;  */
+}
+
+table.company_profile th{
+	width:150px;
+	padding:5px;
+	text-align:center;
+	white-space:nowrap;
+	border:solid #666666 1px;
+/*	background-color:#efefef;*/
+	background-color:#dcdcdc;
+/*	background-color:#ccccee;
+	border-bottom:dotted #666666 1px;  */
+	color:navy;
+}
+
+table.profile td{
+	padding:5px;
+	background-color:#white;
+	border:solid #666666 1px;
+/*	background-color:#eeeeff;
+	border-bottom:dotted #666666 1px;  */
+}

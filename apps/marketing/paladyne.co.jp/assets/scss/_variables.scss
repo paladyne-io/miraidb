@@ -1,0 +1,103 @@
+// Bootstrap overrides
+$body-bg: white;
+$body-color: #748494;
+$primary: #1292ee;
+$secondary: #748494;
+$success: #67d68a;
+$danger: #F44336;
+$warning: #FFC107;
+$info: #17A2B8;
+$light: #F8F9FA;
+
+// Custom colors
+$primary-two: #3a7e69;
+$primary-three: #ef6f31;
+$secondary-light: #8C89A2;
+$secondary-three: #6ac5f1;
+$off-white: #f6f2ed;
+$white-gray: #f2f2f2;
+$white-light: #cacaca;
+$white-opacity-50: rgba(255,255,255,0.5);
+$white: #fff;
+$black: #000;
+$heading-color: #030f27;
+$overlay-black: #030f27;
+$light-orange: rgba(239,111,49,.1);
+
+// Typography
+$body-font: 'Rubik', sans-serif;
+$heading-font: 'Rubik', sans-serif;
+$link-font: 'Rubik', sans-serif;
+$font-awesome: 'Font Awesome 6 Free';
+
+// Transitions
+$transition: all 0.3s ease-in-out;
+
+// Breakpoints
+$extra-small-mobile: 'only screen and (max-width: 479px)';
+$small-mobile: 'only screen and (max-width: 575px)';
+$large-mobile: 'only screen and (max-width: 767px)';
+$tablet-device: 'only screen and (max-width: 991px)';
+$desktop-device: 'only screen and (max-width: 1199px)';
+$laptop-device: 'only screen and (max-width: 1399px)';
+$extraBig-device: 'only screen and (min-width: 1400px)';
+
+// Bootstrap Grid settings
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+);
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1320px
+);
+
+$grid-gutter-width: 30px;
+$enable-negative-margins: true;
+
+// Theme Colors Map
+$theme-colors: (
+  "primary":    $primary,
+  "secondary":  $secondary,
+  "success":    $success,
+  "info":       $info,
+  "warning":    $warning,
+  "danger":     $danger,
+  "light":      $white,
+  "dark":       $black,
+  "white-gray": $white-gray,
+  "white-opacity-50": $white-opacity-50,
+  "white":      $white,
+  "overlay-black": $overlay-black,
+);
+
+// Gray color system
+$gray-100: #748494;
+$gray-200: #3f5054;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #cacaca;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+
+$grays: (
+  "100": $gray-100,
+  "200": $gray-200,
+  "300": $gray-300,
+  "400": $gray-400,
+  "500": $gray-500,
+  "600": $gray-600,
+  "700": $gray-700,
+  "800": $gray-800,
+  "900": $gray-900
+);

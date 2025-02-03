@@ -1,0 +1,5 @@
+// Import Bootstrap first
+@import 'bootstrap/scss/bootstrap';
+
+// Then import our variables which will override Bootstrap's defaults
+@import 'variables';

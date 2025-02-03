@@ -1,0 +1,1 @@
+import{B as e,k as r,C as n}from"./mainRouter-D1MtaxKQ.js";import{h as s}from"./QBtn-Dfw2kp-I.js";const l=e({name:"QCardSection",props:{tag:{type:String,default:"div"},horizontal:Boolean},setup(t,{slots:o}){const a=r(()=>`q-card__section q-card__section--${t.horizontal===!0?"horiz row no-wrap":"vert"}`);return()=>n(t.tag,{class:a.value},s(o.default))}});export{l as Q};
