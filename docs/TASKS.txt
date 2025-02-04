@@ -11,11 +11,22 @@ This file tracks ongoing tasks for the MiraiDB platform - a system to create and
 /apps
   /platform          # Main management platform
   /clients          # Client websites
-  /marketing        # My business website
+    /mira           # Mira client application
+    /ai-chatbot     # AI Chatbot client
+  /marketing        # Business websites
+    /paladyne.co.jp # Paladyne marketing site
+    /virtag.site    # Virtag marketing site
+
 /packages
-  /core-components  # Shared components
-  /themes          # Website templates
-/tools             # Development scripts
+  /core-components  # Shared Vue components
+  /themes           # Website templates
+  /auth             # Authentication services
+  /blogging         # Blogging platform components
+  /chatbot          # Chatbot backend and services
+  /mira             # Mira-specific backend services
+  /shared           # Shared utilities and types
+
+/tools             # Development scripts and utilities
 
 # Remaining Tasks
 
