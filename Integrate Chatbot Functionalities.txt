@@ -1,0 +1,149 @@
+# Integrate Chatbot Functionalities into DPM Backend
+
+## Overview
+
+This document outlines the steps taken to integrate the `aiChatbot` with the DPM backend. The integration ensures a clean and consistent implementation, maintaining the server as a "container" for APIs and managing client connections. The chatbot functionality supports both OpenAI and Anthropic APIs, allowing for versatile interactions.
+
+## Action Plan
+
+### Phase 1: Setup and Structure
+
+1. **Backup Current State**
+   - Executed the backup script using `./backup_script.sh` to ensure the current state is preserved before making any changes.
+
+2. **Create Module Structure**
+   - Established the following directory structure within the backend:
+     ```
+     apps/platform/DPM/backend/
+     ├── api/
+     │   └── chatbotService.js
+     ├── services/
+     │   └── chatbot/
+     │       ├── openAIClient.js
+     │       ├── anthropicClient.js
+     │       ├── sessionManager.js
+     │       └── helpers.js
+     └── middleware/
+         └── chatbotMiddleware.js
+     ```
+
+### Phase 2: Core Implementation
+
+3. **Implement OpenAI Client Management**
+   - Created `openAIClient.js` to handle OpenAI client instantiation, pooling, and cleanup.
+   - Functions include:
+     - `createOpenAIClient`
+     - `getClientBasedOnID`
+     - `getClientBasedOnThreadID`
+
+4. **Implement Anthropic Client Management**
+   - Created `anthropicClient.js` to manage Anthropic clients similarly to OpenAI.
+   - Functions include:
+     - `createAnthropicClient`
+     - `getAnthropicClientBasedOnID`
+     - `getAnthropicClientBasedOnThreadID`
+
+5. **Session Management Integration**
+   - Developed `sessionManager.js` to manage chatbot-specific sessions.
+   - Functions include:
+     - `addSession`
+     - `getSession`
+     - `removeSession`
+     - `cleanupSessions`
+     - `initializeSessionCleanup`
+
+6. **Define Chatbot Helper Functions**
+   - Updated `helpers.js` to support both OpenAI and Anthropic providers.
+   - Included functions:
+     - `handleTranslate`
+     - `handleAssistant`
+     - `determineProvider`
+     - `validateTranslationInput`
+     - `validateQuestion`
+     - `performOpenAITranslation`
+     - `performAnthropicTranslation`
+     - `interactWithAssistant`
+     - `interactWithAnthropic`
+     - `generateThreadID`
+     - `generateMessageID`
+
+7. **Chatbot Rate Limiting Middleware**
+   - Created `chatbotMiddleware.js` to define rate limiting specifically for chatbot endpoints using `express-rate-limit`.
+   - Configuration:
+     ```javascript
+     export const chatGptLimiter = rateLimit({
+       windowMs: 10 * 60 * 1000, // 10 minutes
+       max: 100, // limit each IP to 100 requests per windowMs
+       message: 'Too many requests from this IP, please try again after 10 minutes.',
+       headers: true,
+     });
+     ```
+
+### Phase 3: Integration
+
+8. **Integrate Chatbot Service into Server**
+   - Although the user opted to handle `server.js` modifications manually, the plan includes:
+     - **Import Chatbot Service**
+       ```javascript
+       import chatbotService from './api/chatbotService.js'; // Importing chatbot service
+       ```
+     - **Mount Chatbot Service**
+       ```javascript
+       app.use('/api/service-plans', servicePlansRoutes); // Mount the service plans router
+       app.use('/api', chatbotService); // Mount the chatbot service
+       ```
+   - **Note:** Ensure that these lines are added without altering existing functionalities.
+
+### Phase 4: Documentation
+
+9. **Update Project Documentation**
+   - Documented the integration steps in `Integrate Chatbot Functionalities.txt`, detailing module additions, configuration requirements, and testing procedures.
+   - **Key Sections Added:**
+     - **Overview:** Summary of the integration.
+     - **Action Plan:** Detailed phases and steps taken.
+     - **Endpoints:** Description of new chatbot-related API endpoints.
+     - **Configuration:** Instructions on setting environment variables (`OPENAI_API_KEY`, `ANTHROPIC_API_KEY`) in the `.env` file.
+     - **Testing:** Guidance on running Cypress tests to validate the integration.
+
+### Phase 5: Testing & Validation
+
+10. **Implement Automated Tests**
+    - Created `cypress/tests/chatbot.spec.js` to automate testing of chatbot endpoints.
+    - **Tests Include:**
+      - **Translation Endpoint (`/chat-gpt/translate`):**
+        - Validates successful translation.
+        - Ensures rate limiting is enforced after 100 requests.
+      - **Assistant Endpoint (`/chat-gpt-asst`):**
+        - Validates interaction with the assistant.
+        - Ensures rate limiting is enforced after 30 requests.
+
+11. **Run Tests**
+    - Execute Cypress tests to ensure endpoints function as expected.
+      ```bash
+      pnpm run test:cypress
+      ```
+    - **Expected Outcomes:**
+      - Successful responses for valid requests.
+      - Proper enforcement of rate limits.
+
+## Next Steps
+
+1. **Configure Environment Variables**
+   - Add `OPENAI_API_KEY` and `ANTHROPIC_API_KEY` to the `.env` file within `apps/platform/DPM/backend/`.
+
+2. **Finalize Server Integration**
+   - Ensure `server.js` includes the imported `chatbotService` and is properly mounted without affecting existing routes.
+
+3. **Run and Validate the Server**
+   - Start the server and monitor logs for any issues.
+     ```bash
+     pnpm run dev
+     ```
+   - Perform manual testing using tools like Postman to further validate chatbot functionalities.
+
+4. **Monitor and Iterate**
+   - Observe the chatbot's performance and make necessary adjustments based on feedback and logs.
+
+## Conclusion
+
+The integration of `aiChatbot` with the DPM backend has been systematically implemented, supporting both OpenAI and Anthropic APIs. With the established module structure, rate limiting, session management, and automated testing, the chatbot functionalities are now robust and scalable.

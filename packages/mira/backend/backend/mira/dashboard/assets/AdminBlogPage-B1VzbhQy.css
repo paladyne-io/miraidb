@@ -1,0 +1,1 @@
+.blog-page[data-v-6348f25c]{max-width:1200px;margin:0 auto}.blog-grid[data-v-6348f25c]{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:2rem}.blog-grid[data-v-6348f25c]>:first-child{grid-column:1 / -1;max-width:none}@media (max-width: 600px){.blog-grid[data-v-6348f25c]{grid-template-columns:1fr}}

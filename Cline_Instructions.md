@@ -19,15 +19,16 @@ Implement automated SSL via Let's Encrypt
 Create simple content management interface
 
 PROJECT STRUCTURE:
-Copy/web-platform
+
   /apps
-    /platform          # Main management platform
+    /platform         # Main management platform
     /clients          # Client websites
     /marketing        # My business website
   /packages
     /core-components  # Shared components
     /themes          # Website templates
   /tools             # Development scripts
+
 IMPLEMENTATION PHASES:
 
 MVP Setup

@@ -1,1 +1,0 @@
-import{i as u}from"./QBtn-Dfw2kp-I.js";import{H as i,I as m,D as s}from"./mainRouter-D1MtaxKQ.js";function f(){let e=null;const o=s();function t(){e!==null&&(clearTimeout(e),e=null)}return i(t),m(t),{removeTimeout:t,registerTimeout(n,r){t(),u(o)===!1&&(e=setTimeout(()=>{e=null,n()},r))}}}export{f as u};

@@ -1,8 +1,0 @@
-/.git
-/node_modules
-.dockerignore
-.env
-Dockerfile
-fly.toml
-/dev_backups
-ToDo, Comments, Suggestions.txt

@@ -1,0 +1,3861 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2820
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;\f1\fnil\fcharset0 Menlo-Bold;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red86\green32\blue244;\red57\green192\blue38;
+\red170\green171\blue37;\red202\green51\blue35;\red108\green197\blue37;\red56\green185\blue199;\red219\green39\blue218;
+\red116\green116\blue116;}
+{\*\expandedcolortbl;;\csgray\c0;\cssrgb\c41681\c25958\c96648;\cssrgb\c25706\c77963\c19557;
+\cssrgb\c72331\c71682\c18599;\cssrgb\c83899\c28663\c18026;\cssrgb\c48760\c79881\c18654;\cssrgb\c25546\c77007\c82023;\cssrgb\c89513\c29736\c88485;
+\csgenericrgb\c45371\c45371\c45371;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww13440\viewh10200\viewkind0
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs22 \cf2 \CocoaLigature0 Last login: Sun Jan 12 09:58:32 on ttys020\
+dcs@Darrens-MacBook-Pro ~ % cd dev\
+dcs@Darrens-MacBook-Pro dev % cd ai\
+dcs@Darrens-MacBook-Pro ai % git clone https://github.com/coleam00/ottomator-agents.git\
+Cloning into 'ottomator-agents'...\
+remote: Enumerating objects: 169, done.\
+remote: Counting objects: 100% (169/169), done.\
+remote: Compressing objects: 100% (134/134), done.\
+remote: Total 169 (delta 70), reused 128 (delta 32), pack-reused 0 (from 0)\
+Receiving objects: 100% (169/169), 110.53 KiB | 1.78 MiB/s, done.\
+Resolving deltas: 100% (70/70), done.\
+dcs@Darrens-MacBook-Pro ai % cd ottomator-agents\
+dcs@Darrens-MacBook-Pro ottomator-agents % cd crawl4AI-agent\
+dcs@Darrens-MacBook-Pro crawl4AI-agent % python -m venv venv\
+zsh: command not found: python\
+dcs@Darrens-MacBook-Pro crawl4AI-agent % brew install python\
+\cf3 ==>\cf2  
+\f1\b Auto-updating Homebrew...
+\f0\b0 \
+Adjust how often this is run with HOMEBREW_AUTO_UPDATE_SECS or disable with\
+HOMEBREW_NO_AUTO_UPDATE. Hide these hints with HOMEBREW_NO_ENV_HINTS (see `man brew`).\
+\cf3 ==>\cf2  
+\f1\b Auto-updated Homebrew!
+\f0\b0 \
+Updated 3 taps (supabase/tap, homebrew/core and homebrew/cask).\
+\cf3 ==>\cf2  
+\f1\b New Formulae
+\f0\b0 \
+cdncheck                   chaos-client               tach\
+\cf3 ==>\cf2  
+\f1\b New Casks
+\f0\b0 \
+font-atkinson-hyperlegible-mono          istherenet\
+font-atkinson-hyperlegible-next\
+\
+You have 
+\f1\b 45
+\f0\b0  outdated formulae installed.\
+\
+\cf3 ==>\cf2  
+\f1\b Downloading https://ghcr.io/v2/homebrew/core/python/3.13/manifests/3.13.1
+\f0\b0 \
+######################################################################### 100.0%\
+\cf4 ==>\cf2  
+\f1\b Fetching dependencies for python@3.13: \cf4 mpdecimal\cf2 , \cf4 ca-certificates\cf2 , \cf4 openssl@3\cf2 , \cf4 readline\cf2 , \cf4 sqlite\cf2  and \cf4 xz
+\f0\b0 \cf2 \
+\cf3 ==>\cf2  
+\f1\b Downloading https://ghcr.io/v2/homebrew/core/mpdecimal/manifests/4.0.0-1
+\f0\b0 \
+Already downloaded: /Users/dcs/Library/Caches/Homebrew/downloads/7b63c3b34bee402290af49fac829a6682ab45ea5c9258b6fe03b590a03a4c4a9--mpdecimal-4.0.0-1.bottle_manifest.json\
+\cf3 ==>\cf2  
+\f1\b Downloading https://ghcr.io/v2/homebrew/core/mpdecimal/manifests/4.0.0-1
+\f0\b0 \
+######################################################################### 100.0%\
+\cf4 ==>\cf2  
+\f1\b Fetching \cf4 mpdecimal
+\f0\b0 \cf2 \
+\cf3 ==>\cf2  
+\f1\b Downloading https://ghcr.io/v2/homebrew/core/mpdecimal/blobs/sha256:0f5f269b
+\f0\b0 \
+######################################################################### 100.0%\
+\cf3 ==>\cf2  
+\f1\b Downloading https://ghcr.io/v2/homebrew/core/ca-certificates/manifests/2024-
+\f0\b0 \
+######################################################################### 100.0%\
+\cf4 ==>\cf2  
+\f1\b Fetching \cf4 ca-certificates
+\f0\b0 \cf2 \
+\cf3 ==>\cf2  
+\f1\b Downloading https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:41
+\f0\b0 \
+######################################################################### 100.0%\
+\cf3 ==>\cf2  
+\f1\b Downloading https://ghcr.io/v2/homebrew/core/openssl/3/manifests/3.4.0
+\f0\b0 \
+######################################################################### 100.0%\
+\cf4 ==>\cf2  
+\f1\b Fetching \cf4 openssl@3
+\f0\b0 \cf2 \
+\cf3 ==>\cf2  
+\f1\b Downloading https://ghcr.io/v2/homebrew/core/openssl/3/blobs/sha256:bf2e6c5c
+\f0\b0 \
+######################################################################### 100.0%\
+\cf3 ==>\cf2  
+\f1\b Downloading https://ghcr.io/v2/homebrew/core/readline/manifests/8.2.13
+\f0\b0 \
+Already downloaded: /Users/dcs/Library/Caches/Homebrew/downloads/aa1afa38997a2866d91c81fdda8b36d436cd4ea7a82aed07d13c83c56eb3460e--readline-8.2.13.bottle_manifest.json\
+\cf3 ==>\cf2  
+\f1\b Downloading https://ghcr.io/v2/homebrew/core/readline/manifests/8.2.13
+\f0\b0 \
+######################################################################### 100.0%\
+\cf4 ==>\cf2  
+\f1\b Fetching \cf4 readline
+\f0\b0 \cf2 \
+\cf3 ==>\cf2  
+\f1\b Downloading https://ghcr.io/v2/homebrew/core/readline/blobs/sha256:738c27cee
+\f0\b0 \
+######################################################################### 100.0%\
+\cf3 ==>\cf2  
+\f1\b Downloading https://ghcr.io/v2/homebrew/core/sqlite/manifests/3.47.2
+\f0\b0 \
+######################################################################### 100.0%\
+\cf4 ==>\cf2  
+\f1\b Fetching \cf4 sqlite
+\f0\b0 \cf2 \
+\cf3 ==>\cf2  
+\f1\b Downloading https://ghcr.io/v2/homebrew/core/sqlite/blobs/sha256:7eca69ad469
+\f0\b0 \
+######################################################################### 100.0%\
+\cf3 ==>\cf2  
+\f1\b Downloading https://ghcr.io/v2/homebrew/core/xz/manifests/5.6.3
+\f0\b0 \
+######################################################################### 100.0%\
+\cf4 ==>\cf2  
+\f1\b Fetching \cf4 xz
+\f0\b0 \cf2 \
+\cf3 ==>\cf2  
+\f1\b Downloading https://ghcr.io/v2/homebrew/core/xz/blobs/sha256:743c3d366f11b13
+\f0\b0 \
+######################################################################### 100.0%\
+\cf4 ==>\cf2  
+\f1\b Fetching \cf4 python@3.13
+\f0\b0 \cf2 \
+\cf3 ==>\cf2  
+\f1\b Downloading https://ghcr.io/v2/homebrew/core/python/3.13/blobs/sha256:e9acf7
+\f0\b0 \
+######################################################################### 100.0%\
+\cf4 ==>\cf2  
+\f1\b Installing dependencies for python@3.13: \cf4 mpdecimal\cf2 , \cf4 ca-certificates\cf2 , \cf4 openssl@3\cf2 , \cf4 readline\cf2 , \cf4 sqlite\cf2  and \cf4 xz
+\f0\b0 \cf2 \
+\cf4 ==>\cf2  
+\f1\b Installing python@3.13 dependency: \cf4 mpdecimal
+\f0\b0 \cf2 \
+\cf3 ==>\cf2  
+\f1\b Downloading https://ghcr.io/v2/homebrew/core/mpdecimal/manifests/4.0.0-1
+\f0\b0 \
+Already downloaded: /Users/dcs/Library/Caches/Homebrew/downloads/7b63c3b34bee402290af49fac829a6682ab45ea5c9258b6fe03b590a03a4c4a9--mpdecimal-4.0.0-1.bottle_manifest.json\
+\cf3 ==>\cf2  
+\f1\b Pouring mpdecimal--4.0.0.arm64_sequoia.bottle.1.tar.gz
+\f0\b0 \
+\uc0\u55356 \u57210   /opt/homebrew/Cellar/mpdecimal/4.0.0: 22 files, 641.3KB\
+\cf4 ==>\cf2  
+\f1\b Installing python@3.13 dependency: \cf4 ca-certificates
+\f0\b0 \cf2 \
+\cf3 ==>\cf2  
+\f1\b Downloading https://ghcr.io/v2/homebrew/core/ca-certificates/manifests/2024-
+\f0\b0 \
+Already downloaded: /Users/dcs/Library/Caches/Homebrew/downloads/c41a485689e1507291617fb1f0e2322a087064960638fd050663df867bf53928--ca-certificates-2024-12-31.bottle_manifest.json\
+\cf3 ==>\cf2  
+\f1\b Pouring ca-certificates--2024-12-31.all.bottle.tar.gz
+\f0\b0 \
+\cf3 ==>\cf2  
+\f1\b Regenerating CA certificate bundle from keychain, this may take a while...
+\f0\b0 \
+\uc0\u55356 \u57210   /opt/homebrew/Cellar/ca-certificates/2024-12-31: 4 files, 233.9KB\
+\cf4 ==>\cf2  
+\f1\b Installing python@3.13 dependency: \cf4 openssl@3
+\f0\b0 \cf2 \
+\cf3 ==>\cf2  
+\f1\b Downloading https://ghcr.io/v2/homebrew/core/openssl/3/manifests/3.4.0
+\f0\b0 \
+Already downloaded: /Users/dcs/Library/Caches/Homebrew/downloads/a8a169d38329b14f967d497d0ea77eee6dc5444175093fc7b26026b357e81736--openssl@3-3.4.0.bottle_manifest.json\
+\cf3 ==>\cf2  
+\f1\b Pouring openssl@3--3.4.0.arm64_sequoia.bottle.tar.gz
+\f0\b0 \
+\uc0\u55356 \u57210   /opt/homebrew/Cellar/openssl@3/3.4.0: 7,236 files, 33.4MB\
+\cf4 ==>\cf2  
+\f1\b Installing python@3.13 dependency: \cf4 readline
+\f0\b0 \cf2 \
+\cf3 ==>\cf2  
+\f1\b Downloading https://ghcr.io/v2/homebrew/core/readline/manifests/8.2.13
+\f0\b0 \
+Already downloaded: /Users/dcs/Library/Caches/Homebrew/downloads/aa1afa38997a2866d91c81fdda8b36d436cd4ea7a82aed07d13c83c56eb3460e--readline-8.2.13.bottle_manifest.json\
+\cf3 ==>\cf2  
+\f1\b Pouring readline--8.2.13.arm64_sequoia.bottle.tar.gz
+\f0\b0 \
+\uc0\u55356 \u57210   /opt/homebrew/Cellar/readline/8.2.13: 51 files, 1.7MB\
+\cf4 ==>\cf2  
+\f1\b Installing python@3.13 dependency: \cf4 sqlite
+\f0\b0 \cf2 \
+\cf3 ==>\cf2  
+\f1\b Downloading https://ghcr.io/v2/homebrew/core/sqlite/manifests/3.47.2
+\f0\b0 \
+Already downloaded: /Users/dcs/Library/Caches/Homebrew/downloads/27ec8d19bd501f36464da50d9b2641d87015b451a6b81864afce75a247a2d3b1--sqlite-3.47.2.bottle_manifest.json\
+\cf3 ==>\cf2  
+\f1\b Pouring sqlite--3.47.2.arm64_sequoia.bottle.tar.gz
+\f0\b0 \
+\uc0\u55356 \u57210   /opt/homebrew/Cellar/sqlite/3.47.2: 12 files, 4.9MB\
+\cf4 ==>\cf2  
+\f1\b Installing python@3.13 dependency: \cf4 xz
+\f0\b0 \cf2 \
+\cf3 ==>\cf2  
+\f1\b Downloading https://ghcr.io/v2/homebrew/core/xz/manifests/5.6.3
+\f0\b0 \
+Already downloaded: /Users/dcs/Library/Caches/Homebrew/downloads/e68799185cc17334108ba286ba8c3df0587c9fd8375647d85f7157b62a797599--xz-5.6.3.bottle_manifest.json\
+\cf3 ==>\cf2  
+\f1\b Pouring xz--5.6.3.arm64_sequoia.bottle.tar.gz
+\f0\b0 \
+\uc0\u55356 \u57210   /opt/homebrew/Cellar/xz/5.6.3: 96 files, 2.0MB\
+\cf4 ==>\cf2  
+\f1\b Installing \cf4 python@3.13
+\f0\b0 \cf2 \
+\cf3 ==>\cf2  
+\f1\b Pouring python@3.13--3.13.1.arm64_sequoia.bottle.tar.gz
+\f0\b0 \
+\cf5 Warning:\cf2  These files were overwritten during the `brew link` step:\
+/opt/homebrew/bin/idle3\
+/opt/homebrew/bin/pydoc3\
+/opt/homebrew/bin/python3\
+/opt/homebrew/bin/python3-config\
+/opt/homebrew/share/man/man1/python3.1\
+/opt/homebrew/lib/pkgconfig/python3-embed.pc\
+/opt/homebrew/lib/pkgconfig/python3.pc\
+/opt/homebrew/Frameworks/Python.framework/Headers\
+/opt/homebrew/Frameworks/Python.framework/Python\
+/opt/homebrew/Frameworks/Python.framework/Resources\
+/opt/homebrew/Frameworks/Python.framework/Versions/Current\
+\
+They have been backed up to: /Users/dcs/Library/Caches/Homebrew/Backup\
+\cf3 ==>\cf2  
+\f1\b /opt/homebrew/Cellar/python@3.13/3.13.1/bin/python3.13 -Im ensurepip
+\f0\b0 \
+\cf3 ==>\cf2  
+\f1\b /opt/homebrew/Cellar/python@3.13/3.13.1/bin/python3.13 -Im pip install -v --
+\f0\b0 \
+\cf3 ==>\cf2  
+\f1\b Caveats
+\f0\b0 \
+Python is installed as\
+  /opt/homebrew/bin/python3\
+\
+Unversioned symlinks `python`, `python-config`, `pip` etc. pointing to\
+`python3`, `python3-config`, `pip3` etc., respectively, are installed into\
+  /opt/homebrew/opt/python@3.13/libexec/bin\
+\
+See: https://docs.brew.sh/Homebrew-and-Python\
+\cf3 ==>\cf2  
+\f1\b Summary
+\f0\b0 \
+\uc0\u55356 \u57210   /opt/homebrew/Cellar/python@3.13/3.13.1: 3,269 files, 65.3MB\
+\cf3 ==>\cf2  
+\f1\b Running `brew cleanup python@3.13`...
+\f0\b0 \
+Disable this behaviour by setting HOMEBREW_NO_INSTALL_CLEANUP.\
+Hide these hints with HOMEBREW_NO_ENV_HINTS (see `man brew`).\
+\cf3 ==>\cf2  
+\f1\b Upgrading 10 dependents of upgraded formulae:
+\f0\b0 \
+Disable this behaviour by setting HOMEBREW_NO_INSTALLED_DEPENDENTS_CHECK.\
+Hide these hints with HOMEBREW_NO_ENV_HINTS (see `man brew`).\
+cocoapods 1.15.2 -> 1.16.2_1, libssh2 1.11.0_1 -> 1.11.1, curl 8.9.1 -> 8.11.1, libtiff 4.5.1 -> 4.7.0, little-cms2 2.15 -> 2.16, openjdk 20.0.1 -> 23.0.1, openssl@1.1 1.1.1u -> 1.1.1w, python@3.11 3.11.4 -> 3.11.11, ruby 3.3.4 -> 3.4.1, semgrep 1.27.0 -> 1.102.0\
+\cf6 Error:\cf2  openssl@1.1 has been disabled because it is not supported upstream! It was disabled on 2024-10-24.\
+\cf3 ==>\cf2  
+\f1\b Downloading https://ghcr.io/v2/homebrew/core/libssh2/manifests/1.11.1
+\f0\b0 \
+######################################################################### 100.0%\
+\cf3 ==>\cf2  
+\f1\b Downloading https://ghcr.io/v2/homebrew/core/curl/manifests/8.11.1
+\f0\b0 \
+######################################################################### 100.0%\
+\cf4 ==>\cf2  
+\f1\b Fetching dependencies for curl: \cf4 libnghttp2\cf2 , \cf4 libssh2\cf2  and \cf4 lz4
+\f0\b0 \cf2 \
+\cf3 ==>\cf2  
+\f1\b Downloading https://ghcr.io/v2/homebrew/core/libnghttp2/manifests/1.64.0
+\f0\b0 \
+######################################################################### 100.0%\
+\cf4 ==>\cf2  
+\f1\b Fetching \cf4 libnghttp2
+\f0\b0 \cf2 \
+\cf3 ==>\cf2  
+\f1\b Downloading https://ghcr.io/v2/homebrew/core/libnghttp2/blobs/sha256:f3851a8
+\f0\b0 \
+######################################################################### 100.0%\
+\cf3 ==>\cf2  
+\f1\b Downloading https://ghcr.io/v2/homebrew/core/libssh2/manifests/1.11.1
+\f0\b0 \
+Already downloaded: /Users/dcs/Library/Caches/Homebrew/downloads/6d2495eb2b5f37f7931b23940ceb29db14a4742a49d1d8cce26964ad91a03f26--libssh2-1.11.1.bottle_manifest.json\
+\cf4 ==>\cf2  
+\f1\b Fetching \cf4 libssh2
+\f0\b0 \cf2 \
+\cf3 ==>\cf2  
+\f1\b Downloading https://ghcr.io/v2/homebrew/core/libssh2/blobs/sha256:4fd55e8973
+\f0\b0 \
+######################################################################### 100.0%\
+\cf3 ==>\cf2  
+\f1\b Downloading https://ghcr.io/v2/homebrew/core/lz4/manifests/1.10.0-1
+\f0\b0 \
+######################################################################### 100.0%\
+\cf4 ==>\cf2  
+\f1\b Fetching \cf4 lz4
+\f0\b0 \cf2 \
+\cf3 ==>\cf2  
+\f1\b Downloading https://ghcr.io/v2/homebrew/core/lz4/blobs/sha256:5bd143b7b78498
+\f0\b0 \
+######################################################################### 100.0%\
+\cf4 ==>\cf2  
+\f1\b Fetching \cf4 curl
+\f0\b0 \cf2 \
+\cf3 ==>\cf2  
+\f1\b Downloading https://ghcr.io/v2/homebrew/core/curl/blobs/sha256:9becff07bed07
+\f0\b0 \
+######################################################################### 100.0%\
+\cf3 ==>\cf2  
+\f1\b Downloading https://ghcr.io/v2/homebrew/core/ruby/manifests/3.4.1-1
+\f0\b0 \
+######################################################################### 100.0%\
+\cf3 ==>\cf2  
+\f1\b Downloading https://ghcr.io/v2/homebrew/core/libtiff/manifests/4.7.0-1
+\f0\b0 \
+######################################################################### 100.0%\
+\cf4 ==>\cf2  
+\f1\b Fetching dependencies for libtiff: \cf4 jpeg-turbo
+\f0\b0 \cf2 \
+\cf3 ==>\cf2  
+\f1\b Downloading https://ghcr.io/v2/homebrew/core/jpeg-turbo/manifests/3.1.0
+\f0\b0 \
+######################################################################### 100.0%\
+\cf4 ==>\cf2  
+\f1\b Fetching \cf4 jpeg-turbo
+\f0\b0 \cf2 \
+\cf3 ==>\cf2  
+\f1\b Downloading https://ghcr.io/v2/homebrew/core/jpeg-turbo/blobs/sha256:c43b108
+\f0\b0 \
+######################################################################### 100.0%\
+\cf4 ==>\cf2  
+\f1\b Fetching \cf4 libtiff
+\f0\b0 \cf2 \
+\cf3 ==>\cf2  
+\f1\b Downloading https://ghcr.io/v2/homebrew/core/libtiff/blobs/sha256:5f771cedcb
+\f0\b0 \
+######################################################################### 100.0%\
+\cf3 ==>\cf2  
+\f1\b Downloading https://ghcr.io/v2/homebrew/core/little-cms2/manifests/2.16-1
+\f0\b0 \
+######################################################################### 100.0%\
+\cf4 ==>\cf2  
+\f1\b Fetching \cf4 little-cms2
+\f0\b0 \cf2 \
+\cf3 ==>\cf2  
+\f1\b Downloading https://ghcr.io/v2/homebrew/core/little-cms2/blobs/sha256:ca8251
+\f0\b0 \
+######################################################################### 100.0%\
+\cf3 ==>\cf2  
+\f1\b Downloading https://ghcr.io/v2/homebrew/core/openjdk/manifests/23.0.1
+\f0\b0 \
+######################################################################### 100.0%\
+\cf4 ==>\cf2  
+\f1\b Fetching dependencies for openjdk: \cf4 libpng\cf2 , \cf4 freetype\cf2 , \cf4 giflib\cf2 , \cf4 fontconfig\cf2 , \cf4 pcre2\cf2 , \cf4 python-packaging\cf2 , \cf4 libunistring\cf2 , \cf4 glib\cf2 , \cf4 xorgproto\cf2 , \cf4 libxdmcp\cf2 , \cf4 libxcb\cf2 , \cf4 libx11\cf2 , \cf4 libxext\cf2 , \cf4 cairo\cf2 , \cf4 icu4c@76\cf2  and \cf4 harfbuzz
+\f0\b0 \cf2 \
+\cf3 ==>\cf2  
+\f1\b Downloading https://ghcr.io/v2/homebrew/core/libpng/manifests/1.6.45
+\f0\b0 \
+######################################################################### 100.0%\
+\cf4 ==>\cf2  
+\f1\b Fetching \cf4 libpng
+\f0\b0 \cf2 \
+\cf3 ==>\cf2  
+\f1\b Downloading https://ghcr.io/v2/homebrew/core/libpng/blobs/sha256:2d9fddec7ff
+\f0\b0 \
+######################################################################### 100.0%\
+\cf3 ==>\cf2  
+\f1\b Downloading https://ghcr.io/v2/homebrew/core/freetype/manifests/2.13.3
+\f0\b0 \
+######################################################################### 100.0%\
+\cf4 ==>\cf2  
+\f1\b Fetching \cf4 freetype
+\f0\b0 \cf2 \
+\cf3 ==>\cf2  
+\f1\b Downloading https://ghcr.io/v2/homebrew/core/freetype/blobs/sha256:bcd39d3a5
+\f0\b0 \
+######################################################################### 100.0%\
+\cf3 ==>\cf2  
+\f1\b Downloading https://ghcr.io/v2/homebrew/core/giflib/manifests/5.2.2
+\f0\b0 \
+######################################################################### 100.0%\
+\cf4 ==>\cf2  
+\f1\b Fetching \cf4 giflib
+\f0\b0 \cf2 \
+\cf3 ==>\cf2  
+\f1\b Downloading https://ghcr.io/v2/homebrew/core/giflib/blobs/sha256:bf188a3d3e3
+\f0\b0 \
+######################################################################### 100.0%\
+\cf3 ==>\cf2  
+\f1\b Downloading https://ghcr.io/v2/homebrew/core/fontconfig/manifests/2.15.0
+\f0\b0 \
+######################################################################### 100.0%\
+\cf4 ==>\cf2  
+\f1\b Fetching \cf4 fontconfig
+\f0\b0 \cf2 \
+\cf3 ==>\cf2  
+\f1\b Downloading https://ghcr.io/v2/homebrew/core/fontconfig/blobs/sha256:032ec9d
+\f0\b0 \
+######################################################################### 100.0%\
+\cf3 ==>\cf2  
+\f1\b Downloading https://ghcr.io/v2/homebrew/core/pcre2/manifests/10.44
+\f0\b0 \
+Already downloaded: /Users/dcs/Library/Caches/Homebrew/downloads/22ed791461c5bf400adde8c3b432c1230866aa1db3c5cb81e06a6ff21cac96ee--pcre2-10.44.bottle_manifest.json\
+\cf3 ==>\cf2  
+\f1\b Downloading https://ghcr.io/v2/homebrew/core/pcre2/manifests/10.44
+\f0\b0 \
+######################################################################### 100.0%\
+\cf4 ==>\cf2  
+\f1\b Fetching \cf4 pcre2
+\f0\b0 \cf2 \
+\cf3 ==>\cf2  
+\f1\b Downloading https://ghcr.io/v2/homebrew/core/pcre2/blobs/sha256:c3f9e7a70ebc
+\f0\b0 \
+######################################################################### 100.0%\
+\cf3 ==>\cf2  
+\f1\b Downloading https://ghcr.io/v2/homebrew/core/python-packaging/manifests/24.2
+\f0\b0 \
+######################################################################### 100.0%\
+\cf4 ==>\cf2  
+\f1\b Fetching \cf4 python-packaging
+\f0\b0 \cf2 \
+\cf3 ==>\cf2  
+\f1\b Downloading https://ghcr.io/v2/homebrew/core/python-packaging/blobs/sha256:8
+\f0\b0 \
+######################################################################### 100.0%\
+\cf3 ==>\cf2  
+\f1\b Downloading https://ghcr.io/v2/homebrew/core/libunistring/manifests/1.3
+\f0\b0 \
+######################################################################### 100.0%\
+\cf4 ==>\cf2  
+\f1\b Fetching \cf4 libunistring
+\f0\b0 \cf2 \
+\cf3 ==>\cf2  
+\f1\b Downloading https://ghcr.io/v2/homebrew/core/libunistring/blobs/sha256:3cd26
+\f0\b0 \
+######################################################################### 100.0%\
+\cf3 ==>\cf2  
+\f1\b Downloading https://ghcr.io/v2/homebrew/core/glib/manifests/2.82.4-1
+\f0\b0 \
+######################################################################### 100.0%\
+\cf4 ==>\cf2  
+\f1\b Fetching dependencies for glib: \cf4 gettext
+\f0\b0 \cf2 \
+\cf3 ==>\cf2  
+\f1\b Downloading https://ghcr.io/v2/homebrew/core/gettext/manifests/0.23.1
+\f0\b0 \
+######################################################################### 100.0%\
+\cf4 ==>\cf2  
+\f1\b Fetching \cf4 gettext
+\f0\b0 \cf2 \
+\cf3 ==>\cf2  
+\f1\b Downloading https://ghcr.io/v2/homebrew/core/gettext/blobs/sha256:9179f47309
+\f0\b0 \
+######################################################################### 100.0%\
+\cf4 ==>\cf2  
+\f1\b Fetching \cf4 glib
+\f0\b0 \cf2 \
+\cf3 ==>\cf2  
+\f1\b Downloading https://ghcr.io/v2/homebrew/core/glib/blobs/sha256:cb7e1e45b994e
+\f0\b0 \
+######################################################################### 100.0%\
+\cf3 ==>\cf2  
+\f1\b Downloading https://ghcr.io/v2/homebrew/core/xorgproto/manifests/2024.1
+\f0\b0 \
+######################################################################### 100.0%\
+\cf4 ==>\cf2  
+\f1\b Fetching \cf4 xorgproto
+\f0\b0 \cf2 \
+\cf3 ==>\cf2  
+\f1\b Downloading https://ghcr.io/v2/homebrew/core/xorgproto/blobs/sha256:91066363
+\f0\b0 \
+######################################################################### 100.0%\
+\cf3 ==>\cf2  
+\f1\b Downloading https://ghcr.io/v2/homebrew/core/libxdmcp/manifests/1.1.5
+\f0\b0 \
+######################################################################### 100.0%\
+\cf4 ==>\cf2  
+\f1\b Fetching \cf4 libxdmcp
+\f0\b0 \cf2 \
+\cf3 ==>\cf2  
+\f1\b Downloading https://ghcr.io/v2/homebrew/core/libxdmcp/blobs/sha256:b09a915da
+\f0\b0 \
+######################################################################### 100.0%\
+\cf3 ==>\cf2  
+\f1\b Downloading https://ghcr.io/v2/homebrew/core/libxcb/manifests/1.17.0-1
+\f0\b0 \
+######################################################################### 100.0%\
+\cf4 ==>\cf2  
+\f1\b Fetching dependencies for libxcb: \cf4 libxau
+\f0\b0 \cf2 \
+\cf3 ==>\cf2  
+\f1\b Downloading https://ghcr.io/v2/homebrew/core/libxau/manifests/1.0.12
+\f0\b0 \
+######################################################################### 100.0%\
+\cf4 ==>\cf2  
+\f1\b Fetching \cf4 libxau
+\f0\b0 \cf2 \
+\cf3 ==>\cf2  
+\f1\b Downloading https://ghcr.io/v2/homebrew/core/libxau/blobs/sha256:e8a5fedbd9e
+\f0\b0 \
+######################################################################### 100.0%\
+\cf4 ==>\cf2  
+\f1\b Fetching \cf4 libxcb
+\f0\b0 \cf2 \
+\cf3 ==>\cf2  
+\f1\b Downloading https://ghcr.io/v2/homebrew/core/libxcb/blobs/sha256:cce8d9e12c3
+\f0\b0 \
+######################################################################### 100.0%\
+\cf3 ==>\cf2  
+\f1\b Downloading https://ghcr.io/v2/homebrew/core/libx11/manifests/1.8.10
+\f0\b0 \
+######################################################################### 100.0%\
+\cf4 ==>\cf2  
+\f1\b Fetching \cf4 libx11
+\f0\b0 \cf2 \
+\cf3 ==>\cf2  
+\f1\b Downloading https://ghcr.io/v2/homebrew/core/libx11/blobs/sha256:c6f87c76459
+\f0\b0 \
+######################################################################### 100.0%\
+\cf3 ==>\cf2  
+\f1\b Downloading https://ghcr.io/v2/homebrew/core/libxext/manifests/1.3.6
+\f0\b0 \
+######################################################################### 100.0%\
+\cf4 ==>\cf2  
+\f1\b Fetching \cf4 libxext
+\f0\b0 \cf2 \
+\cf3 ==>\cf2  
+\f1\b Downloading https://ghcr.io/v2/homebrew/core/libxext/blobs/sha256:a0434e871b
+\f0\b0 \
+######################################################################### 100.0%\
+\cf3 ==>\cf2  
+\f1\b Downloading https://ghcr.io/v2/homebrew/core/cairo/manifests/1.18.2
+\f0\b0 \
+######################################################################### 100.0%\
+\cf4 ==>\cf2  
+\f1\b Fetching \cf4 cairo
+\f0\b0 \cf2 \
+\cf3 ==>\cf2  
+\f1\b Downloading https://ghcr.io/v2/homebrew/core/cairo/blobs/sha256:d74a4f1916b9
+\f0\b0 \
+######################################################################### 100.0%\
+\cf3 ==>\cf2  
+\f1\b Downloading https://ghcr.io/v2/homebrew/core/icu4c/76/manifests/76.1_1
+\f0\b0 \
+######################################################################### 100.0%\
+\cf4 ==>\cf2  
+\f1\b Fetching \cf4 icu4c@76
+\f0\b0 \cf2 \
+\cf3 ==>\cf2  
+\f1\b Downloading https://ghcr.io/v2/homebrew/core/icu4c/76/blobs/sha256:66a2995c0
+\f0\b0 \
+######################################################################### 100.0%\
+\cf3 ==>\cf2  
+\f1\b Downloading https://ghcr.io/v2/homebrew/core/harfbuzz/manifests/10.2.0
+\f0\b0 \
+######################################################################### 100.0%\
+\cf4 ==>\cf2  
+\f1\b Fetching dependencies for harfbuzz: \cf4 libxrender\cf2  and \cf4 pixman
+\f0\b0 \cf2 \
+\cf3 ==>\cf2  
+\f1\b Downloading https://ghcr.io/v2/homebrew/core/libxrender/manifests/0.9.12
+\f0\b0 \
+######################################################################### 100.0%\
+\cf4 ==>\cf2  
+\f1\b Fetching \cf4 libxrender
+\f0\b0 \cf2 \
+\cf3 ==>\cf2  
+\f1\b Downloading https://ghcr.io/v2/homebrew/core/libxrender/blobs/sha256:edcb888
+\f0\b0 \
+######################################################################### 100.0%\
+\cf3 ==>\cf2  
+\f1\b Downloading https://ghcr.io/v2/homebrew/core/pixman/manifests/0.44.2
+\f0\b0 \
+######################################################################### 100.0%\
+\cf4 ==>\cf2  
+\f1\b Fetching \cf4 pixman
+\f0\b0 \cf2 \
+\cf3 ==>\cf2  
+\f1\b Downloading https://ghcr.io/v2/homebrew/core/pixman/blobs/sha256:8ec43a3f69d
+\f0\b0 \
+######################################################################### 100.0%\
+\cf4 ==>\cf2  
+\f1\b Fetching \cf4 harfbuzz
+\f0\b0 \cf2 \
+\cf3 ==>\cf2  
+\f1\b Downloading https://ghcr.io/v2/homebrew/core/harfbuzz/blobs/sha256:2f892566c
+\f0\b0 \
+######################################################################### 100.0%\
+\cf4 ==>\cf2  
+\f1\b Fetching \cf4 openjdk
+\f0\b0 \cf2 \
+\cf3 ==>\cf2  
+\f1\b Downloading https://ghcr.io/v2/homebrew/core/openjdk/blobs/sha256:5cba5c9149
+\f0\b0 \
+######################################################################### 100.0%\
+\cf3 ==>\cf2  
+\f1\b Downloading https://ghcr.io/v2/homebrew/core/python/3.11/manifests/3.11.11
+\f0\b0 \
+######################################################################### 100.0%\
+\cf3 ==>\cf2  
+\f1\b Downloading https://ghcr.io/v2/homebrew/core/cocoapods/manifests/1.16.2_1
+\f0\b0 \
+######################################################################### 100.0%\
+\cf4 ==>\cf2  
+\f1\b Fetching dependencies for cocoapods: \cf4 ruby
+\f0\b0 \cf2 \
+\cf3 ==>\cf2  
+\f1\b Downloading https://ghcr.io/v2/homebrew/core/ruby/manifests/3.4.1-1
+\f0\b0 \
+Already downloaded: /Users/dcs/Library/Caches/Homebrew/downloads/2b999c3afe56c5e6831e4b088bf5ec7a4aba494ad9a1a9071ae4f3db209df431--ruby-3.4.1-1.bottle_manifest.json\
+\cf4 ==>\cf2  
+\f1\b Fetching \cf4 ruby
+\f0\b0 \cf2 \
+\cf3 ==>\cf2  
+\f1\b Downloading https://ghcr.io/v2/homebrew/core/ruby/blobs/sha256:a11f7158aa46b
+\f0\b0 \
+######################################################################### 100.0%\
+\cf4 ==>\cf2  
+\f1\b Fetching \cf4 cocoapods
+\f0\b0 \cf2 \
+\cf3 ==>\cf2  
+\f1\b Downloading https://ghcr.io/v2/homebrew/core/cocoapods/blobs/sha256:c0bd1f8e
+\f0\b0 \
+######################################################################### 100.0%\
+\cf3 ==>\cf2  
+\f1\b Downloading https://ghcr.io/v2/homebrew/core/semgrep/manifests/1.102.0
+\f0\b0 \
+######################################################################### 100.0%\
+\cf4 ==>\cf2  
+\f1\b Fetching dependencies for semgrep: \cf4 certifi\cf2 , \cf4 gmp\cf2 , \cf4 libev\cf2  and \cf4 tree-sitter
+\f0\b0 \cf2 \
+\cf3 ==>\cf2  
+\f1\b Downloading https://ghcr.io/v2/homebrew/core/certifi/manifests/2024.12.14
+\f0\b0 \
+######################################################################### 100.0%\
+\cf4 ==>\cf2  
+\f1\b Fetching \cf4 certifi
+\f0\b0 \cf2 \
+\cf3 ==>\cf2  
+\f1\b Downloading https://ghcr.io/v2/homebrew/core/certifi/blobs/sha256:44725646c7
+\f0\b0 \
+######################################################################### 100.0%\
+\cf3 ==>\cf2  
+\f1\b Downloading https://ghcr.io/v2/homebrew/core/gmp/manifests/6.3.0
+\f0\b0 \
+Already downloaded: /Users/dcs/Library/Caches/Homebrew/downloads/70a72a71216843d66a953c06ff6337445ce9bc94fae9f0e301e2f59005274a8e--gmp-6.3.0.bottle_manifest.json\
+\cf3 ==>\cf2  
+\f1\b Downloading https://ghcr.io/v2/homebrew/core/gmp/manifests/6.3.0
+\f0\b0 \
+######################################################################### 100.0%\
+\cf4 ==>\cf2  
+\f1\b Fetching \cf4 gmp
+\f0\b0 \cf2 \
+\cf3 ==>\cf2  
+\f1\b Downloading https://ghcr.io/v2/homebrew/core/gmp/blobs/sha256:6683d73d6677d2
+\f0\b0 \
+######################################################################### 100.0%\
+\cf3 ==>\cf2  
+\f1\b Downloading https://ghcr.io/v2/homebrew/core/libev/manifests/4.33
+\f0\b0 \
+Already downloaded: /Users/dcs/Library/Caches/Homebrew/downloads/dcc77a4ef78cc646caf5e0675f4121c18ac6fbbb84ddb181eaab408546c41b66--libev-4.33.bottle_manifest.json\
+\cf3 ==>\cf2  
+\f1\b Downloading https://ghcr.io/v2/homebrew/core/libev/manifests/4.33
+\f0\b0 \
+######################################################################### 100.0%\
+\cf4 ==>\cf2  
+\f1\b Fetching \cf4 libev
+\f0\b0 \cf2 \
+\cf3 ==>\cf2  
+\f1\b Downloading https://ghcr.io/v2/homebrew/core/libev/blobs/sha256:67740e5ba01e
+\f0\b0 \
+######################################################################### 100.0%\
+\cf3 ==>\cf2  
+\f1\b Downloading https://ghcr.io/v2/homebrew/core/tree-sitter/manifests/0.24.7
+\f0\b0 \
+######################################################################### 100.0%\
+\cf4 ==>\cf2  
+\f1\b Fetching \cf4 tree-sitter
+\f0\b0 \cf2 \
+\cf3 ==>\cf2  
+\f1\b Downloading https://ghcr.io/v2/homebrew/core/tree-sitter/blobs/sha256:f4106b
+\f0\b0 \
+######################################################################### 100.0%\
+\cf4 ==>\cf2  
+\f1\b Fetching \cf4 semgrep
+\f0\b0 \cf2 \
+\cf3 ==>\cf2  
+\f1\b Downloading https://ghcr.io/v2/homebrew/core/semgrep/blobs/sha256:dcf489e6e4
+\f0\b0 \
+######################################################################### 100.0%\
+\cf4 ==>\cf2  
+\f1\b Upgrading \cf4 curl
+\f0\b0 \cf2 \
+  8.9.1 -> 8.11.1 \
+\cf4 ==>\cf2  
+\f1\b Installing dependencies for curl: \cf4 libnghttp2\cf2 , \cf4 libssh2\cf2  and \cf4 lz4
+\f0\b0 \cf2 \
+\cf4 ==>\cf2  
+\f1\b Installing curl dependency: \cf4 libnghttp2
+\f0\b0 \cf2 \
+\cf3 ==>\cf2  
+\f1\b Downloading https://ghcr.io/v2/homebrew/core/libnghttp2/manifests/1.64.0
+\f0\b0 \
+Already downloaded: /Users/dcs/Library/Caches/Homebrew/downloads/ca092fa9d99f26d52103722d42230c00f21eb8a4a36bf1d40fc9d5f798562d92--libnghttp2-1.64.0.bottle_manifest.json\
+\cf3 ==>\cf2  
+\f1\b Pouring libnghttp2--1.64.0.arm64_sequoia.bottle.tar.gz
+\f0\b0 \
+\uc0\u55356 \u57210   /opt/homebrew/Cellar/libnghttp2/1.64.0: 14 files, 793.7KB\
+\cf4 ==>\cf2  
+\f1\b Installing curl dependency: \cf4 libssh2
+\f0\b0 \cf2 \
+\cf3 ==>\cf2  
+\f1\b Downloading https://ghcr.io/v2/homebrew/core/libssh2/manifests/1.11.1
+\f0\b0 \
+Already downloaded: /Users/dcs/Library/Caches/Homebrew/downloads/6d2495eb2b5f37f7931b23940ceb29db14a4742a49d1d8cce26964ad91a03f26--libssh2-1.11.1.bottle_manifest.json\
+\cf3 ==>\cf2  
+\f1\b Pouring libssh2--1.11.1.arm64_sequoia.bottle.tar.gz
+\f0\b0 \
+\uc0\u55356 \u57210   /opt/homebrew/Cellar/libssh2/1.11.1: 201 files, 1.2MB\
+\cf4 ==>\cf2  
+\f1\b Installing curl dependency: \cf4 lz4
+\f0\b0 \cf2 \
+\cf3 ==>\cf2  
+\f1\b Downloading https://ghcr.io/v2/homebrew/core/lz4/manifests/1.10.0-1
+\f0\b0 \
+Already downloaded: /Users/dcs/Library/Caches/Homebrew/downloads/8e11e90eb21a06e0f199af9d80e011e3693c77dd353b2477579d95c8471a5802--lz4-1.10.0-1.bottle_manifest.json\
+\cf3 ==>\cf2  
+\f1\b Pouring lz4--1.10.0.arm64_sequoia.bottle.1.tar.gz
+\f0\b0 \
+\uc0\u55356 \u57210   /opt/homebrew/Cellar/lz4/1.10.0: 24 files, 713.6KB\
+\cf4 ==>\cf2  
+\f1\b Installing \cf4 curl
+\f0\b0 \cf2 \
+\cf3 ==>\cf2  
+\f1\b Pouring curl--8.11.1.arm64_sequoia.bottle.tar.gz
+\f0\b0 \
+\cf3 ==>\cf2  
+\f1\b Caveats
+\f0\b0 \
+curl is keg-only, which means it was not symlinked into /opt/homebrew,\
+because macOS already provides this software and installing another version in\
+parallel can cause all kinds of trouble.\
+\
+If you need to have curl first in your PATH, run:\
+  echo 'export PATH="/opt/homebrew/opt/curl/bin:$PATH"' >> ~/.zshrc\
+\
+For compilers to find curl you may need to set:\
+  export LDFLAGS="-L/opt/homebrew/opt/curl/lib"\
+  export CPPFLAGS="-I/opt/homebrew/opt/curl/include"\
+\
+For pkg-config to find curl you may need to set:\
+  export PKG_CONFIG_PATH="/opt/homebrew/opt/curl/lib/pkgconfig"\
+\
+zsh completions have been installed to:\
+  /opt/homebrew/opt/curl/share/zsh/site-functions\
+\cf3 ==>\cf2  
+\f1\b Summary
+\f0\b0 \
+\uc0\u55356 \u57210   /opt/homebrew/Cellar/curl/8.11.1: 531 files, 4.1MB\
+\cf3 ==>\cf2  
+\f1\b Running `brew cleanup curl`...
+\f0\b0 \
+Removing: /opt/homebrew/Cellar/curl/8.9.1... (529 files, 4.3MB)\
+Removing: /Users/dcs/Library/Caches/Homebrew/curl_bottle_manifest--8.9.1... (18.9KB)\
+\cf4 ==>\cf2  
+\f1\b Upgrading \cf4 libtiff
+\f0\b0 \cf2 \
+  4.5.1 -> 4.7.0 \
+\cf4 ==>\cf2  
+\f1\b Installing dependencies for libtiff: \cf4 jpeg-turbo
+\f0\b0 \cf2 \
+\cf4 ==>\cf2  
+\f1\b Installing libtiff dependency: \cf4 jpeg-turbo
+\f0\b0 \cf2 \
+\cf3 ==>\cf2  
+\f1\b Downloading https://ghcr.io/v2/homebrew/core/jpeg-turbo/manifests/3.1.0
+\f0\b0 \
+Already downloaded: /Users/dcs/Library/Caches/Homebrew/downloads/6a56a664f24b0435ac129cb33185ae84d884e0f2357ac6fd37727dad9ac5c7d7--jpeg-turbo-3.1.0.bottle_manifest.json\
+\cf3 ==>\cf2  
+\f1\b Pouring jpeg-turbo--3.1.0.arm64_sequoia.bottle.tar.gz
+\f0\b0 \
+\uc0\u55356 \u57210   /opt/homebrew/Cellar/jpeg-turbo/3.1.0: 47 files, 3.5MB\
+\cf4 ==>\cf2  
+\f1\b Installing \cf4 libtiff
+\f0\b0 \cf2 \
+\cf3 ==>\cf2  
+\f1\b Pouring libtiff--4.7.0.arm64_sequoia.bottle.1.tar.gz
+\f0\b0 \
+\uc0\u55356 \u57210   /opt/homebrew/Cellar/libtiff/4.7.0: 486 files, 8.4MB\
+\cf3 ==>\cf2  
+\f1\b Running `brew cleanup libtiff`...
+\f0\b0 \
+Removing: /opt/homebrew/Cellar/libtiff/4.5.1... (473 files, 8MB)\
+\cf4 ==>\cf2  
+\f1\b Upgrading \cf4 little-cms2
+\f0\b0 \cf2 \
+  2.15 -> 2.16 \
+\cf3 ==>\cf2  
+\f1\b Pouring little-cms2--2.16.arm64_sequoia.bottle.1.tar.gz
+\f0\b0 \
+\uc0\u55356 \u57210   /opt/homebrew/Cellar/little-cms2/2.16: 23 files, 1.4MB\
+\cf3 ==>\cf2  
+\f1\b Running `brew cleanup little-cms2`...
+\f0\b0 \
+Removing: /opt/homebrew/Cellar/little-cms2/2.15... (21 files, 1.4MB)\
+\cf4 ==>\cf2  
+\f1\b Upgrading \cf4 openjdk
+\f0\b0 \cf2 \
+  20.0.1 -> 23.0.1 \
+\cf4 ==>\cf2  
+\f1\b Installing dependencies for openjdk: \cf4 libpng\cf2 , \cf4 freetype\cf2 , \cf4 giflib\cf2 , \cf4 fontconfig\cf2 , \cf4 pcre2\cf2 , \cf4 python-packaging\cf2 , \cf4 libunistring\cf2 , \cf4 glib\cf2 , \cf4 xorgproto\cf2 , \cf4 libxdmcp\cf2 , \cf4 libxcb\cf2 , \cf4 libx11\cf2 , \cf4 libxext\cf2 , \cf4 cairo\cf2 , \cf4 icu4c@76\cf2  and \cf4 harfbuzz
+\f0\b0 \cf2 \
+\cf4 ==>\cf2  
+\f1\b Installing openjdk dependency: \cf4 libpng
+\f0\b0 \cf2 \
+\cf3 ==>\cf2  
+\f1\b Downloading https://ghcr.io/v2/homebrew/core/libpng/manifests/1.6.45
+\f0\b0 \
+Already downloaded: /Users/dcs/Library/Caches/Homebrew/downloads/45e044f04a9c9003b3fbe1ee536c125e6d68a8509f2d30cf7308fb6421d3b980--libpng-1.6.45.bottle_manifest.json\
+\cf3 ==>\cf2  
+\f1\b Pouring libpng--1.6.45.arm64_sequoia.bottle.tar.gz
+\f0\b0 \
+\uc0\u55356 \u57210   /opt/homebrew/Cellar/libpng/1.6.45: 28 files, 1.3MB\
+\cf4 ==>\cf2  
+\f1\b Installing openjdk dependency: \cf4 freetype
+\f0\b0 \cf2 \
+\cf3 ==>\cf2  
+\f1\b Downloading https://ghcr.io/v2/homebrew/core/freetype/manifests/2.13.3
+\f0\b0 \
+Already downloaded: /Users/dcs/Library/Caches/Homebrew/downloads/4c4d14d574a7af9a5a0220cd5012c698bd87b75a3d5e39a6a6c34b4c411aab52--freetype-2.13.3.bottle_manifest.json\
+\cf3 ==>\cf2  
+\f1\b Pouring freetype--2.13.3.arm64_sequoia.bottle.tar.gz
+\f0\b0 \
+\uc0\u55356 \u57210   /opt/homebrew/Cellar/freetype/2.13.3: 68 files, 2.5MB\
+\cf4 ==>\cf2  
+\f1\b Installing openjdk dependency: \cf4 giflib
+\f0\b0 \cf2 \
+\cf3 ==>\cf2  
+\f1\b Downloading https://ghcr.io/v2/homebrew/core/giflib/manifests/5.2.2
+\f0\b0 \
+Already downloaded: /Users/dcs/Library/Caches/Homebrew/downloads/283773c4d2db4fe867419d7eea6811a6417889d78fad8871041c07f49b22d2a1--giflib-5.2.2.bottle_manifest.json\
+\cf3 ==>\cf2  
+\f1\b Pouring giflib--5.2.2.arm64_sequoia.bottle.tar.gz
+\f0\b0 \
+\uc0\u55356 \u57210   /opt/homebrew/Cellar/giflib/5.2.2: 20 files, 546.9KB\
+\cf4 ==>\cf2  
+\f1\b Installing openjdk dependency: \cf4 fontconfig
+\f0\b0 \cf2 \
+\cf3 ==>\cf2  
+\f1\b Downloading https://ghcr.io/v2/homebrew/core/fontconfig/manifests/2.15.0
+\f0\b0 \
+Already downloaded: /Users/dcs/Library/Caches/Homebrew/downloads/33d176010dc9a105404ed23b6c0f8b853bf3a2df2e274876d412d7229a643320--fontconfig-2.15.0.bottle_manifest.json\
+\cf3 ==>\cf2  
+\f1\b Pouring fontconfig--2.15.0.arm64_sequoia.bottle.tar.gz
+\f0\b0 \
+\cf3 ==>\cf2  
+\f1\b Regenerating font cache, this may take a while
+\f0\b0 \
+\cf3 ==>\cf2  
+\f1\b /opt/homebrew/Cellar/fontconfig/2.15.0/bin/fc-cache -frv
+\f0\b0 \
+\uc0\u55356 \u57210   /opt/homebrew/Cellar/fontconfig/2.15.0: 91 files, 2.4MB\
+\cf4 ==>\cf2  
+\f1\b Installing openjdk dependency: \cf4 pcre2
+\f0\b0 \cf2 \
+\cf3 ==>\cf2  
+\f1\b Downloading https://ghcr.io/v2/homebrew/core/pcre2/manifests/10.44
+\f0\b0 \
+Already downloaded: /Users/dcs/Library/Caches/Homebrew/downloads/22ed791461c5bf400adde8c3b432c1230866aa1db3c5cb81e06a6ff21cac96ee--pcre2-10.44.bottle_manifest.json\
+\cf3 ==>\cf2  
+\f1\b Pouring pcre2--10.44.arm64_sequoia.bottle.tar.gz
+\f0\b0 \
+\uc0\u55356 \u57210   /opt/homebrew/Cellar/pcre2/10.44: 237 files, 6.3MB\
+\cf4 ==>\cf2  
+\f1\b Installing openjdk dependency: \cf4 python-packaging
+\f0\b0 \cf2 \
+\cf3 ==>\cf2  
+\f1\b Downloading https://ghcr.io/v2/homebrew/core/python-packaging/manifests/24.2
+\f0\b0 \
+Already downloaded: /Users/dcs/Library/Caches/Homebrew/downloads/a654ed84d67e434e714ac548959721dfcfc2297e1cb87be9237baee7632a2b76--python-packaging-24.2.bottle_manifest.json\
+\cf3 ==>\cf2  
+\f1\b Pouring python-packaging--24.2.all.bottle.tar.gz
+\f0\b0 \
+\uc0\u55356 \u57210   /opt/homebrew/Cellar/python-packaging/24.2: 56 files, 491.3KB\
+\cf4 ==>\cf2  
+\f1\b Installing openjdk dependency: \cf4 libunistring
+\f0\b0 \cf2 \
+\cf3 ==>\cf2  
+\f1\b Downloading https://ghcr.io/v2/homebrew/core/libunistring/manifests/1.3
+\f0\b0 \
+Already downloaded: /Users/dcs/Library/Caches/Homebrew/downloads/a570da63bc1839c7e217f203abd54d4d873ebd6b99f6e88994d0e79e2ebe987c--libunistring-1.3.bottle_manifest.json\
+\cf3 ==>\cf2  
+\f1\b Pouring libunistring--1.3.arm64_sequoia.bottle.tar.gz
+\f0\b0 \
+\uc0\u55356 \u57210   /opt/homebrew/Cellar/libunistring/1.3: 59 files, 5.4MB\
+\cf4 ==>\cf2  
+\f1\b Installing openjdk dependency: \cf4 glib
+\f0\b0 \cf2 \
+\cf3 ==>\cf2  
+\f1\b Downloading https://ghcr.io/v2/homebrew/core/glib/manifests/2.82.4-1
+\f0\b0 \
+Already downloaded: /Users/dcs/Library/Caches/Homebrew/downloads/48cf1dc2a2e975f6b45e31970e772c5b8aadbf7e5dd1b4543c353ae422f07e1c--glib-2.82.4-1.bottle_manifest.json\
+\cf4 ==>\cf2  
+\f1\b Installing dependencies for glib: \cf4 gettext
+\f0\b0 \cf2 \
+\cf4 ==>\cf2  
+\f1\b Installing glib dependency: \cf4 gettext
+\f0\b0 \cf2 \
+\cf3 ==>\cf2  
+\f1\b Downloading https://ghcr.io/v2/homebrew/core/gettext/manifests/0.23.1
+\f0\b0 \
+Already downloaded: /Users/dcs/Library/Caches/Homebrew/downloads/a5b6ba6453cc31731ac67fb3d0075d98ab572a913f3e740b54a86d79906f360e--gettext-0.23.1.bottle_manifest.json\
+\cf3 ==>\cf2  
+\f1\b Pouring gettext--0.23.1.arm64_sequoia.bottle.tar.gz
+\f0\b0 \
+\uc0\u55356 \u57210   /opt/homebrew/Cellar/gettext/0.23.1: 2,052 files, 22.2MB\
+\cf4 ==>\cf2  
+\f1\b Installing \cf4 glib
+\f0\b0 \cf2 \
+\cf3 ==>\cf2  
+\f1\b Pouring glib--2.82.4.arm64_sequoia.bottle.1.tar.gz
+\f0\b0 \
+\uc0\u55356 \u57210   /opt/homebrew/Cellar/glib/2.82.4: 504 files, 36.3MB\
+\cf4 ==>\cf2  
+\f1\b Installing openjdk dependency: \cf4 xorgproto
+\f0\b0 \cf2 \
+\cf3 ==>\cf2  
+\f1\b Downloading https://ghcr.io/v2/homebrew/core/xorgproto/manifests/2024.1
+\f0\b0 \
+Already downloaded: /Users/dcs/Library/Caches/Homebrew/downloads/d89d69340366d1d015e7214520f64081e2d82d7955fb28c6ea5f6539dcb610b2--xorgproto-2024.1.bottle_manifest.json\
+\cf3 ==>\cf2  
+\f1\b Pouring xorgproto--2024.1.arm64_sequoia.bottle.tar.gz
+\f0\b0 \
+\uc0\u55356 \u57210   /opt/homebrew/Cellar/xorgproto/2024.1: 268 files, 3.9MB\
+\cf4 ==>\cf2  
+\f1\b Installing openjdk dependency: \cf4 libxdmcp
+\f0\b0 \cf2 \
+\cf3 ==>\cf2  
+\f1\b Downloading https://ghcr.io/v2/homebrew/core/libxdmcp/manifests/1.1.5
+\f0\b0 \
+Already downloaded: /Users/dcs/Library/Caches/Homebrew/downloads/8713e53f73d0be64780dbea522b0ee07027e6cc7828ff1a4fa0a6596f14cfe25--libxdmcp-1.1.5.bottle_manifest.json\
+\cf3 ==>\cf2  
+\f1\b Pouring libxdmcp--1.1.5.arm64_sequoia.bottle.tar.gz
+\f0\b0 \
+\uc0\u55356 \u57210   /opt/homebrew/Cellar/libxdmcp/1.1.5: 12 files, 140.0KB\
+\cf4 ==>\cf2  
+\f1\b Installing openjdk dependency: \cf4 libxcb
+\f0\b0 \cf2 \
+\cf3 ==>\cf2  
+\f1\b Downloading https://ghcr.io/v2/homebrew/core/libxcb/manifests/1.17.0-1
+\f0\b0 \
+Already downloaded: /Users/dcs/Library/Caches/Homebrew/downloads/a17e9d0e04a0013a5be592875b012c409023664b3df084b8051766331d213ff5--libxcb-1.17.0-1.bottle_manifest.json\
+\cf4 ==>\cf2  
+\f1\b Installing dependencies for libxcb: \cf4 libxau
+\f0\b0 \cf2 \
+\cf4 ==>\cf2  
+\f1\b Installing libxcb dependency: \cf4 libxau
+\f0\b0 \cf2 \
+\cf3 ==>\cf2  
+\f1\b Downloading https://ghcr.io/v2/homebrew/core/libxau/manifests/1.0.12
+\f0\b0 \
+Already downloaded: /Users/dcs/Library/Caches/Homebrew/downloads/6335be202d59f96fdee2e4a02f93d8ee87dfcfdbaa4ed132b8fe8c3e3651e27c--libxau-1.0.12.bottle_manifest.json\
+\cf3 ==>\cf2  
+\f1\b Pouring libxau--1.0.12.arm64_sequoia.bottle.tar.gz
+\f0\b0 \
+\uc0\u55356 \u57210   /opt/homebrew/Cellar/libxau/1.0.12: 21 files, 134.3KB\
+\cf4 ==>\cf2  
+\f1\b Installing \cf4 libxcb
+\f0\b0 \cf2 \
+\cf3 ==>\cf2  
+\f1\b Pouring libxcb--1.17.0.arm64_sequoia.bottle.1.tar.gz
+\f0\b0 \
+\uc0\u55356 \u57210   /opt/homebrew/Cellar/libxcb/1.17.0: 2,498 files, 7.5MB\
+\cf4 ==>\cf2  
+\f1\b Installing openjdk dependency: \cf4 libx11
+\f0\b0 \cf2 \
+\cf3 ==>\cf2  
+\f1\b Downloading https://ghcr.io/v2/homebrew/core/libx11/manifests/1.8.10
+\f0\b0 \
+Already downloaded: /Users/dcs/Library/Caches/Homebrew/downloads/2e75e14e6bb3157688933738ae64e0dc86954ca8ef075737dda6b890d605d566--libx11-1.8.10.bottle_manifest.json\
+\cf3 ==>\cf2  
+\f1\b Pouring libx11--1.8.10.arm64_sequoia.bottle.tar.gz
+\f0\b0 \
+\uc0\u55356 \u57210   /opt/homebrew/Cellar/libx11/1.8.10: 1,043 files, 7MB\
+\cf4 ==>\cf2  
+\f1\b Installing openjdk dependency: \cf4 libxext
+\f0\b0 \cf2 \
+\cf3 ==>\cf2  
+\f1\b Downloading https://ghcr.io/v2/homebrew/core/libxext/manifests/1.3.6
+\f0\b0 \
+Already downloaded: /Users/dcs/Library/Caches/Homebrew/downloads/fedb843acbfcf682fb451396914bfc096f9ea2748376d4c43ce2af7ce1b766b7--libxext-1.3.6.bottle_manifest.json\
+\cf3 ==>\cf2  
+\f1\b Pouring libxext--1.3.6.arm64_sequoia.bottle.tar.gz
+\f0\b0 \
+\uc0\u55356 \u57210   /opt/homebrew/Cellar/libxext/1.3.6: 88 files, 458.4KB\
+\cf4 ==>\cf2  
+\f1\b Installing openjdk dependency: \cf4 cairo
+\f0\b0 \cf2 \
+\cf3 ==>\cf2  
+\f1\b Downloading https://ghcr.io/v2/homebrew/core/cairo/manifests/1.18.2
+\f0\b0 \
+Already downloaded: /Users/dcs/Library/Caches/Homebrew/downloads/9d3ab10478bcceef6fbed69d1a4f387b5d996a592bb1ccbf33e560e3d2d5e103--cairo-1.18.2.bottle_manifest.json\
+\cf3 ==>\cf2  
+\f1\b Pouring cairo--1.18.2.arm64_sequoia.bottle.tar.gz
+\f0\b0 \
+\uc0\u55356 \u57210   /opt/homebrew/Cellar/cairo/1.18.2: 53 files, 2.2MB\
+\cf4 ==>\cf2  
+\f1\b Installing openjdk dependency: \cf4 icu4c@76
+\f0\b0 \cf2 \
+\cf3 ==>\cf2  
+\f1\b Downloading https://ghcr.io/v2/homebrew/core/icu4c/76/manifests/76.1_1
+\f0\b0 \
+Already downloaded: /Users/dcs/Library/Caches/Homebrew/downloads/c105f8980d3a6b0ff0253b47492e886520580406ee75fa52509cf5b251b4d633--icu4c@76-76.1_1.bottle_manifest.json\
+\cf3 ==>\cf2  
+\f1\b Pouring icu4c@76--76.1_1.arm64_sequoia.bottle.tar.gz
+\f0\b0 \
+\uc0\u55356 \u57210   /opt/homebrew/Cellar/icu4c@76/76.1_1: 277 files, 81MB\
+\cf4 ==>\cf2  
+\f1\b Installing openjdk dependency: \cf4 harfbuzz
+\f0\b0 \cf2 \
+\cf3 ==>\cf2  
+\f1\b Downloading https://ghcr.io/v2/homebrew/core/harfbuzz/manifests/10.2.0
+\f0\b0 \
+Already downloaded: /Users/dcs/Library/Caches/Homebrew/downloads/1575c3ecb3f0eddb4bb01b12e8c2e027bc1a795991afa8204c85b11331806ef4--harfbuzz-10.2.0.bottle_manifest.json\
+\cf4 ==>\cf2  
+\f1\b Installing dependencies for harfbuzz: \cf4 libxrender\cf2  and \cf4 pixman
+\f0\b0 \cf2 \
+\cf4 ==>\cf2  
+\f1\b Installing harfbuzz dependency: \cf4 libxrender
+\f0\b0 \cf2 \
+\cf3 ==>\cf2  
+\f1\b Downloading https://ghcr.io/v2/homebrew/core/libxrender/manifests/0.9.12
+\f0\b0 \
+Already downloaded: /Users/dcs/Library/Caches/Homebrew/downloads/152fb22ff88a23b62841dcfa14aac21018e1d736c072d732185f6139ef922e1c--libxrender-0.9.12.bottle_manifest.json\
+\cf3 ==>\cf2  
+\f1\b Pouring libxrender--0.9.12.arm64_sequoia.bottle.tar.gz
+\f0\b0 \
+\uc0\u55356 \u57210   /opt/homebrew/Cellar/libxrender/0.9.12: 13 files, 225.3KB\
+\cf4 ==>\cf2  
+\f1\b Installing harfbuzz dependency: \cf4 pixman
+\f0\b0 \cf2 \
+\cf3 ==>\cf2  
+\f1\b Downloading https://ghcr.io/v2/homebrew/core/pixman/manifests/0.44.2
+\f0\b0 \
+Already downloaded: /Users/dcs/Library/Caches/Homebrew/downloads/710d020ae0348db5aff5d6dbdfd222dca000e630d64e8dcd5f8a8499e8131681--pixman-0.44.2.bottle_manifest.json\
+\cf3 ==>\cf2  
+\f1\b Pouring pixman--0.44.2.arm64_sequoia.bottle.tar.gz
+\f0\b0 \
+\uc0\u55356 \u57210   /opt/homebrew/Cellar/pixman/0.44.2: 10 files, 655.6KB\
+\cf4 ==>\cf2  
+\f1\b Installing \cf4 harfbuzz
+\f0\b0 \cf2 \
+\cf3 ==>\cf2  
+\f1\b Pouring harfbuzz--10.2.0.arm64_sequoia.bottle.tar.gz
+\f0\b0 \
+\uc0\u55356 \u57210   /opt/homebrew/Cellar/harfbuzz/10.2.0: 77 files, 9.8MB\
+\cf4 ==>\cf2  
+\f1\b Installing \cf4 openjdk
+\f0\b0 \cf2 \
+\cf3 ==>\cf2  
+\f1\b Pouring openjdk--23.0.1.arm64_sequoia.bottle.tar.gz
+\f0\b0 \
+\cf3 ==>\cf2  
+\f1\b Caveats
+\f0\b0 \
+For the system Java wrappers to find this JDK, symlink it with\
+  sudo ln -sfn /opt/homebrew/opt/openjdk/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk.jdk\
+\
+openjdk is keg-only, which means it was not symlinked into /opt/homebrew,\
+because macOS provides similar software and installing this software in\
+parallel can cause all kinds of trouble.\
+\
+If you need to have openjdk first in your PATH, run:\
+  echo 'export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"' >> ~/.zshrc\
+\
+For compilers to find openjdk you may need to set:\
+  export CPPFLAGS="-I/opt/homebrew/opt/openjdk/include"\
+\cf3 ==>\cf2  
+\f1\b Summary
+\f0\b0 \
+\uc0\u55356 \u57210   /opt/homebrew/Cellar/openjdk/23.0.1: 602 files, 337.2MB\
+\cf3 ==>\cf2  
+\f1\b Running `brew cleanup openjdk`...
+\f0\b0 \
+Removing: /opt/homebrew/Cellar/openjdk/20.0.1... (637 files, 322MB)\
+\cf4 ==>\cf2  
+\f1\b Upgrading \cf4 cocoapods
+\f0\b0 \cf2 \
+  1.15.2 -> 1.16.2_1 \
+\cf4 ==>\cf2  
+\f1\b Installing dependencies for cocoapods: \cf4 ruby
+\f0\b0 \cf2 \
+\cf4 ==>\cf2  
+\f1\b Installing cocoapods dependency: \cf4 ruby
+\f0\b0 \cf2 \
+\cf3 ==>\cf2  
+\f1\b Downloading https://ghcr.io/v2/homebrew/core/ruby/manifests/3.4.1-1
+\f0\b0 \
+Already downloaded: /Users/dcs/Library/Caches/Homebrew/downloads/2b999c3afe56c5e6831e4b088bf5ec7a4aba494ad9a1a9071ae4f3db209df431--ruby-3.4.1-1.bottle_manifest.json\
+\cf3 ==>\cf2  
+\f1\b Pouring ruby--3.4.1.arm64_sequoia.bottle.1.tar.gz
+\f0\b0 \
+\uc0\u55356 \u57210   /opt/homebrew/Cellar/ruby/3.4.1: 20,490 files, 57.3MB\
+\cf4 ==>\cf2  
+\f1\b Installing \cf4 cocoapods
+\f0\b0 \cf2 \
+\cf3 ==>\cf2  
+\f1\b Pouring cocoapods--1.16.2_1.arm64_sequoia.bottle.tar.gz
+\f0\b0 \
+\uc0\u55356 \u57210   /opt/homebrew/Cellar/cocoapods/1.16.2_1: 2,276 files, 17.8MB\
+\cf3 ==>\cf2  
+\f1\b Running `brew cleanup cocoapods`...
+\f0\b0 \
+Removing: /opt/homebrew/Cellar/cocoapods/1.15.2... (13,736 files, 28.8MB)\
+Removing: /Users/dcs/Library/Caches/Homebrew/cocoapods_bottle_manifest--1.15.2... (14.9KB)\
+\cf4 ==>\cf2  
+\f1\b Upgrading \cf4 semgrep
+\f0\b0 \cf2 \
+  1.27.0 -> 1.102.0 \
+\cf4 ==>\cf2  
+\f1\b Installing dependencies for semgrep: \cf4 certifi\cf2 , \cf4 gmp\cf2 , \cf4 libev\cf2  and \cf4 tree-sitter
+\f0\b0 \cf2 \
+\cf4 ==>\cf2  
+\f1\b Installing semgrep dependency: \cf4 certifi
+\f0\b0 \cf2 \
+\cf3 ==>\cf2  
+\f1\b Downloading https://ghcr.io/v2/homebrew/core/certifi/manifests/2024.12.14
+\f0\b0 \
+Already downloaded: /Users/dcs/Library/Caches/Homebrew/downloads/2138a839ba863ab07435f0046f3bbe6e4bc7e70ece77044134658df31ad966a8--certifi-2024.12.14.bottle_manifest.json\
+\cf3 ==>\cf2  
+\f1\b Pouring certifi--2024.12.14.all.bottle.tar.gz
+\f0\b0 \
+\uc0\u55356 \u57210   /opt/homebrew/Cellar/certifi/2024.12.14: 27 files, 26.4KB\
+\cf4 ==>\cf2  
+\f1\b Installing semgrep dependency: \cf4 gmp
+\f0\b0 \cf2 \
+\cf3 ==>\cf2  
+\f1\b Downloading https://ghcr.io/v2/homebrew/core/gmp/manifests/6.3.0
+\f0\b0 \
+Already downloaded: /Users/dcs/Library/Caches/Homebrew/downloads/70a72a71216843d66a953c06ff6337445ce9bc94fae9f0e301e2f59005274a8e--gmp-6.3.0.bottle_manifest.json\
+\cf3 ==>\cf2  
+\f1\b Pouring gmp--6.3.0.arm64_sequoia.bottle.tar.gz
+\f0\b0 \
+\uc0\u55356 \u57210   /opt/homebrew/Cellar/gmp/6.3.0: 22 files, 3.3MB\
+\cf4 ==>\cf2  
+\f1\b Installing semgrep dependency: \cf4 libev
+\f0\b0 \cf2 \
+\cf3 ==>\cf2  
+\f1\b Downloading https://ghcr.io/v2/homebrew/core/libev/manifests/4.33
+\f0\b0 \
+Already downloaded: /Users/dcs/Library/Caches/Homebrew/downloads/dcc77a4ef78cc646caf5e0675f4121c18ac6fbbb84ddb181eaab408546c41b66--libev-4.33.bottle_manifest.json\
+\cf3 ==>\cf2  
+\f1\b Pouring libev--4.33.arm64_sequoia.bottle.tar.gz
+\f0\b0 \
+\uc0\u55356 \u57210   /opt/homebrew/Cellar/libev/4.33: 13 files, 503.5KB\
+\cf4 ==>\cf2  
+\f1\b Installing semgrep dependency: \cf4 tree-sitter
+\f0\b0 \cf2 \
+\cf3 ==>\cf2  
+\f1\b Downloading https://ghcr.io/v2/homebrew/core/tree-sitter/manifests/0.24.7
+\f0\b0 \
+Already downloaded: /Users/dcs/Library/Caches/Homebrew/downloads/dc2446c711e747f8648e1d0592be65b6e94eede6254d861d84465216c380b0f5--tree-sitter-0.24.7.bottle_manifest.json\
+\cf3 ==>\cf2  
+\f1\b Pouring tree-sitter--0.24.7.arm64_sequoia.bottle.tar.gz
+\f0\b0 \
+\uc0\u55356 \u57210   /opt/homebrew/Cellar/tree-sitter/0.24.7: 15 files, 15MB\
+\cf4 ==>\cf2  
+\f1\b Installing \cf4 semgrep
+\f0\b0 \cf2 \
+\cf3 ==>\cf2  
+\f1\b Pouring semgrep--1.102.0.arm64_sequoia.bottle.tar.gz
+\f0\b0 \
+\cf3 ==>\cf2  
+\f1\b Caveats
+\f0\b0 \
+zsh completions have been installed to:\
+  /opt/homebrew/share/zsh/site-functions\
+\cf3 ==>\cf2  
+\f1\b Summary
+\f0\b0 \
+\uc0\u55356 \u57210   /opt/homebrew/Cellar/semgrep/1.102.0: 2,234 files, 147.5MB\
+\cf3 ==>\cf2  
+\f1\b Running `brew cleanup semgrep`...
+\f0\b0 \
+Removing: /opt/homebrew/Cellar/semgrep/1.27.0... (1,657 files, 234.8MB)\
+Removing: /Users/dcs/Library/Caches/Homebrew/semgrep_bottle_manifest--1.85.0... (25KB)\
+\cf4 ==>\cf2  
+\f1\b Checking for dependents of upgraded formulae...
+\f0\b0 \
+\cf3 ==>\cf2  
+\f1\b No broken dependents to reinstall!
+\f0\b0 \
+\cf4 ==>\cf2  
+\f1\b Caveats
+\f0\b0 \
+\cf3 ==>\cf2  
+\f1\b python@3.13
+\f0\b0 \
+Python is installed as\
+  /opt/homebrew/bin/python3\
+\
+Unversioned symlinks `python`, `python-config`, `pip` etc. pointing to\
+`python3`, `python3-config`, `pip3` etc., respectively, are installed into\
+  /opt/homebrew/opt/python@3.13/libexec/bin\
+\
+See: https://docs.brew.sh/Homebrew-and-Python\
+\cf3 ==>\cf2  
+\f1\b curl
+\f0\b0 \
+curl is keg-only, which means it was not symlinked into /opt/homebrew,\
+because macOS already provides this software and installing another version in\
+parallel can cause all kinds of trouble.\
+\
+If you need to have curl first in your PATH, run:\
+  echo 'export PATH="/opt/homebrew/opt/curl/bin:$PATH"' >> ~/.zshrc\
+\
+For compilers to find curl you may need to set:\
+  export LDFLAGS="-L/opt/homebrew/opt/curl/lib"\
+  export CPPFLAGS="-I/opt/homebrew/opt/curl/include"\
+\
+For pkg-config to find curl you may need to set:\
+  export PKG_CONFIG_PATH="/opt/homebrew/opt/curl/lib/pkgconfig"\
+\
+zsh completions have been installed to:\
+  /opt/homebrew/opt/curl/share/zsh/site-functions\
+\cf3 ==>\cf2  
+\f1\b openjdk
+\f0\b0 \
+For the system Java wrappers to find this JDK, symlink it with\
+  sudo ln -sfn /opt/homebrew/opt/openjdk/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk.jdk\
+\
+openjdk is keg-only, which means it was not symlinked into /opt/homebrew,\
+because macOS provides similar software and installing this software in\
+parallel can cause all kinds of trouble.\
+\
+If you need to have openjdk first in your PATH, run:\
+  echo 'export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"' >> ~/.zshrc\
+\
+For compilers to find openjdk you may need to set:\
+  export CPPFLAGS="-I/opt/homebrew/opt/openjdk/include"\
+\cf3 ==>\cf2  
+\f1\b semgrep
+\f0\b0 \
+zsh completions have been installed to:\
+  /opt/homebrew/share/zsh/site-functions\
+dcs@Darrens-MacBook-Pro crawl4AI-agent % python -m venv venv\
+zsh: command not found: python\
+dcs@Darrens-MacBook-Pro crawl4AI-agent % brew install pyenv\
+\cf3 ==>\cf2  
+\f1\b Downloading https://ghcr.io/v2/homebrew/core/pyenv/manifests/2.5.0
+\f0\b0 \
+######################################################################### 100.0%\
+\cf4 ==>\cf2  
+\f1\b Fetching dependencies for pyenv: \cf4 m4\cf2 , \cf4 autoconf\cf2  and \cf4 pkgconf
+\f0\b0 \cf2 \
+\cf3 ==>\cf2  
+\f1\b Downloading https://ghcr.io/v2/homebrew/core/m4/manifests/1.4.19
+\f0\b0 \
+######################################################################### 100.0%\
+\cf4 ==>\cf2  
+\f1\b Fetching \cf4 m4
+\f0\b0 \cf2 \
+\cf3 ==>\cf2  
+\f1\b Downloading https://ghcr.io/v2/homebrew/core/m4/blobs/sha256:2d39513c268897a
+\f0\b0 \
+######################################################################### 100.0%\
+\cf3 ==>\cf2  
+\f1\b Downloading https://ghcr.io/v2/homebrew/core/autoconf/manifests/2.72-1
+\f0\b0 \
+######################################################################### 100.0%\
+\cf4 ==>\cf2  
+\f1\b Fetching \cf4 autoconf
+\f0\b0 \cf2 \
+\cf3 ==>\cf2  
+\f1\b Downloading https://ghcr.io/v2/homebrew/core/autoconf/blobs/sha256:b1d110e2e
+\f0\b0 \
+######################################################################### 100.0%\
+\cf3 ==>\cf2  
+\f1\b Downloading https://ghcr.io/v2/homebrew/core/pkgconf/manifests/2.3.0_1-1
+\f0\b0 \
+######################################################################### 100.0%\
+\cf4 ==>\cf2  
+\f1\b Fetching \cf4 pkgconf
+\f0\b0 \cf2 \
+\cf3 ==>\cf2  
+\f1\b Downloading https://ghcr.io/v2/homebrew/core/pkgconf/blobs/sha256:6b946f8b71
+\f0\b0 \
+######################################################################### 100.0%\
+\cf4 ==>\cf2  
+\f1\b Fetching \cf4 pyenv
+\f0\b0 \cf2 \
+\cf3 ==>\cf2  
+\f1\b Downloading https://ghcr.io/v2/homebrew/core/pyenv/blobs/sha256:c9e923d3c320
+\f0\b0 \
+######################################################################### 100.0%\
+\cf4 ==>\cf2  
+\f1\b Installing dependencies for pyenv: \cf4 m4\cf2 , \cf4 autoconf\cf2  and \cf4 pkgconf
+\f0\b0 \cf2 \
+\cf4 ==>\cf2  
+\f1\b Installing pyenv dependency: \cf4 m4
+\f0\b0 \cf2 \
+\cf3 ==>\cf2  
+\f1\b Downloading https://ghcr.io/v2/homebrew/core/m4/manifests/1.4.19
+\f0\b0 \
+Already downloaded: /Users/dcs/Library/Caches/Homebrew/downloads/5b2a7f715487b7377e409e8ca58569040cd89f33859f691210c58d94410fd33b--m4-1.4.19.bottle_manifest.json\
+\cf3 ==>\cf2  
+\f1\b Pouring m4--1.4.19.arm64_sequoia.bottle.tar.gz
+\f0\b0 \
+\uc0\u55356 \u57210   /opt/homebrew/Cellar/m4/1.4.19: 14 files, 729.1KB\
+\cf4 ==>\cf2  
+\f1\b Installing pyenv dependency: \cf4 autoconf
+\f0\b0 \cf2 \
+\cf3 ==>\cf2  
+\f1\b Downloading https://ghcr.io/v2/homebrew/core/autoconf/manifests/2.72-1
+\f0\b0 \
+Already downloaded: /Users/dcs/Library/Caches/Homebrew/downloads/1b54b8d75974d006eb6be1db91a6ec040791ac751f25271fcd5a1d78cb361afd--autoconf-2.72-1.bottle_manifest.json\
+\cf3 ==>\cf2  
+\f1\b Pouring autoconf--2.72.arm64_sequoia.bottle.1.tar.gz
+\f0\b0 \
+\uc0\u55356 \u57210   /opt/homebrew/Cellar/autoconf/2.72: 72 files, 3.6MB\
+\cf4 ==>\cf2  
+\f1\b Installing pyenv dependency: \cf4 pkgconf
+\f0\b0 \cf2 \
+\cf3 ==>\cf2  
+\f1\b Downloading https://ghcr.io/v2/homebrew/core/pkgconf/manifests/2.3.0_1-1
+\f0\b0 \
+Already downloaded: /Users/dcs/Library/Caches/Homebrew/downloads/4a660f26297baafd06fb3109f473edfa592f4aa00adbd8a2506b05d0374c5c1d--pkgconf-2.3.0_1-1.bottle_manifest.json\
+\cf3 ==>\cf2  
+\f1\b Pouring pkgconf--2.3.0_1.arm64_sequoia.bottle.1.tar.gz
+\f0\b0 \
+\uc0\u55356 \u57210   /opt/homebrew/Cellar/pkgconf/2.3.0_1: 27 files, 474.3KB\
+\cf4 ==>\cf2  
+\f1\b Installing \cf4 pyenv
+\f0\b0 \cf2 \
+\cf3 ==>\cf2  
+\f1\b Pouring pyenv--2.5.0.arm64_sequoia.bottle.tar.gz
+\f0\b0 \
+\uc0\u55356 \u57210   /opt/homebrew/Cellar/pyenv/2.5.0: 1,276 files, 4.1MB\
+\cf3 ==>\cf2  
+\f1\b Running `brew cleanup pyenv`...
+\f0\b0 \
+Disable this behaviour by setting HOMEBREW_NO_INSTALL_CLEANUP.\
+Hide these hints with HOMEBREW_NO_ENV_HINTS (see `man brew`).\
+\cf3 ==>\cf2  
+\f1\b Upgrading 1 dependent of upgraded formulae:
+\f0\b0 \
+Disable this behaviour by setting HOMEBREW_NO_INSTALLED_DEPENDENTS_CHECK.\
+Hide these hints with HOMEBREW_NO_ENV_HINTS (see `man brew`).\
+libpthread-stubs 0.4 -> 0.5\
+\cf3 ==>\cf2  
+\f1\b Downloading https://ghcr.io/v2/homebrew/core/libpthread-stubs/manifests/0.5-
+\f0\b0 \
+######################################################################### 100.0%\
+\cf4 ==>\cf2  
+\f1\b Checking for dependents of upgraded formulae...
+\f0\b0 \
+\cf3 ==>\cf2  
+\f1\b No broken dependents found!
+\f0\b0 \
+dcs@Darrens-MacBook-Pro crawl4AI-agent % pyenv install --list\
+Available versions:\
+  2.1.3\
+  2.2.3\
+  2.3.7\
+  2.4.0\
+  2.4.1\
+  2.4.2\
+  2.4.3\
+  2.4.4\
+  2.4.5\
+  2.4.6\
+  2.5.0\
+  2.5.1\
+  2.5.2\
+  2.5.3\
+  2.5.4\
+  2.5.5\
+  2.5.6\
+  2.6.0\
+  2.6.1\
+  2.6.2\
+  2.6.3\
+  2.6.4\
+  2.6.5\
+  2.6.6\
+  2.6.7\
+  2.6.8\
+  2.6.9\
+  2.7.0\
+  2.7-dev\
+  2.7.1\
+  2.7.2\
+  2.7.3\
+  2.7.4\
+  2.7.5\
+  2.7.6\
+  2.7.7\
+  2.7.8\
+  2.7.9\
+  2.7.10\
+  2.7.11\
+  2.7.12\
+  2.7.13\
+  2.7.14\
+  2.7.15\
+  2.7.16\
+  2.7.17\
+  2.7.18\
+  3.0.1\
+  3.1.0\
+  3.1.1\
+  3.1.2\
+  3.1.3\
+  3.1.4\
+  3.1.5\
+  3.2.0\
+  3.2.1\
+  3.2.2\
+  3.2.3\
+  3.2.4\
+  3.2.5\
+  3.2.6\
+  3.3.0\
+  3.3.1\
+  3.3.2\
+  3.3.3\
+  3.3.4\
+  3.3.5\
+  3.3.6\
+  3.3.7\
+  3.4.0\
+  3.4-dev\
+  3.4.1\
+  3.4.2\
+  3.4.3\
+  3.4.4\
+  3.4.5\
+  3.4.6\
+  3.4.7\
+  3.4.8\
+  3.4.9\
+  3.4.10\
+  3.5.0\
+  3.5-dev\
+  3.5.1\
+  3.5.2\
+  3.5.3\
+  3.5.4\
+  3.5.5\
+  3.5.6\
+  3.5.7\
+  3.5.8\
+  3.5.9\
+  3.5.10\
+  3.6.0\
+  3.6-dev\
+  3.6.1\
+  3.6.2\
+  3.6.3\
+  3.6.4\
+  3.6.5\
+  3.6.6\
+  3.6.7\
+  3.6.8\
+  3.6.9\
+  3.6.10\
+  3.6.11\
+  3.6.12\
+  3.6.13\
+  3.6.14\
+  3.6.15\
+  3.7.0\
+  3.7-dev\
+  3.7.1\
+  3.7.2\
+  3.7.3\
+  3.7.4\
+  3.7.5\
+  3.7.6\
+  3.7.7\
+  3.7.8\
+  3.7.9\
+  3.7.10\
+  3.7.11\
+  3.7.12\
+  3.7.13\
+  3.7.14\
+  3.7.15\
+  3.7.16\
+  3.7.17\
+  3.8.0\
+  3.8-dev\
+  3.8.1\
+  3.8.2\
+  3.8.3\
+  3.8.4\
+  3.8.5\
+  3.8.6\
+  3.8.7\
+  3.8.8\
+  3.8.9\
+  3.8.10\
+  3.8.11\
+  3.8.12\
+  3.8.13\
+  3.8.14\
+  3.8.15\
+  3.8.16\
+  3.8.17\
+  3.8.18\
+  3.8.19\
+  3.8.20\
+  3.9.0\
+  3.9-dev\
+  3.9.1\
+  3.9.2\
+  3.9.4\
+  3.9.5\
+  3.9.6\
+  3.9.7\
+  3.9.8\
+  3.9.9\
+  3.9.10\
+  3.9.11\
+  3.9.12\
+  3.9.13\
+  3.9.14\
+  3.9.15\
+  3.9.16\
+  3.9.17\
+  3.9.18\
+  3.9.19\
+  3.9.20\
+  3.9.21\
+  3.10.0\
+  3.10-dev\
+  3.10.1\
+  3.10.2\
+  3.10.3\
+  3.10.4\
+  3.10.5\
+  3.10.6\
+  3.10.7\
+  3.10.8\
+  3.10.9\
+  3.10.10\
+  3.10.11\
+  3.10.12\
+  3.10.13\
+  3.10.14\
+  3.10.15\
+  3.10.16\
+  3.11.0\
+  3.11-dev\
+  3.11.1\
+  3.11.2\
+  3.11.3\
+  3.11.4\
+  3.11.5\
+  3.11.6\
+  3.11.7\
+  3.11.8\
+  3.11.9\
+  3.11.10\
+  3.11.11\
+  3.12.0\
+  3.12-dev\
+  3.12.1\
+  3.12.2\
+  3.12.3\
+  3.12.4\
+  3.12.5\
+  3.12.6\
+  3.12.7\
+  3.12.8\
+  3.13.0\
+  3.13.0t\
+  3.13-dev\
+  3.13t-dev\
+  3.13.1\
+  3.13.1t\
+  3.14.0a3\
+  3.14.0a3t\
+  3.14-dev\
+  3.14t-dev\
+  activepython-2.7.14\
+  activepython-3.5.4\
+  activepython-3.6.0\
+  anaconda-1.4.0\
+  anaconda-1.5.0\
+  anaconda-1.5.1\
+  anaconda-1.6.0\
+  anaconda-1.6.1\
+  anaconda-1.7.0\
+  anaconda-1.8.0\
+  anaconda-1.9.0\
+  anaconda-1.9.1\
+  anaconda-1.9.2\
+  anaconda-2.0.0\
+  anaconda-2.0.1\
+  anaconda-2.1.0\
+  anaconda-2.2.0\
+  anaconda-2.3.0\
+  anaconda-2.4.0\
+  anaconda-4.0.0\
+  anaconda2-2.4.0\
+  anaconda2-2.4.1\
+  anaconda2-2.5.0\
+  anaconda2-4.0.0\
+  anaconda2-4.1.0\
+  anaconda2-4.1.1\
+  anaconda2-4.2.0\
+  anaconda2-4.3.0\
+  anaconda2-4.3.1\
+  anaconda2-4.4.0\
+  anaconda2-5.0.0\
+  anaconda2-5.0.1\
+  anaconda2-5.1.0\
+  anaconda2-5.2.0\
+  anaconda2-5.3.0\
+  anaconda2-5.3.1\
+  anaconda2-2018.12\
+  anaconda2-2019.03\
+  anaconda2-2019.07\
+  anaconda2-2019.10\
+  anaconda3-2.0.0\
+  anaconda3-2.0.1\
+  anaconda3-2.1.0\
+  anaconda3-2.2.0\
+  anaconda3-2.3.0\
+  anaconda3-2.4.0\
+  anaconda3-2.4.1\
+  anaconda3-2.5.0\
+  anaconda3-4.0.0\
+  anaconda3-4.1.0\
+  anaconda3-4.1.1\
+  anaconda3-4.2.0\
+  anaconda3-4.3.0\
+  anaconda3-4.3.1\
+  anaconda3-4.4.0\
+  anaconda3-5.0.0\
+  anaconda3-5.0.1\
+  anaconda3-5.1.0\
+  anaconda3-5.2.0\
+  anaconda3-5.3.0\
+  anaconda3-5.3.1\
+  anaconda3-2018.12\
+  anaconda3-2019.03\
+  anaconda3-2019.07\
+  anaconda3-2019.10\
+  anaconda3-2020.02\
+  anaconda3-2020.07\
+  anaconda3-2020.11\
+  anaconda3-2021.04\
+  anaconda3-2021.05\
+  anaconda3-2021.11\
+  anaconda3-2022.05\
+  anaconda3-2022.10\
+  anaconda3-2023.03-0\
+  anaconda3-2023.03\
+  anaconda3-2023.03-1\
+  anaconda3-2023.07-0\
+  anaconda3-2023.07-1\
+  anaconda3-2023.07-2\
+  anaconda3-2023.09-0\
+  anaconda3-2024.02-1\
+  anaconda3-2024.06-1\
+  anaconda3-2024.10-1\
+  cinder-3.8-dev\
+  cinder-3.10-dev\
+  graalpy-dev\
+  graalpy-community-23.1.0\
+  graalpy-community-23.1.2\
+  graalpy-community-24.0.0\
+  graalpy-community-24.1.0\
+  graalpy-community-24.1.1\
+  graalpy-22.3.0\
+  graalpy-23.0.0\
+  graalpy-23.1.0\
+  graalpy-23.1.2\
+  graalpy-24.0.0\
+  graalpy-24.1.0\
+  graalpy-24.1.1\
+  graalpython-20.1.0\
+  graalpython-20.2.0\
+  graalpython-20.3.0\
+  graalpython-21.0.0\
+  graalpython-21.1.0\
+  graalpython-21.2.0\
+  graalpython-21.3.0\
+  graalpython-22.0.0\
+  graalpython-22.1.0\
+  graalpython-22.2.0\
+  ironpython-dev\
+  ironpython-2.7.4\
+  ironpython-2.7.5\
+  ironpython-2.7.6.3\
+  ironpython-2.7.7\
+  jython-dev\
+  jython-2.5.0\
+  jython-2.5-dev\
+  jython-2.5.1\
+  jython-2.5.2\
+  jython-2.5.3\
+  jython-2.5.4-rc1\
+  jython-2.7.0\
+  jython-2.7.1\
+  jython-2.7.2\
+  jython-2.7.3\
+  mambaforge-pypy3\
+  mambaforge\
+  mambaforge-4.10.1-4\
+  mambaforge-4.10.1-5\
+  mambaforge-4.10.2-0\
+  mambaforge-4.10.3-0\
+  mambaforge-4.10.3-1\
+  mambaforge-4.10.3-2\
+  mambaforge-4.10.3-3\
+  mambaforge-4.10.3-4\
+  mambaforge-4.10.3-5\
+  mambaforge-4.10.3-6\
+  mambaforge-4.10.3-7\
+  mambaforge-4.10.3-8\
+  mambaforge-4.10.3-9\
+  mambaforge-4.10.3-10\
+  mambaforge-4.11.0-0\
+  mambaforge-4.11.0-1\
+  mambaforge-4.11.0-2\
+  mambaforge-4.11.0-3\
+  mambaforge-4.11.0-4\
+  mambaforge-4.12.0-0\
+  mambaforge-4.12.0-1\
+  mambaforge-4.12.0-2\
+  mambaforge-4.12.0-3\
+  mambaforge-4.13.0-1\
+  mambaforge-4.14.0-0\
+  mambaforge-4.14.0-1\
+  mambaforge-4.14.0-2\
+  mambaforge-22.9.0-0\
+  mambaforge-22.9.0-1\
+  mambaforge-22.9.0-2\
+  mambaforge-22.9.0-3\
+  mambaforge-22.11.1-3\
+  mambaforge-22.11.1-4\
+  mambaforge-23.1.0-0\
+  mambaforge-23.1.0-1\
+  mambaforge-23.1.0-2\
+  mambaforge-23.1.0-3\
+  mambaforge-23.1.0-4\
+  mambaforge-23.3.0-0\
+  mambaforge-23.3.1-0\
+  mambaforge-23.3.1-1\
+  mambaforge-23.10.0-0\
+  mambaforge-23.11.0-0\
+  mambaforge-24.1.2-0\
+  mambaforge-24.3.0-0\
+  mambaforge-24.5.0-0\
+  mambaforge-24.7.1-0\
+  mambaforge-24.7.1-1\
+  mambaforge-24.7.1-2\
+  mambaforge-24.9.0-0\
+  mambaforge-24.9.2-0\
+  mambaforge-24.11.0-0\
+  mambaforge-24.11.0-1\
+  micropython-dev\
+  micropython-1.9.3\
+  micropython-1.9.4\
+  micropython-1.10\
+  micropython-1.11\
+  micropython-1.12\
+  micropython-1.13\
+  micropython-1.14\
+  micropython-1.15\
+  micropython-1.16\
+  micropython-1.17\
+  micropython-1.18\
+  micropython-1.19.1\
+  micropython-1.20.0\
+  micropython-1.21.0\
+  miniconda-latest\
+  miniconda-2.2.2\
+  miniconda-3.0.0\
+  miniconda-3.0.4\
+  miniconda-3.0.5\
+  miniconda-3.3.0\
+  miniconda-3.4.2\
+  miniconda-3.7.0\
+  miniconda-3.8.3\
+  miniconda-3.9.1\
+  miniconda-3.10.1\
+  miniconda-3.16.0\
+  miniconda-3.18.3\
+  miniconda2-latest\
+  miniconda2-2.7-4.8.3\
+  miniconda2-3.18.3\
+  miniconda2-3.19.0\
+  miniconda2-4.0.5\
+  miniconda2-4.1.11\
+  miniconda2-4.3.14\
+  miniconda2-4.3.21\
+  miniconda2-4.3.27\
+  miniconda2-4.3.30\
+  miniconda2-4.3.31\
+  miniconda2-4.4.10\
+  miniconda2-4.5.1\
+  miniconda2-4.5.4\
+  miniconda2-4.5.11\
+  miniconda2-4.5.12\
+  miniconda2-4.6.14\
+  miniconda2-4.7.10\
+  miniconda2-4.7.12\
+  miniconda3-latest\
+  miniconda3-2.2.2\
+  miniconda3-3.0.0\
+  miniconda3-3.0.4\
+  miniconda3-3.0.5\
+  miniconda3-3.3.0\
+  miniconda3-3.4.2\
+  miniconda3-3.7.0\
+  miniconda3-3.7-4.8.2\
+  miniconda3-3.7-4.8.3\
+  miniconda3-3.7-4.9.2\
+  miniconda3-3.7-4.10.1\
+  miniconda3-3.7-4.10.3\
+  miniconda3-3.7-4.11.0\
+  miniconda3-3.7-4.12.0\
+  miniconda3-3.7-22.11.1-1\
+  miniconda3-3.7-23.1.0-1\
+  miniconda3-3.8.3\
+  miniconda3-3.8-4.8.2\
+  miniconda3-3.8-4.8.3\
+  miniconda3-3.8-4.9.2\
+  miniconda3-3.8-4.10.1\
+  miniconda3-3.8-4.10.3\
+  miniconda3-3.8-4.11.0\
+  miniconda3-3.8-4.12.0\
+  miniconda3-3.8-22.11.1-1\
+  miniconda3-3.8-23.1.0-1\
+  miniconda3-3.8-23.3.1-0\
+  miniconda3-3.8-23.5.0-3\
+  miniconda3-3.8-23.5.1-0\
+  miniconda3-3.8-23.5.2-0\
+  miniconda3-3.8-23.9.0-0\
+  miniconda3-3.8-23.10.0-1\
+  miniconda3-3.8-23.11.0-1\
+  miniconda3-3.8-23.11.0-2\
+  miniconda3-3.9.1\
+  miniconda3-3.9-4.9.2\
+  miniconda3-3.9-4.10.1\
+  miniconda3-3.9-4.10.3\
+  miniconda3-3.9-4.11.0\
+  miniconda3-3.9-4.12.0\
+  miniconda3-3.9-22.11.1-1\
+  miniconda3-3.9-23.1.0-1\
+  miniconda3-3.9-23.3.1-0\
+  miniconda3-3.9-23.5.0-3\
+  miniconda3-3.9-23.5.1-0\
+  miniconda3-3.9-23.5.2-0\
+  miniconda3-3.9-23.9.0-0\
+  miniconda3-3.9-23.10.0-1\
+  miniconda3-3.9-23.11.0-1\
+  miniconda3-3.9-23.11.0-2\
+  miniconda3-3.9-24.1.2-0\
+  miniconda3-3.9-24.3.0-0\
+  miniconda3-3.9-24.4.0-0\
+  miniconda3-3.9-24.5.0-0\
+  miniconda3-3.9-24.7.1-0\
+  miniconda3-3.9-24.9.2-0\
+  miniconda3-3.9-24.11.1-0\
+  miniconda3-3.10.1\
+  miniconda3-3.10-22.11.1-1\
+  miniconda3-3.10-23.1.0-1\
+  miniconda3-3.10-23.3.1-0\
+  miniconda3-3.10-23.5.0-3\
+  miniconda3-3.10-23.5.1-0\
+  miniconda3-3.10-23.5.2-0\
+  miniconda3-3.10-23.9.0-0\
+  miniconda3-3.10-23.10.0-1\
+  miniconda3-3.10-23.11.0-1\
+  miniconda3-3.10-23.11.0-2\
+  miniconda3-3.10-24.1.2-0\
+  miniconda3-3.10-24.3.0-0\
+  miniconda3-3.10-24.4.0-0\
+  miniconda3-3.10-24.5.0-0\
+  miniconda3-3.10-24.7.1-0\
+  miniconda3-3.10-24.9.2-0\
+  miniconda3-3.10-24.11.1-0\
+  miniconda3-3.11-23.5.0-3\
+  miniconda3-3.11-23.5.1-0\
+  miniconda3-3.11-23.5.2-0\
+  miniconda3-3.11-23.9.0-0\
+  miniconda3-3.11-23.10.0-1\
+  miniconda3-3.11-23.11.0-1\
+  miniconda3-3.11-23.11.0-2\
+  miniconda3-3.11-24.1.2-0\
+  miniconda3-3.11-24.3.0-0\
+  miniconda3-3.11-24.4.0-0\
+  miniconda3-3.11-24.5.0-0\
+  miniconda3-3.11-24.7.1-0\
+  miniconda3-3.11-24.9.2-0\
+  miniconda3-3.11-24.11.1-0\
+  miniconda3-3.12-24.1.2-0\
+  miniconda3-3.12-24.3.0-0\
+  miniconda3-3.12-24.4.0-0\
+  miniconda3-3.12-24.5.0-0\
+  miniconda3-3.12-24.7.1-0\
+  miniconda3-3.12-24.9.2-0\
+  miniconda3-3.12-24.11.1-0\
+  miniconda3-3.16.0\
+  miniconda3-3.18.3\
+  miniconda3-3.19.0\
+  miniconda3-4.0.5\
+  miniconda3-4.1.11\
+  miniconda3-4.2.12\
+  miniconda3-4.3.11\
+  miniconda3-4.3.14\
+  miniconda3-4.3.21\
+  miniconda3-4.3.27\
+  miniconda3-4.3.30\
+  miniconda3-4.3.31\
+  miniconda3-4.4.10\
+  miniconda3-4.5.1\
+  miniconda3-4.5.4\
+  miniconda3-4.5.11\
+  miniconda3-4.5.12\
+  miniconda3-4.6.14\
+  miniconda3-4.7.10\
+  miniconda3-4.7.12\
+  miniforge-pypy3\
+  miniforge3-latest\
+  miniforge3-4.9.2\
+  miniforge3-4.10\
+  miniforge3-4.10.1-1\
+  miniforge3-4.10.1-3\
+  miniforge3-4.10.1-5\
+  miniforge3-4.10.2-0\
+  miniforge3-4.10.3-0\
+  miniforge3-4.10.3-1\
+  miniforge3-4.10.3-2\
+  miniforge3-4.10.3-3\
+  miniforge3-4.10.3-4\
+  miniforge3-4.10.3-5\
+  miniforge3-4.10.3-6\
+  miniforge3-4.10.3-7\
+  miniforge3-4.10.3-8\
+  miniforge3-4.10.3-9\
+  miniforge3-4.10.3-10\
+  miniforge3-4.11.0-0\
+  miniforge3-4.11.0-1\
+  miniforge3-4.11.0-2\
+  miniforge3-4.11.0-3\
+  miniforge3-4.11.0-4\
+  miniforge3-4.12.0-0\
+  miniforge3-4.12.0-1\
+  miniforge3-4.12.0-2\
+  miniforge3-4.12.0-3\
+  miniforge3-4.13.0-0\
+  miniforge3-4.13.0-1\
+  miniforge3-4.14.0-0\
+  miniforge3-4.14.0-1\
+  miniforge3-4.14.0-2\
+  miniforge3-22.9.0-0\
+  miniforge3-22.9.0-1\
+  miniforge3-22.9.0-2\
+  miniforge3-22.9.0-3\
+  miniforge3-22.11.1-3\
+  miniforge3-22.11.1-4\
+  miniforge3-23.1.0-0\
+  miniforge3-23.1.0-1\
+  miniforge3-23.1.0-2\
+  miniforge3-23.1.0-3\
+  miniforge3-23.1.0-4\
+  miniforge3-23.3.0-0\
+  miniforge3-23.3.1-0\
+  miniforge3-23.3.1-1\
+  miniforge3-23.10.0-0\
+  miniforge3-23.11.0-0\
+  miniforge3-24.1.2-0\
+  miniforge3-24.3.0-0\
+  miniforge3-24.5.0-0\
+  miniforge3-24.7.1-0\
+  miniforge3-24.7.1-1\
+  miniforge3-24.7.1-2\
+  miniforge3-24.9.0-0\
+  miniforge3-24.9.2-0\
+  miniforge3-24.11.0-0\
+  miniforge3-24.11.0-1\
+  nogil-3.9.10\
+  nogil-3.9.10-1\
+  pypy-c-jit-latest\
+  pypy-dev\
+  pypy-stm-2.3\
+  pypy-stm-2.5.1\
+  pypy-1.5-src\
+  pypy-1.6\
+  pypy-1.7\
+  pypy-1.8\
+  pypy-1.9\
+  pypy-2.0-src\
+  pypy-2.0\
+  pypy-2.0.1-src\
+  pypy-2.0.1\
+  pypy-2.0.2-src\
+  pypy-2.0.2\
+  pypy-2.1-src\
+  pypy-2.1\
+  pypy-2.2-src\
+  pypy-2.2\
+  pypy-2.2.1-src\
+  pypy-2.2.1\
+  pypy-2.3-src\
+  pypy-2.3\
+  pypy-2.3.1-src\
+  pypy-2.3.1\
+  pypy-2.4.0-src\
+  pypy-2.4.0\
+  pypy-2.5.0-src\
+  pypy-2.5.0\
+  pypy-2.5.1-src\
+  pypy-2.5.1\
+  pypy-2.6.0-src\
+  pypy-2.6.0\
+  pypy-2.6.1-src\
+  pypy-2.6.1\
+  pypy-4.0.0-src\
+  pypy-4.0.0\
+  pypy-4.0.1-src\
+  pypy-4.0.1\
+  pypy-5.0.0-src\
+  pypy-5.0.0\
+  pypy-5.0.1-src\
+  pypy-5.0.1\
+  pypy-5.1-src\
+  pypy-5.1\
+  pypy-5.1.1-src\
+  pypy-5.1.1\
+  pypy-5.3-src\
+  pypy-5.3\
+  pypy-5.3.1-src\
+  pypy-5.3.1\
+  pypy-5.4-src\
+  pypy-5.4\
+  pypy-5.4.1-src\
+  pypy-5.4.1\
+  pypy-5.6.0-src\
+  pypy-5.6.0\
+  pypy-5.7.0-src\
+  pypy-5.7.0\
+  pypy-5.7.1-src\
+  pypy-5.7.1\
+  pypy2-5.3-src\
+  pypy2-5.3\
+  pypy2-5.3.1-src\
+  pypy2-5.3.1\
+  pypy2-5.4-src\
+  pypy2-5.4\
+  pypy2-5.4.1-src\
+  pypy2-5.4.1\
+  pypy2-5.6.0-src\
+  pypy2-5.6.0\
+  pypy2-5.7.0-src\
+  pypy2-5.7.0\
+  pypy2-5.7.1-src\
+  pypy2-5.7.1\
+  pypy2.7-5.8.0-src\
+  pypy2.7-5.8.0\
+  pypy2.7-5.9.0-src\
+  pypy2.7-5.9.0\
+  pypy2.7-5.10.0-src\
+  pypy2.7-5.10.0\
+  pypy2.7-6.0.0-src\
+  pypy2.7-6.0.0\
+  pypy2.7-7.0.0-src\
+  pypy2.7-7.0.0\
+  pypy2.7-7.1.0-src\
+  pypy2.7-7.1.0\
+  pypy2.7-7.1.1-src\
+  pypy2.7-7.1.1\
+  pypy2.7-7.2.0-src\
+  pypy2.7-7.2.0\
+  pypy2.7-7.3.0-src\
+  pypy2.7-7.3.0\
+  pypy2.7-7.3.1-src\
+  pypy2.7-7.3.1\
+  pypy2.7-7.3.2-src\
+  pypy2.7-7.3.2\
+  pypy2.7-7.3.3-src\
+  pypy2.7-7.3.3\
+  pypy2.7-7.3.4-src\
+  pypy2.7-7.3.4\
+  pypy2.7-7.3.5-src\
+  pypy2.7-7.3.5\
+  pypy2.7-7.3.6-src\
+  pypy2.7-7.3.6\
+  pypy2.7-7.3.8-src\
+  pypy2.7-7.3.8\
+  pypy2.7-7.3.9-src\
+  pypy2.7-7.3.9\
+  pypy2.7-7.3.10-src\
+  pypy2.7-7.3.10\
+  pypy2.7-7.3.11-src\
+  pypy2.7-7.3.11\
+  pypy2.7-7.3.12-src\
+  pypy2.7-7.3.12\
+  pypy2.7-7.3.13-src\
+  pypy2.7-7.3.13\
+  pypy2.7-7.3.14-src\
+  pypy2.7-7.3.14\
+  pypy2.7-7.3.15-src\
+  pypy2.7-7.3.15\
+  pypy2.7-7.3.16-src\
+  pypy2.7-7.3.16\
+  pypy2.7-7.3.17-src\
+  pypy2.7-7.3.17\
+  pypy3-2.3.1-src\
+  pypy3-2.3.1\
+  pypy3-2.4.0-src\
+  pypy3-2.4.0\
+  pypy3.3-5.2-alpha1-src\
+  pypy3.3-5.2-alpha1\
+  pypy3.3-5.5-alpha-src\
+  pypy3.3-5.5-alpha\
+  pypy3.5-c-jit-latest\
+  pypy3.5-5.7-beta-src\
+  pypy3.5-5.7-beta\
+  pypy3.5-5.7.1-beta-src\
+  pypy3.5-5.7.1-beta\
+  pypy3.5-5.8.0-src\
+  pypy3.5-5.8.0\
+  pypy3.5-5.9.0-src\
+  pypy3.5-5.9.0\
+  pypy3.5-5.10.0-src\
+  pypy3.5-5.10.0\
+  pypy3.5-5.10.1-src\
+  pypy3.5-5.10.1\
+  pypy3.5-6.0.0-src\
+  pypy3.5-6.0.0\
+  pypy3.5-7.0.0-src\
+  pypy3.5-7.0.0\
+  pypy3.6-7.0.0-src\
+  pypy3.6-7.0.0\
+  pypy3.6-7.1.0-src\
+  pypy3.6-7.1.0\
+  pypy3.6-7.1.1-src\
+  pypy3.6-7.1.1\
+  pypy3.6-7.2.0-src\
+  pypy3.6-7.2.0\
+  pypy3.6-7.3.0-src\
+  pypy3.6-7.3.0\
+  pypy3.6-7.3.1-src\
+  pypy3.6-7.3.1\
+  pypy3.6-7.3.2-src\
+  pypy3.6-7.3.2\
+  pypy3.6-7.3.3-src\
+  pypy3.6-7.3.3\
+  pypy3.7-c-jit-latest\
+  pypy3.7-7.3.2-src\
+  pypy3.7-7.3.2\
+  pypy3.7-7.3.3-src\
+  pypy3.7-7.3.3\
+  pypy3.7-7.3.4-src\
+  pypy3.7-7.3.4\
+  pypy3.7-7.3.5-src\
+  pypy3.7-7.3.5\
+  pypy3.7-7.3.6-src\
+  pypy3.7-7.3.6\
+  pypy3.7-7.3.7-src\
+  pypy3.7-7.3.7\
+  pypy3.7-7.3.8-src\
+  pypy3.7-7.3.8\
+  pypy3.7-7.3.9-src\
+  pypy3.7-7.3.9\
+  pypy3.8-7.3.6-src\
+  pypy3.8-7.3.6\
+  pypy3.8-7.3.7-src\
+  pypy3.8-7.3.7\
+  pypy3.8-7.3.8-src\
+  pypy3.8-7.3.8\
+  pypy3.8-7.3.9-src\
+  pypy3.8-7.3.9\
+  pypy3.8-7.3.10-src\
+  pypy3.8-7.3.10\
+  pypy3.8-7.3.11-src\
+  pypy3.8-7.3.11\
+  pypy3.9-7.3.8-src\
+  pypy3.9-7.3.8\
+  pypy3.9-7.3.9-src\
+  pypy3.9-7.3.9\
+  pypy3.9-7.3.10-src\
+  pypy3.9-7.3.10\
+  pypy3.9-7.3.11-src\
+  pypy3.9-7.3.11\
+  pypy3.9-7.3.12-src\
+  pypy3.9-7.3.12\
+  pypy3.9-7.3.13-src\
+  pypy3.9-7.3.13\
+  pypy3.9-7.3.14-src\
+  pypy3.9-7.3.14\
+  pypy3.9-7.3.15-src\
+  pypy3.9-7.3.15\
+  pypy3.9-7.3.16-src\
+  pypy3.9-7.3.16\
+  pypy3.10-7.3.12-src\
+  pypy3.10-7.3.12\
+  pypy3.10-7.3.13-src\
+  pypy3.10-7.3.13\
+  pypy3.10-7.3.14-src\
+  pypy3.10-7.3.14\
+  pypy3.10-7.3.15-src\
+  pypy3.10-7.3.15\
+  pypy3.10-7.3.16-src\
+  pypy3.10-7.3.16\
+  pypy3.10-7.3.17-src\
+  pypy3.10-7.3.17\
+  pyston-2.2\
+  pyston-2.3\
+  pyston-2.3.1\
+  pyston-2.3.2\
+  pyston-2.3.3\
+  pyston-2.3.4\
+  pyston-2.3.5\
+  stackless-dev\
+  stackless-2.7-dev\
+  stackless-2.7.2\
+  stackless-2.7.3\
+  stackless-2.7.4\
+  stackless-2.7.5\
+  stackless-2.7.6\
+  stackless-2.7.7\
+  stackless-2.7.8\
+  stackless-2.7.9\
+  stackless-2.7.10\
+  stackless-2.7.11\
+  stackless-2.7.12\
+  stackless-2.7.14\
+  stackless-2.7.16\
+  stackless-3.2.2\
+  stackless-3.2.5\
+  stackless-3.3.5\
+  stackless-3.3.7\
+  stackless-3.4-dev\
+  stackless-3.4.2\
+  stackless-3.4.7\
+  stackless-3.5.4\
+  stackless-3.7.5\
+dcs@Darrens-MacBook-Pro crawl4AI-agent % pyenv install --list\
+Available versions:\
+  2.1.3\
+  2.2.3\
+  2.3.7\
+  2.4.0\
+  2.4.1\
+  2.4.2\
+  2.4.3\
+  2.4.4\
+  2.4.5\
+  2.4.6\
+  2.5.0\
+  2.5.1\
+  2.5.2\
+  2.5.3\
+  2.5.4\
+  2.5.5\
+  2.5.6\
+  2.6.0\
+  2.6.1\
+  2.6.2\
+  2.6.3\
+  2.6.4\
+  2.6.5\
+  2.6.6\
+  2.6.7\
+  2.6.8\
+  2.6.9\
+  2.7.0\
+  2.7-dev\
+  2.7.1\
+  2.7.2\
+  2.7.3\
+  2.7.4\
+  2.7.5\
+  2.7.6\
+  2.7.7\
+  2.7.8\
+  2.7.9\
+  2.7.10\
+  2.7.11\
+  2.7.12\
+  2.7.13\
+  2.7.14\
+  2.7.15\
+  2.7.16\
+  2.7.17\
+  2.7.18\
+  3.0.1\
+  3.1.0\
+  3.1.1\
+  3.1.2\
+  3.1.3\
+  3.1.4\
+  3.1.5\
+  3.2.0\
+  3.2.1\
+  3.2.2\
+  3.2.3\
+  3.2.4\
+  3.2.5\
+  3.2.6\
+  3.3.0\
+  3.3.1\
+  3.3.2\
+  3.3.3\
+  3.3.4\
+  3.3.5\
+  3.3.6\
+  3.3.7\
+  3.4.0\
+  3.4-dev\
+  3.4.1\
+  3.4.2\
+  3.4.3\
+  3.4.4\
+  3.4.5\
+  3.4.6\
+  3.4.7\
+  3.4.8\
+  3.4.9\
+  3.4.10\
+  3.5.0\
+  3.5-dev\
+  3.5.1\
+  3.5.2\
+  3.5.3\
+  3.5.4\
+  3.5.5\
+  3.5.6\
+  3.5.7\
+  3.5.8\
+  3.5.9\
+  3.5.10\
+  3.6.0\
+  3.6-dev\
+  3.6.1\
+  3.6.2\
+  3.6.3\
+  3.6.4\
+  3.6.5\
+  3.6.6\
+  3.6.7\
+  3.6.8\
+  3.6.9\
+  3.6.10\
+  3.6.11\
+  3.6.12\
+  3.6.13\
+  3.6.14\
+  3.6.15\
+  3.7.0\
+  3.7-dev\
+  3.7.1\
+  3.7.2\
+  3.7.3\
+  3.7.4\
+  3.7.5\
+  3.7.6\
+  3.7.7\
+  3.7.8\
+  3.7.9\
+  3.7.10\
+  3.7.11\
+  3.7.12\
+  3.7.13\
+  3.7.14\
+  3.7.15\
+  3.7.16\
+  3.7.17\
+  3.8.0\
+  3.8-dev\
+  3.8.1\
+  3.8.2\
+  3.8.3\
+  3.8.4\
+  3.8.5\
+  3.8.6\
+  3.8.7\
+  3.8.8\
+  3.8.9\
+  3.8.10\
+  3.8.11\
+  3.8.12\
+  3.8.13\
+  3.8.14\
+  3.8.15\
+  3.8.16\
+  3.8.17\
+  3.8.18\
+  3.8.19\
+  3.8.20\
+  3.9.0\
+  3.9-dev\
+  3.9.1\
+  3.9.2\
+  3.9.4\
+  3.9.5\
+  3.9.6\
+  3.9.7\
+  3.9.8\
+  3.9.9\
+  3.9.10\
+  3.9.11\
+  3.9.12\
+  3.9.13\
+  3.9.14\
+  3.9.15\
+  3.9.16\
+  3.9.17\
+  3.9.18\
+  3.9.19\
+  3.9.20\
+  3.9.21\
+  3.10.0\
+  3.10-dev\
+  3.10.1\
+  3.10.2\
+  3.10.3\
+  3.10.4\
+  3.10.5\
+  3.10.6\
+  3.10.7\
+  3.10.8\
+  3.10.9\
+  3.10.10\
+  3.10.11\
+  3.10.12\
+  3.10.13\
+  3.10.14\
+  3.10.15\
+  3.10.16\
+  3.11.0\
+  3.11-dev\
+  3.11.1\
+  3.11.2\
+  3.11.3\
+  3.11.4\
+  3.11.5\
+  3.11.6\
+  3.11.7\
+  3.11.8\
+  3.11.9\
+  3.11.10\
+  3.11.11\
+  3.12.0\
+  3.12-dev\
+  3.12.1\
+  3.12.2\
+  3.12.3\
+  3.12.4\
+  3.12.5\
+  3.12.6\
+  3.12.7\
+  3.12.8\
+  3.13.0\
+  3.13.0t\
+  3.13-dev\
+  3.13t-dev\
+  3.13.1\
+  3.13.1t\
+  3.14.0a3\
+  3.14.0a3t\
+  3.14-dev\
+  3.14t-dev\
+  activepython-2.7.14\
+  activepython-3.5.4\
+  activepython-3.6.0\
+  anaconda-1.4.0\
+  anaconda-1.5.0\
+  anaconda-1.5.1\
+  anaconda-1.6.0\
+  anaconda-1.6.1\
+  anaconda-1.7.0\
+  anaconda-1.8.0\
+  anaconda-1.9.0\
+  anaconda-1.9.1\
+  anaconda-1.9.2\
+  anaconda-2.0.0\
+  anaconda-2.0.1\
+  anaconda-2.1.0\
+  anaconda-2.2.0\
+  anaconda-2.3.0\
+  anaconda-2.4.0\
+  anaconda-4.0.0\
+  anaconda2-2.4.0\
+  anaconda2-2.4.1\
+  anaconda2-2.5.0\
+  anaconda2-4.0.0\
+  anaconda2-4.1.0\
+  anaconda2-4.1.1\
+  anaconda2-4.2.0\
+  anaconda2-4.3.0\
+  anaconda2-4.3.1\
+  anaconda2-4.4.0\
+  anaconda2-5.0.0\
+  anaconda2-5.0.1\
+  anaconda2-5.1.0\
+  anaconda2-5.2.0\
+  anaconda2-5.3.0\
+  anaconda2-5.3.1\
+  anaconda2-2018.12\
+  anaconda2-2019.03\
+  anaconda2-2019.07\
+  anaconda2-2019.10\
+  anaconda3-2.0.0\
+  anaconda3-2.0.1\
+  anaconda3-2.1.0\
+  anaconda3-2.2.0\
+  anaconda3-2.3.0\
+  anaconda3-2.4.0\
+  anaconda3-2.4.1\
+  anaconda3-2.5.0\
+  anaconda3-4.0.0\
+  anaconda3-4.1.0\
+  anaconda3-4.1.1\
+  anaconda3-4.2.0\
+  anaconda3-4.3.0\
+  anaconda3-4.3.1\
+  anaconda3-4.4.0\
+  anaconda3-5.0.0\
+  anaconda3-5.0.1\
+  anaconda3-5.1.0\
+  anaconda3-5.2.0\
+  anaconda3-5.3.0\
+  anaconda3-5.3.1\
+  anaconda3-2018.12\
+  anaconda3-2019.03\
+  anaconda3-2019.07\
+  anaconda3-2019.10\
+  anaconda3-2020.02\
+  anaconda3-2020.07\
+  anaconda3-2020.11\
+  anaconda3-2021.04\
+  anaconda3-2021.05\
+  anaconda3-2021.11\
+  anaconda3-2022.05\
+  anaconda3-2022.10\
+  anaconda3-2023.03-0\
+  anaconda3-2023.03\
+  anaconda3-2023.03-1\
+  anaconda3-2023.07-0\
+  anaconda3-2023.07-1\
+  anaconda3-2023.07-2\
+  anaconda3-2023.09-0\
+  anaconda3-2024.02-1\
+  anaconda3-2024.06-1\
+  anaconda3-2024.10-1\
+  cinder-3.8-dev\
+  cinder-3.10-dev\
+  graalpy-dev\
+  graalpy-community-23.1.0\
+  graalpy-community-23.1.2\
+  graalpy-community-24.0.0\
+  graalpy-community-24.1.0\
+  graalpy-community-24.1.1\
+  graalpy-22.3.0\
+  graalpy-23.0.0\
+  graalpy-23.1.0\
+  graalpy-23.1.2\
+  graalpy-24.0.0\
+  graalpy-24.1.0\
+  graalpy-24.1.1\
+  graalpython-20.1.0\
+  graalpython-20.2.0\
+  graalpython-20.3.0\
+  graalpython-21.0.0\
+  graalpython-21.1.0\
+  graalpython-21.2.0\
+  graalpython-21.3.0\
+  graalpython-22.0.0\
+  graalpython-22.1.0\
+  graalpython-22.2.0\
+  ironpython-dev\
+  ironpython-2.7.4\
+  ironpython-2.7.5\
+  ironpython-2.7.6.3\
+  ironpython-2.7.7\
+  jython-dev\
+  jython-2.5.0\
+  jython-2.5-dev\
+  jython-2.5.1\
+  jython-2.5.2\
+  jython-2.5.3\
+  jython-2.5.4-rc1\
+  jython-2.7.0\
+  jython-2.7.1\
+  jython-2.7.2\
+  jython-2.7.3\
+  mambaforge-pypy3\
+  mambaforge\
+  mambaforge-4.10.1-4\
+  mambaforge-4.10.1-5\
+  mambaforge-4.10.2-0\
+  mambaforge-4.10.3-0\
+  mambaforge-4.10.3-1\
+  mambaforge-4.10.3-2\
+  mambaforge-4.10.3-3\
+  mambaforge-4.10.3-4\
+  mambaforge-4.10.3-5\
+  mambaforge-4.10.3-6\
+  mambaforge-4.10.3-7\
+  mambaforge-4.10.3-8\
+  mambaforge-4.10.3-9\
+  mambaforge-4.10.3-10\
+  mambaforge-4.11.0-0\
+  mambaforge-4.11.0-1\
+  mambaforge-4.11.0-2\
+  mambaforge-4.11.0-3\
+  mambaforge-4.11.0-4\
+  mambaforge-4.12.0-0\
+  mambaforge-4.12.0-1\
+  mambaforge-4.12.0-2\
+  mambaforge-4.12.0-3\
+  mambaforge-4.13.0-1\
+  mambaforge-4.14.0-0\
+  mambaforge-4.14.0-1\
+  mambaforge-4.14.0-2\
+  mambaforge-22.9.0-0\
+  mambaforge-22.9.0-1\
+  mambaforge-22.9.0-2\
+  mambaforge-22.9.0-3\
+  mambaforge-22.11.1-3\
+  mambaforge-22.11.1-4\
+  mambaforge-23.1.0-0\
+  mambaforge-23.1.0-1\
+  mambaforge-23.1.0-2\
+  mambaforge-23.1.0-3\
+  mambaforge-23.1.0-4\
+  mambaforge-23.3.0-0\
+  mambaforge-23.3.1-0\
+  mambaforge-23.3.1-1\
+  mambaforge-23.10.0-0\
+  mambaforge-23.11.0-0\
+  mambaforge-24.1.2-0\
+  mambaforge-24.3.0-0\
+  mambaforge-24.5.0-0\
+  mambaforge-24.7.1-0\
+  mambaforge-24.7.1-1\
+  mambaforge-24.7.1-2\
+  mambaforge-24.9.0-0\
+  mambaforge-24.9.2-0\
+  mambaforge-24.11.0-0\
+  mambaforge-24.11.0-1\
+  micropython-dev\
+  micropython-1.9.3\
+  micropython-1.9.4\
+  micropython-1.10\
+  micropython-1.11\
+  micropython-1.12\
+  micropython-1.13\
+  micropython-1.14\
+  micropython-1.15\
+  micropython-1.16\
+  micropython-1.17\
+  micropython-1.18\
+  micropython-1.19.1\
+  micropython-1.20.0\
+  micropython-1.21.0\
+  miniconda-latest\
+  miniconda-2.2.2\
+  miniconda-3.0.0\
+  miniconda-3.0.4\
+  miniconda-3.0.5\
+  miniconda-3.3.0\
+  miniconda-3.4.2\
+  miniconda-3.7.0\
+  miniconda-3.8.3\
+  miniconda-3.9.1\
+  miniconda-3.10.1\
+  miniconda-3.16.0\
+  miniconda-3.18.3\
+  miniconda2-latest\
+  miniconda2-2.7-4.8.3\
+  miniconda2-3.18.3\
+  miniconda2-3.19.0\
+  miniconda2-4.0.5\
+  miniconda2-4.1.11\
+  miniconda2-4.3.14\
+  miniconda2-4.3.21\
+  miniconda2-4.3.27\
+  miniconda2-4.3.30\
+  miniconda2-4.3.31\
+  miniconda2-4.4.10\
+  miniconda2-4.5.1\
+  miniconda2-4.5.4\
+  miniconda2-4.5.11\
+  miniconda2-4.5.12\
+  miniconda2-4.6.14\
+  miniconda2-4.7.10\
+  miniconda2-4.7.12\
+  miniconda3-latest\
+  miniconda3-2.2.2\
+  miniconda3-3.0.0\
+  miniconda3-3.0.4\
+  miniconda3-3.0.5\
+  miniconda3-3.3.0\
+  miniconda3-3.4.2\
+  miniconda3-3.7.0\
+  miniconda3-3.7-4.8.2\
+  miniconda3-3.7-4.8.3\
+  miniconda3-3.7-4.9.2\
+  miniconda3-3.7-4.10.1\
+  miniconda3-3.7-4.10.3\
+  miniconda3-3.7-4.11.0\
+  miniconda3-3.7-4.12.0\
+  miniconda3-3.7-22.11.1-1\
+  miniconda3-3.7-23.1.0-1\
+  miniconda3-3.8.3\
+  miniconda3-3.8-4.8.2\
+  miniconda3-3.8-4.8.3\
+  miniconda3-3.8-4.9.2\
+  miniconda3-3.8-4.10.1\
+  miniconda3-3.8-4.10.3\
+  miniconda3-3.8-4.11.0\
+  miniconda3-3.8-4.12.0\
+  miniconda3-3.8-22.11.1-1\
+  miniconda3-3.8-23.1.0-1\
+  miniconda3-3.8-23.3.1-0\
+  miniconda3-3.8-23.5.0-3\
+  miniconda3-3.8-23.5.1-0\
+  miniconda3-3.8-23.5.2-0\
+  miniconda3-3.8-23.9.0-0\
+  miniconda3-3.8-23.10.0-1\
+  miniconda3-3.8-23.11.0-1\
+  miniconda3-3.8-23.11.0-2\
+  miniconda3-3.9.1\
+  miniconda3-3.9-4.9.2\
+  miniconda3-3.9-4.10.1\
+  miniconda3-3.9-4.10.3\
+  miniconda3-3.9-4.11.0\
+  miniconda3-3.9-4.12.0\
+  miniconda3-3.9-22.11.1-1\
+  miniconda3-3.9-23.1.0-1\
+  miniconda3-3.9-23.3.1-0\
+  miniconda3-3.9-23.5.0-3\
+  miniconda3-3.9-23.5.1-0\
+  miniconda3-3.9-23.5.2-0\
+  miniconda3-3.9-23.9.0-0\
+  miniconda3-3.9-23.10.0-1\
+  miniconda3-3.9-23.11.0-1\
+  miniconda3-3.9-23.11.0-2\
+  miniconda3-3.9-24.1.2-0\
+  miniconda3-3.9-24.3.0-0\
+  miniconda3-3.9-24.4.0-0\
+  miniconda3-3.9-24.5.0-0\
+  miniconda3-3.9-24.7.1-0\
+  miniconda3-3.9-24.9.2-0\
+  miniconda3-3.9-24.11.1-0\
+  miniconda3-3.10.1\
+  miniconda3-3.10-22.11.1-1\
+  miniconda3-3.10-23.1.0-1\
+  miniconda3-3.10-23.3.1-0\
+  miniconda3-3.10-23.5.0-3\
+  miniconda3-3.10-23.5.1-0\
+  miniconda3-3.10-23.5.2-0\
+  miniconda3-3.10-23.9.0-0\
+  miniconda3-3.10-23.10.0-1\
+  miniconda3-3.10-23.11.0-1\
+  miniconda3-3.10-23.11.0-2\
+  miniconda3-3.10-24.1.2-0\
+  miniconda3-3.10-24.3.0-0\
+  miniconda3-3.10-24.4.0-0\
+  miniconda3-3.10-24.5.0-0\
+  miniconda3-3.10-24.7.1-0\
+  miniconda3-3.10-24.9.2-0\
+  miniconda3-3.10-24.11.1-0\
+  miniconda3-3.11-23.5.0-3\
+  miniconda3-3.11-23.5.1-0\
+  miniconda3-3.11-23.5.2-0\
+  miniconda3-3.11-23.9.0-0\
+  miniconda3-3.11-23.10.0-1\
+  miniconda3-3.11-23.11.0-1\
+  miniconda3-3.11-23.11.0-2\
+  miniconda3-3.11-24.1.2-0\
+  miniconda3-3.11-24.3.0-0\
+  miniconda3-3.11-24.4.0-0\
+  miniconda3-3.11-24.5.0-0\
+  miniconda3-3.11-24.7.1-0\
+  miniconda3-3.11-24.9.2-0\
+  miniconda3-3.11-24.11.1-0\
+  miniconda3-3.12-24.1.2-0\
+  miniconda3-3.12-24.3.0-0\
+  miniconda3-3.12-24.4.0-0\
+  miniconda3-3.12-24.5.0-0\
+  miniconda3-3.12-24.7.1-0\
+  miniconda3-3.12-24.9.2-0\
+  miniconda3-3.12-24.11.1-0\
+  miniconda3-3.16.0\
+  miniconda3-3.18.3\
+  miniconda3-3.19.0\
+  miniconda3-4.0.5\
+  miniconda3-4.1.11\
+  miniconda3-4.2.12\
+  miniconda3-4.3.11\
+  miniconda3-4.3.14\
+  miniconda3-4.3.21\
+  miniconda3-4.3.27\
+  miniconda3-4.3.30\
+  miniconda3-4.3.31\
+  miniconda3-4.4.10\
+  miniconda3-4.5.1\
+  miniconda3-4.5.4\
+  miniconda3-4.5.11\
+  miniconda3-4.5.12\
+  miniconda3-4.6.14\
+  miniconda3-4.7.10\
+  miniconda3-4.7.12\
+  miniforge-pypy3\
+  miniforge3-latest\
+  miniforge3-4.9.2\
+  miniforge3-4.10\
+  miniforge3-4.10.1-1\
+  miniforge3-4.10.1-3\
+  miniforge3-4.10.1-5\
+  miniforge3-4.10.2-0\
+  miniforge3-4.10.3-0\
+  miniforge3-4.10.3-1\
+  miniforge3-4.10.3-2\
+  miniforge3-4.10.3-3\
+  miniforge3-4.10.3-4\
+  miniforge3-4.10.3-5\
+  miniforge3-4.10.3-6\
+  miniforge3-4.10.3-7\
+  miniforge3-4.10.3-8\
+  miniforge3-4.10.3-9\
+  miniforge3-4.10.3-10\
+  miniforge3-4.11.0-0\
+  miniforge3-4.11.0-1\
+  miniforge3-4.11.0-2\
+  miniforge3-4.11.0-3\
+  miniforge3-4.11.0-4\
+  miniforge3-4.12.0-0\
+  miniforge3-4.12.0-1\
+  miniforge3-4.12.0-2\
+  miniforge3-4.12.0-3\
+  miniforge3-4.13.0-0\
+  miniforge3-4.13.0-1\
+  miniforge3-4.14.0-0\
+  miniforge3-4.14.0-1\
+  miniforge3-4.14.0-2\
+  miniforge3-22.9.0-0\
+  miniforge3-22.9.0-1\
+  miniforge3-22.9.0-2\
+  miniforge3-22.9.0-3\
+  miniforge3-22.11.1-3\
+  miniforge3-22.11.1-4\
+  miniforge3-23.1.0-0\
+  miniforge3-23.1.0-1\
+  miniforge3-23.1.0-2\
+  miniforge3-23.1.0-3\
+  miniforge3-23.1.0-4\
+  miniforge3-23.3.0-0\
+  miniforge3-23.3.1-0\
+  miniforge3-23.3.1-1\
+  miniforge3-23.10.0-0\
+  miniforge3-23.11.0-0\
+  miniforge3-24.1.2-0\
+  miniforge3-24.3.0-0\
+  miniforge3-24.5.0-0\
+  miniforge3-24.7.1-0\
+  miniforge3-24.7.1-1\
+  miniforge3-24.7.1-2\
+  miniforge3-24.9.0-0\
+  miniforge3-24.9.2-0\
+  miniforge3-24.11.0-0\
+  miniforge3-24.11.0-1\
+  nogil-3.9.10\
+  nogil-3.9.10-1\
+  pypy-c-jit-latest\
+  pypy-dev\
+  pypy-stm-2.3\
+  pypy-stm-2.5.1\
+  pypy-1.5-src\
+  pypy-1.6\
+  pypy-1.7\
+  pypy-1.8\
+  pypy-1.9\
+  pypy-2.0-src\
+  pypy-2.0\
+  pypy-2.0.1-src\
+  pypy-2.0.1\
+  pypy-2.0.2-src\
+  pypy-2.0.2\
+  pypy-2.1-src\
+  pypy-2.1\
+  pypy-2.2-src\
+  pypy-2.2\
+  pypy-2.2.1-src\
+  pypy-2.2.1\
+  pypy-2.3-src\
+  pypy-2.3\
+  pypy-2.3.1-src\
+  pypy-2.3.1\
+  pypy-2.4.0-src\
+  pypy-2.4.0\
+  pypy-2.5.0-src\
+  pypy-2.5.0\
+  pypy-2.5.1-src\
+  pypy-2.5.1\
+  pypy-2.6.0-src\
+  pypy-2.6.0\
+  pypy-2.6.1-src\
+  pypy-2.6.1\
+  pypy-4.0.0-src\
+  pypy-4.0.0\
+  pypy-4.0.1-src\
+  pypy-4.0.1\
+  pypy-5.0.0-src\
+  pypy-5.0.0\
+  pypy-5.0.1-src\
+  pypy-5.0.1\
+  pypy-5.1-src\
+  pypy-5.1\
+  pypy-5.1.1-src\
+  pypy-5.1.1\
+  pypy-5.3-src\
+  pypy-5.3\
+  pypy-5.3.1-src\
+  pypy-5.3.1\
+  pypy-5.4-src\
+  pypy-5.4\
+  pypy-5.4.1-src\
+  pypy-5.4.1\
+  pypy-5.6.0-src\
+  pypy-5.6.0\
+  pypy-5.7.0-src\
+  pypy-5.7.0\
+  pypy-5.7.1-src\
+  pypy-5.7.1\
+  pypy2-5.3-src\
+  pypy2-5.3\
+  pypy2-5.3.1-src\
+  pypy2-5.3.1\
+  pypy2-5.4-src\
+  pypy2-5.4\
+  pypy2-5.4.1-src\
+  pypy2-5.4.1\
+  pypy2-5.6.0-src\
+  pypy2-5.6.0\
+  pypy2-5.7.0-src\
+  pypy2-5.7.0\
+  pypy2-5.7.1-src\
+  pypy2-5.7.1\
+  pypy2.7-5.8.0-src\
+  pypy2.7-5.8.0\
+  pypy2.7-5.9.0-src\
+  pypy2.7-5.9.0\
+  pypy2.7-5.10.0-src\
+  pypy2.7-5.10.0\
+  pypy2.7-6.0.0-src\
+  pypy2.7-6.0.0\
+  pypy2.7-7.0.0-src\
+  pypy2.7-7.0.0\
+  pypy2.7-7.1.0-src\
+  pypy2.7-7.1.0\
+  pypy2.7-7.1.1-src\
+  pypy2.7-7.1.1\
+  pypy2.7-7.2.0-src\
+  pypy2.7-7.2.0\
+  pypy2.7-7.3.0-src\
+  pypy2.7-7.3.0\
+  pypy2.7-7.3.1-src\
+  pypy2.7-7.3.1\
+  pypy2.7-7.3.2-src\
+  pypy2.7-7.3.2\
+  pypy2.7-7.3.3-src\
+  pypy2.7-7.3.3\
+  pypy2.7-7.3.4-src\
+  pypy2.7-7.3.4\
+  pypy2.7-7.3.5-src\
+  pypy2.7-7.3.5\
+  pypy2.7-7.3.6-src\
+  pypy2.7-7.3.6\
+  pypy2.7-7.3.8-src\
+  pypy2.7-7.3.8\
+  pypy2.7-7.3.9-src\
+  pypy2.7-7.3.9\
+  pypy2.7-7.3.10-src\
+  pypy2.7-7.3.10\
+  pypy2.7-7.3.11-src\
+  pypy2.7-7.3.11\
+  pypy2.7-7.3.12-src\
+  pypy2.7-7.3.12\
+  pypy2.7-7.3.13-src\
+  pypy2.7-7.3.13\
+  pypy2.7-7.3.14-src\
+  pypy2.7-7.3.14\
+  pypy2.7-7.3.15-src\
+  pypy2.7-7.3.15\
+  pypy2.7-7.3.16-src\
+  pypy2.7-7.3.16\
+  pypy2.7-7.3.17-src\
+  pypy2.7-7.3.17\
+  pypy3-2.3.1-src\
+  pypy3-2.3.1\
+  pypy3-2.4.0-src\
+  pypy3-2.4.0\
+  pypy3.3-5.2-alpha1-src\
+  pypy3.3-5.2-alpha1\
+  pypy3.3-5.5-alpha-src\
+  pypy3.3-5.5-alpha\
+  pypy3.5-c-jit-latest\
+  pypy3.5-5.7-beta-src\
+  pypy3.5-5.7-beta\
+  pypy3.5-5.7.1-beta-src\
+  pypy3.5-5.7.1-beta\
+  pypy3.5-5.8.0-src\
+  pypy3.5-5.8.0\
+  pypy3.5-5.9.0-src\
+  pypy3.5-5.9.0\
+  pypy3.5-5.10.0-src\
+  pypy3.5-5.10.0\
+  pypy3.5-5.10.1-src\
+  pypy3.5-5.10.1\
+  pypy3.5-6.0.0-src\
+  pypy3.5-6.0.0\
+  pypy3.5-7.0.0-src\
+  pypy3.5-7.0.0\
+  pypy3.6-7.0.0-src\
+  pypy3.6-7.0.0\
+  pypy3.6-7.1.0-src\
+  pypy3.6-7.1.0\
+  pypy3.6-7.1.1-src\
+  pypy3.6-7.1.1\
+  pypy3.6-7.2.0-src\
+  pypy3.6-7.2.0\
+  pypy3.6-7.3.0-src\
+  pypy3.6-7.3.0\
+  pypy3.6-7.3.1-src\
+  pypy3.6-7.3.1\
+  pypy3.6-7.3.2-src\
+  pypy3.6-7.3.2\
+  pypy3.6-7.3.3-src\
+  pypy3.6-7.3.3\
+  pypy3.7-c-jit-latest\
+  pypy3.7-7.3.2-src\
+  pypy3.7-7.3.2\
+  pypy3.7-7.3.3-src\
+  pypy3.7-7.3.3\
+  pypy3.7-7.3.4-src\
+  pypy3.7-7.3.4\
+  pypy3.7-7.3.5-src\
+  pypy3.7-7.3.5\
+  pypy3.7-7.3.6-src\
+  pypy3.7-7.3.6\
+  pypy3.7-7.3.7-src\
+  pypy3.7-7.3.7\
+  pypy3.7-7.3.8-src\
+  pypy3.7-7.3.8\
+  pypy3.7-7.3.9-src\
+  pypy3.7-7.3.9\
+  pypy3.8-7.3.6-src\
+  pypy3.8-7.3.6\
+  pypy3.8-7.3.7-src\
+  pypy3.8-7.3.7\
+  pypy3.8-7.3.8-src\
+  pypy3.8-7.3.8\
+  pypy3.8-7.3.9-src\
+  pypy3.8-7.3.9\
+  pypy3.8-7.3.10-src\
+  pypy3.8-7.3.10\
+  pypy3.8-7.3.11-src\
+  pypy3.8-7.3.11\
+  pypy3.9-7.3.8-src\
+  pypy3.9-7.3.8\
+  pypy3.9-7.3.9-src\
+  pypy3.9-7.3.9\
+  pypy3.9-7.3.10-src\
+  pypy3.9-7.3.10\
+  pypy3.9-7.3.11-src\
+  pypy3.9-7.3.11\
+  pypy3.9-7.3.12-src\
+  pypy3.9-7.3.12\
+  pypy3.9-7.3.13-src\
+  pypy3.9-7.3.13\
+  pypy3.9-7.3.14-src\
+  pypy3.9-7.3.14\
+  pypy3.9-7.3.15-src\
+  pypy3.9-7.3.15\
+  pypy3.9-7.3.16-src\
+  pypy3.9-7.3.16\
+  pypy3.10-7.3.12-src\
+  pypy3.10-7.3.12\
+  pypy3.10-7.3.13-src\
+  pypy3.10-7.3.13\
+  pypy3.10-7.3.14-src\
+  pypy3.10-7.3.14\
+  pypy3.10-7.3.15-src\
+  pypy3.10-7.3.15\
+  pypy3.10-7.3.16-src\
+  pypy3.10-7.3.16\
+  pypy3.10-7.3.17-src\
+  pypy3.10-7.3.17\
+  pyston-2.2\
+  pyston-2.3\
+  pyston-2.3.1\
+  pyston-2.3.2\
+  pyston-2.3.3\
+  pyston-2.3.4\
+  pyston-2.3.5\
+  stackless-dev\
+  stackless-2.7-dev\
+  stackless-2.7.2\
+  stackless-2.7.3\
+  stackless-2.7.4\
+  stackless-2.7.5\
+  stackless-2.7.6\
+  stackless-2.7.7\
+  stackless-2.7.8\
+  stackless-2.7.9\
+  stackless-2.7.10\
+  stackless-2.7.11\
+  stackless-2.7.12\
+  stackless-2.7.14\
+  stackless-2.7.16\
+  stackless-3.2.2\
+  stackless-3.2.5\
+  stackless-3.3.5\
+  stackless-3.3.7\
+  stackless-3.4-dev\
+  stackless-3.4.2\
+  stackless-3.4.7\
+  stackless-3.5.4\
+  stackless-3.7.5\
+dcs@Darrens-MacBook-Pro crawl4AI-agent %  python3 --version\
+Python 3.13.1\
+dcs@Darrens-MacBook-Pro crawl4AI-agent % python3 -m venv venv\
+dcs@Darrens-MacBook-Pro crawl4AI-agent % source venv/bin/activate\
+(venv) dcs@Darrens-MacBook-Pro crawl4AI-agent % pip install -r requirements.txt\
+Collecting aiofiles==24.1.0 (from -r requirements.txt (line 1))\
+  Downloading aiofiles-24.1.0-py3-none-any.whl.metadata (10 kB)\
+Collecting aiohappyeyeballs==2.4.4 (from -r requirements.txt (line 2))\
+  Downloading aiohappyeyeballs-2.4.4-py3-none-any.whl.metadata (6.1 kB)\
+Collecting aiohttp==3.11.11 (from -r requirements.txt (line 3))\
+  Downloading aiohttp-3.11.11-cp313-cp313-macosx_11_0_arm64.whl.metadata (7.7 kB)\
+Collecting aiosignal==1.3.2 (from -r requirements.txt (line 4))\
+  Downloading aiosignal-1.3.2-py2.py3-none-any.whl.metadata (3.8 kB)\
+Collecting aiosqlite==0.20.0 (from -r requirements.txt (line 5))\
+  Downloading aiosqlite-0.20.0-py3-none-any.whl.metadata (4.3 kB)\
+Collecting altair==5.5.0 (from -r requirements.txt (line 6))\
+  Downloading altair-5.5.0-py3-none-any.whl.metadata (11 kB)\
+Collecting annotated-types==0.7.0 (from -r requirements.txt (line 7))\
+  Using cached annotated_types-0.7.0-py3-none-any.whl.metadata (15 kB)\
+Collecting anthropic==0.42.0 (from -r requirements.txt (line 8))\
+  Downloading anthropic-0.42.0-py3-none-any.whl.metadata (23 kB)\
+Collecting anyio==4.8.0 (from -r requirements.txt (line 9))\
+  Downloading anyio-4.8.0-py3-none-any.whl.metadata (4.6 kB)\
+Collecting attrs==24.3.0 (from -r requirements.txt (line 10))\
+  Downloading attrs-24.3.0-py3-none-any.whl.metadata (11 kB)\
+Collecting beautifulsoup4==4.12.3 (from -r requirements.txt (line 11))\
+  Downloading beautifulsoup4-4.12.3-py3-none-any.whl.metadata (3.8 kB)\
+Collecting blinker==1.9.0 (from -r requirements.txt (line 12))\
+  Downloading blinker-1.9.0-py3-none-any.whl.metadata (1.6 kB)\
+Collecting cachetools==5.5.0 (from -r requirements.txt (line 13))\
+  Downloading cachetools-5.5.0-py3-none-any.whl.metadata (5.3 kB)\
+Collecting certifi==2024.12.14 (from -r requirements.txt (line 14))\
+  Downloading certifi-2024.12.14-py3-none-any.whl.metadata (2.3 kB)\
+Collecting cffi==1.17.1 (from -r requirements.txt (line 15))\
+  Downloading cffi-1.17.1-cp313-cp313-macosx_11_0_arm64.whl.metadata (1.5 kB)\
+Collecting charset-normalizer==3.4.1 (from -r requirements.txt (line 16))\
+  Downloading charset_normalizer-3.4.1-cp313-cp313-macosx_10_13_universal2.whl.metadata (35 kB)\
+Collecting click==8.1.8 (from -r requirements.txt (line 17))\
+  Downloading click-8.1.8-py3-none-any.whl.metadata (2.3 kB)\
+Collecting colorama==0.4.6 (from -r requirements.txt (line 18))\
+  Downloading colorama-0.4.6-py2.py3-none-any.whl.metadata (17 kB)\
+Collecting Crawl4AI==0.4.247 (from -r requirements.txt (line 19))\
+  Downloading Crawl4AI-0.4.247-py3-none-any.whl.metadata (25 kB)\
+Collecting cryptography==44.0.0 (from -r requirements.txt (line 20))\
+  Downloading cryptography-44.0.0-cp39-abi3-macosx_10_9_universal2.whl.metadata (5.7 kB)\
+Collecting Deprecated==1.2.15 (from -r requirements.txt (line 21))\
+  Downloading Deprecated-1.2.15-py2.py3-none-any.whl.metadata (5.5 kB)\
+Collecting deprecation==2.1.0 (from -r requirements.txt (line 22))\
+  Downloading deprecation-2.1.0-py2.py3-none-any.whl.metadata (4.6 kB)\
+Collecting distro==1.9.0 (from -r requirements.txt (line 23))\
+  Using cached distro-1.9.0-py3-none-any.whl.metadata (6.8 kB)\
+Collecting eval_type_backport==0.2.2 (from -r requirements.txt (line 24))\
+  Downloading eval_type_backport-0.2.2-py3-none-any.whl.metadata (2.2 kB)\
+Collecting executing==2.1.0 (from -r requirements.txt (line 25))\
+  Downloading executing-2.1.0-py2.py3-none-any.whl.metadata (8.9 kB)\
+Collecting fake-http-header==0.3.5 (from -r requirements.txt (line 26))\
+  Downloading fake_http_header-0.3.5-py3-none-any.whl.metadata (3.5 kB)\
+Collecting filelock==3.16.1 (from -r requirements.txt (line 27))\
+  Using cached filelock-3.16.1-py3-none-any.whl.metadata (2.9 kB)\
+Collecting frozenlist==1.5.0 (from -r requirements.txt (line 28))\
+  Downloading frozenlist-1.5.0-cp313-cp313-macosx_11_0_arm64.whl.metadata (13 kB)\
+Collecting fsspec==2024.12.0 (from -r requirements.txt (line 29))\
+  Downloading fsspec-2024.12.0-py3-none-any.whl.metadata (11 kB)\
+Collecting gitdb==4.0.12 (from -r requirements.txt (line 30))\
+  Downloading gitdb-4.0.12-py3-none-any.whl.metadata (1.2 kB)\
+Collecting GitPython==3.1.44 (from -r requirements.txt (line 31))\
+  Downloading GitPython-3.1.44-py3-none-any.whl.metadata (13 kB)\
+Collecting google-auth==2.37.0 (from -r requirements.txt (line 32))\
+  Downloading google_auth-2.37.0-py2.py3-none-any.whl.metadata (4.8 kB)\
+Collecting googleapis-common-protos==1.66.0 (from -r requirements.txt (line 33))\
+  Downloading googleapis_common_protos-1.66.0-py2.py3-none-any.whl.metadata (1.5 kB)\
+Collecting gotrue==2.11.1 (from -r requirements.txt (line 34))\
+  Downloading gotrue-2.11.1-py3-none-any.whl.metadata (6.0 kB)\
+Collecting greenlet==3.1.1 (from -r requirements.txt (line 35))\
+  Downloading greenlet-3.1.1-cp313-cp313-macosx_11_0_universal2.whl.metadata (3.8 kB)\
+Collecting griffe==1.5.4 (from -r requirements.txt (line 36))\
+  Downloading griffe-1.5.4-py3-none-any.whl.metadata (5.0 kB)\
+Collecting groq==0.15.0 (from -r requirements.txt (line 37))\
+  Downloading groq-0.15.0-py3-none-any.whl.metadata (14 kB)\
+Collecting h11==0.14.0 (from -r requirements.txt (line 38))\
+  Using cached h11-0.14.0-py3-none-any.whl.metadata (8.2 kB)\
+Collecting h2==4.1.0 (from -r requirements.txt (line 39))\
+  Using cached h2-4.1.0-py3-none-any.whl.metadata (3.6 kB)\
+Collecting hpack==4.0.0 (from -r requirements.txt (line 40))\
+  Using cached hpack-4.0.0-py3-none-any.whl.metadata (2.5 kB)\
+Collecting httpcore==1.0.7 (from -r requirements.txt (line 41))\
+  Downloading httpcore-1.0.7-py3-none-any.whl.metadata (21 kB)\
+Collecting httpx==0.27.2 (from -r requirements.txt (line 42))\
+  Using cached httpx-0.27.2-py3-none-any.whl.metadata (7.1 kB)\
+Collecting huggingface-hub==0.27.1 (from -r requirements.txt (line 43))\
+  Downloading huggingface_hub-0.27.1-py3-none-any.whl.metadata (13 kB)\
+Collecting hyperframe==6.0.1 (from -r requirements.txt (line 44))\
+  Using cached hyperframe-6.0.1-py3-none-any.whl.metadata (2.7 kB)\
+Collecting idna==3.10 (from -r requirements.txt (line 45))\
+  Using cached idna-3.10-py3-none-any.whl.metadata (10 kB)\
+Collecting importlib_metadata==8.5.0 (from -r requirements.txt (line 46))\
+  Downloading importlib_metadata-8.5.0-py3-none-any.whl.metadata (4.8 kB)\
+Collecting iniconfig==2.0.0 (from -r requirements.txt (line 47))\
+  Using cached iniconfig-2.0.0-py3-none-any.whl.metadata (2.6 kB)\
+Collecting Jinja2==3.1.5 (from -r requirements.txt (line 48))\
+  Downloading jinja2-3.1.5-py3-none-any.whl.metadata (2.6 kB)\
+Collecting jiter==0.8.2 (from -r requirements.txt (line 49))\
+  Downloading jiter-0.8.2-cp313-cp313-macosx_11_0_arm64.whl.metadata (5.2 kB)\
+Collecting joblib==1.4.2 (from -r requirements.txt (line 50))\
+  Downloading joblib-1.4.2-py3-none-any.whl.metadata (5.4 kB)\
+Collecting jsonpath-python==1.0.6 (from -r requirements.txt (line 51))\
+  Downloading jsonpath_python-1.0.6-py3-none-any.whl.metadata (12 kB)\
+Collecting jsonschema==4.23.0 (from -r requirements.txt (line 52))\
+  Downloading jsonschema-4.23.0-py3-none-any.whl.metadata (7.9 kB)\
+Collecting jsonschema-specifications==2024.10.1 (from -r requirements.txt (line 53))\
+  Downloading jsonschema_specifications-2024.10.1-py3-none-any.whl.metadata (3.0 kB)\
+Collecting litellm==1.57.8 (from -r requirements.txt (line 54))\
+  Downloading litellm-1.57.8-py3-none-any.whl.metadata (36 kB)\
+Collecting logfire==3.1.0 (from -r requirements.txt (line 55))\
+  Downloading logfire-3.1.0-py3-none-any.whl.metadata (8.5 kB)\
+Collecting logfire-api==3.1.0 (from -r requirements.txt (line 56))\
+  Downloading logfire_api-3.1.0-py3-none-any.whl.metadata (971 bytes)\
+Collecting lxml==5.3.0 (from -r requirements.txt (line 57))\
+  Downloading lxml-5.3.0-cp313-cp313-macosx_10_13_universal2.whl.metadata (3.8 kB)\
+Collecting markdown-it-py==3.0.0 (from -r requirements.txt (line 58))\
+  Using cached markdown_it_py-3.0.0-py3-none-any.whl.metadata (6.9 kB)\
+Collecting MarkupSafe==3.0.2 (from -r requirements.txt (line 59))\
+  Downloading MarkupSafe-3.0.2-cp313-cp313-macosx_11_0_arm64.whl.metadata (4.0 kB)\
+Collecting mdurl==0.1.2 (from -r requirements.txt (line 60))\
+  Using cached mdurl-0.1.2-py3-none-any.whl.metadata (1.6 kB)\
+Collecting mistralai==1.2.6 (from -r requirements.txt (line 61))\
+  Downloading mistralai-1.2.6-py3-none-any.whl.metadata (28 kB)\
+Collecting mockito==1.5.3 (from -r requirements.txt (line 62))\
+  Downloading mockito-1.5.3-py3-none-any.whl.metadata (1.5 kB)\
+Collecting multidict==6.1.0 (from -r requirements.txt (line 63))\
+  Downloading multidict-6.1.0-cp313-cp313-macosx_11_0_arm64.whl.metadata (5.0 kB)\
+Collecting mypy-extensions==1.0.0 (from -r requirements.txt (line 64))\
+  Downloading mypy_extensions-1.0.0-py3-none-any.whl.metadata (1.1 kB)\
+Collecting narwhals==1.21.1 (from -r requirements.txt (line 65))\
+  Downloading narwhals-1.21.1-py3-none-any.whl.metadata (10.0 kB)\
+Collecting nltk==3.9.1 (from -r requirements.txt (line 66))\
+  Downloading nltk-3.9.1-py3-none-any.whl.metadata (2.9 kB)\
+Collecting numpy==2.2.1 (from -r requirements.txt (line 67))\
+  Downloading numpy-2.2.1-cp313-cp313-macosx_14_0_arm64.whl.metadata (62 kB)\
+Collecting openai==1.59.6 (from -r requirements.txt (line 68))\
+  Downloading openai-1.59.6-py3-none-any.whl.metadata (27 kB)\
+Collecting opentelemetry-api==1.29.0 (from -r requirements.txt (line 69))\
+  Downloading opentelemetry_api-1.29.0-py3-none-any.whl.metadata (1.4 kB)\
+Collecting opentelemetry-exporter-otlp-proto-common==1.29.0 (from -r requirements.txt (line 70))\
+  Downloading opentelemetry_exporter_otlp_proto_common-1.29.0-py3-none-any.whl.metadata (1.8 kB)\
+Collecting opentelemetry-exporter-otlp-proto-http==1.29.0 (from -r requirements.txt (line 71))\
+  Downloading opentelemetry_exporter_otlp_proto_http-1.29.0-py3-none-any.whl.metadata (2.2 kB)\
+Collecting opentelemetry-instrumentation==0.50b0 (from -r requirements.txt (line 72))\
+  Downloading opentelemetry_instrumentation-0.50b0-py3-none-any.whl.metadata (6.1 kB)\
+Collecting opentelemetry-proto==1.29.0 (from -r requirements.txt (line 73))\
+  Downloading opentelemetry_proto-1.29.0-py3-none-any.whl.metadata (2.3 kB)\
+Collecting opentelemetry-sdk==1.29.0 (from -r requirements.txt (line 74))\
+  Downloading opentelemetry_sdk-1.29.0-py3-none-any.whl.metadata (1.5 kB)\
+Collecting opentelemetry-semantic-conventions==0.50b0 (from -r requirements.txt (line 75))\
+  Downloading opentelemetry_semantic_conventions-0.50b0-py3-none-any.whl.metadata (2.3 kB)\
+Collecting packaging==24.2 (from -r requirements.txt (line 76))\
+  Downloading packaging-24.2-py3-none-any.whl.metadata (3.2 kB)\
+Collecting pandas==2.2.3 (from -r requirements.txt (line 77))\
+  Downloading pandas-2.2.3-cp313-cp313-macosx_11_0_arm64.whl.metadata (89 kB)\
+Collecting pillow==10.4.0 (from -r requirements.txt (line 78))\
+  Downloading pillow-10.4.0-cp313-cp313-macosx_11_0_arm64.whl.metadata (9.2 kB)\
+Collecting playwright==1.49.1 (from -r requirements.txt (line 79))\
+  Downloading playwright-1.49.1-py3-none-macosx_11_0_arm64.whl.metadata (3.5 kB)\
+Collecting pluggy==1.5.0 (from -r requirements.txt (line 80))\
+  Using cached pluggy-1.5.0-py3-none-any.whl.metadata (4.8 kB)\
+Collecting postgrest==0.19.1 (from -r requirements.txt (line 81))\
+  Downloading postgrest-0.19.1-py3-none-any.whl.metadata (3.5 kB)\
+Collecting propcache==0.2.1 (from -r requirements.txt (line 82))\
+  Downloading propcache-0.2.1-cp313-cp313-macosx_11_0_arm64.whl.metadata (9.2 kB)\
+Collecting protobuf==5.29.3 (from -r requirements.txt (line 83))\
+  Downloading protobuf-5.29.3-cp38-abi3-macosx_10_9_universal2.whl.metadata (592 bytes)\
+Collecting psutil==6.1.1 (from -r requirements.txt (line 84))\
+  Downloading psutil-6.1.1-cp36-abi3-macosx_11_0_arm64.whl.metadata (22 kB)\
+Collecting pyarrow==18.1.0 (from -r requirements.txt (line 85))\
+  Downloading pyarrow-18.1.0-cp313-cp313-macosx_12_0_arm64.whl.metadata (3.3 kB)\
+Collecting pyasn1==0.6.1 (from -r requirements.txt (line 86))\
+  Downloading pyasn1-0.6.1-py3-none-any.whl.metadata (8.4 kB)\
+Collecting pyasn1_modules==0.4.1 (from -r requirements.txt (line 87))\
+  Downloading pyasn1_modules-0.4.1-py3-none-any.whl.metadata (3.5 kB)\
+Collecting pycparser==2.22 (from -r requirements.txt (line 88))\
+  Downloading pycparser-2.22-py3-none-any.whl.metadata (943 bytes)\
+Collecting pydantic==2.10.5 (from -r requirements.txt (line 89))\
+  Downloading pydantic-2.10.5-py3-none-any.whl.metadata (30 kB)\
+Collecting pydantic-ai==0.0.18 (from -r requirements.txt (line 90))\
+  Downloading pydantic_ai-0.0.18-py3-none-any.whl.metadata (11 kB)\
+Collecting pydantic-ai-slim==0.0.18 (from -r requirements.txt (line 91))\
+  Downloading pydantic_ai_slim-0.0.18-py3-none-any.whl.metadata (2.7 kB)\
+Collecting pydantic_core==2.27.2 (from -r requirements.txt (line 92))\
+  Downloading pydantic_core-2.27.2-cp313-cp313-macosx_11_0_arm64.whl.metadata (6.6 kB)\
+Collecting pydeck==0.9.1 (from -r requirements.txt (line 93))\
+  Downloading pydeck-0.9.1-py2.py3-none-any.whl.metadata (4.1 kB)\
+Collecting pyee==12.0.0 (from -r requirements.txt (line 94))\
+  Downloading pyee-12.0.0-py3-none-any.whl.metadata (2.8 kB)\
+Collecting Pygments==2.19.1 (from -r requirements.txt (line 95))\
+  Downloading pygments-2.19.1-py3-none-any.whl.metadata (2.5 kB)\
+Collecting pyOpenSSL==24.3.0 (from -r requirements.txt (line 96))\
+  Downloading pyOpenSSL-24.3.0-py3-none-any.whl.metadata (15 kB)\
+Collecting pytest==8.3.4 (from -r requirements.txt (line 97))\
+  Downloading pytest-8.3.4-py3-none-any.whl.metadata (7.5 kB)\
+Collecting pytest-mockito==0.0.4 (from -r requirements.txt (line 98))\
+  Downloading pytest-mockito-0.0.4.tar.gz (3.0 kB)\
+  Installing build dependencies ... done\
+  Getting requirements to build wheel ... done\
+  Preparing metadata (pyproject.toml) ... done\
+Collecting python-dateutil==2.9.0.post0 (from -r requirements.txt (line 99))\
+  Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl.metadata (8.4 kB)\
+Collecting python-dotenv==1.0.1 (from -r requirements.txt (line 100))\
+  Using cached python_dotenv-1.0.1-py3-none-any.whl.metadata (23 kB)\
+Collecting pytz==2024.2 (from -r requirements.txt (line 101))\
+  Downloading pytz-2024.2-py2.py3-none-any.whl.metadata (22 kB)\
+Collecting PyYAML==6.0.2 (from -r requirements.txt (line 102))\
+  Downloading PyYAML-6.0.2-cp313-cp313-macosx_11_0_arm64.whl.metadata (2.1 kB)\
+Collecting rank-bm25==0.2.2 (from -r requirements.txt (line 103))\
+  Downloading rank_bm25-0.2.2-py3-none-any.whl.metadata (3.2 kB)\
+Collecting realtime==2.1.0 (from -r requirements.txt (line 104))\
+  Downloading realtime-2.1.0-py3-none-any.whl.metadata (6.7 kB)\
+Collecting referencing==0.35.1 (from -r requirements.txt (line 105))\
+  Downloading referencing-0.35.1-py3-none-any.whl.metadata (2.8 kB)\
+Collecting regex==2024.11.6 (from -r requirements.txt (line 106))\
+  Downloading regex-2024.11.6-cp313-cp313-macosx_11_0_arm64.whl.metadata (40 kB)\
+Collecting requests==2.32.3 (from -r requirements.txt (line 107))\
+  Using cached requests-2.32.3-py3-none-any.whl.metadata (4.6 kB)\
+Collecting rich==13.9.4 (from -r requirements.txt (line 108))\
+  Downloading rich-13.9.4-py3-none-any.whl.metadata (18 kB)\
+Collecting rpds-py==0.22.3 (from -r requirements.txt (line 109))\
+  Downloading rpds_py-0.22.3-cp313-cp313-macosx_11_0_arm64.whl.metadata (4.2 kB)\
+Collecting rsa==4.9 (from -r requirements.txt (line 110))\
+  Downloading rsa-4.9-py3-none-any.whl.metadata (4.2 kB)\
+Collecting six==1.17.0 (from -r requirements.txt (line 111))\
+  Downloading six-1.17.0-py2.py3-none-any.whl.metadata (1.7 kB)\
+Collecting smmap==5.0.2 (from -r requirements.txt (line 112))\
+  Downloading smmap-5.0.2-py3-none-any.whl.metadata (4.3 kB)\
+Collecting sniffio==1.3.1 (from -r requirements.txt (line 113))\
+  Using cached sniffio-1.3.1-py3-none-any.whl.metadata (3.9 kB)\
+Collecting snowballstemmer==2.2.0 (from -r requirements.txt (line 114))\
+  Downloading snowballstemmer-2.2.0-py2.py3-none-any.whl.metadata (6.5 kB)\
+Collecting soupsieve==2.6 (from -r requirements.txt (line 115))\
+  Downloading soupsieve-2.6-py3-none-any.whl.metadata (4.6 kB)\
+Collecting storage3==0.11.0 (from -r requirements.txt (line 116))\
+  Downloading storage3-0.11.0-py3-none-any.whl.metadata (1.8 kB)\
+Collecting streamlit==1.41.1 (from -r requirements.txt (line 117))\
+  Downloading streamlit-1.41.1-py2.py3-none-any.whl.metadata (8.5 kB)\
+Collecting StrEnum==0.4.15 (from -r requirements.txt (line 118))\
+  Downloading StrEnum-0.4.15-py3-none-any.whl.metadata (5.3 kB)\
+Collecting supabase==2.11.0 (from -r requirements.txt (line 119))\
+  Downloading supabase-2.11.0-py3-none-any.whl.metadata (10 kB)\
+Collecting supafunc==0.9.0 (from -r requirements.txt (line 120))\
+  Downloading supafunc-0.9.0-py3-none-any.whl.metadata (1.1 kB)\
+Collecting tenacity==9.0.0 (from -r requirements.txt (line 121))\
+  Using cached tenacity-9.0.0-py3-none-any.whl.metadata (1.2 kB)\
+Collecting tf-playwright-stealth==1.1.0 (from -r requirements.txt (line 122))\
+  Downloading tf_playwright_stealth-1.1.0-py3-none-any.whl.metadata (2.6 kB)\
+Collecting tiktoken==0.8.0 (from -r requirements.txt (line 123))\
+  Downloading tiktoken-0.8.0-cp313-cp313-macosx_11_0_arm64.whl.metadata (6.6 kB)\
+Collecting tokenizers==0.21.0 (from -r requirements.txt (line 124))\
+  Downloading tokenizers-0.21.0-cp39-abi3-macosx_11_0_arm64.whl.metadata (6.7 kB)\
+Collecting toml==0.10.2 (from -r requirements.txt (line 125))\
+  Downloading toml-0.10.2-py2.py3-none-any.whl.metadata (7.1 kB)\
+Collecting tornado==6.4.2 (from -r requirements.txt (line 126))\
+  Downloading tornado-6.4.2-cp38-abi3-macosx_10_9_universal2.whl.metadata (2.5 kB)\
+Collecting tqdm==4.67.1 (from -r requirements.txt (line 127))\
+  Downloading tqdm-4.67.1-py3-none-any.whl.metadata (57 kB)\
+Collecting typing-inspect==0.9.0 (from -r requirements.txt (line 128))\
+  Downloading typing_inspect-0.9.0-py3-none-any.whl.metadata (1.5 kB)\
+Collecting typing_extensions==4.12.2 (from -r requirements.txt (line 129))\
+  Using cached typing_extensions-4.12.2-py3-none-any.whl.metadata (3.0 kB)\
+Collecting tzdata==2024.2 (from -r requirements.txt (line 130))\
+  Downloading tzdata-2024.2-py2.py3-none-any.whl.metadata (1.4 kB)\
+Collecting urllib3==2.3.0 (from -r requirements.txt (line 131))\
+  Downloading urllib3-2.3.0-py3-none-any.whl.metadata (6.5 kB)\
+Collecting watchdog==6.0.0 (from -r requirements.txt (line 132))\
+  Downloading watchdog-6.0.0-cp313-cp313-macosx_11_0_arm64.whl.metadata (44 kB)\
+Collecting websockets==13.1 (from -r requirements.txt (line 133))\
+  Downloading websockets-13.1-cp313-cp313-macosx_11_0_arm64.whl.metadata (6.8 kB)\
+Collecting wrapt==1.17.1 (from -r requirements.txt (line 134))\
+  Downloading wrapt-1.17.1-cp313-cp313-macosx_11_0_arm64.whl.metadata (6.4 kB)\
+Collecting xxhash==3.5.0 (from -r requirements.txt (line 135))\
+  Downloading xxhash-3.5.0-cp313-cp313-macosx_11_0_arm64.whl.metadata (12 kB)\
+Collecting yarl==1.18.3 (from -r requirements.txt (line 136))\
+  Downloading yarl-1.18.3-cp313-cp313-macosx_11_0_arm64.whl.metadata (69 kB)\
+Collecting zipp==3.21.0 (from -r requirements.txt (line 137))\
+  Downloading zipp-3.21.0-py3-none-any.whl.metadata (3.7 kB)\
+Downloading aiofiles-24.1.0-py3-none-any.whl (15 kB)\
+Downloading aiohappyeyeballs-2.4.4-py3-none-any.whl (14 kB)\
+Downloading aiohttp-3.11.11-cp313-cp313-macosx_11_0_arm64.whl (452 kB)\
+Downloading aiosignal-1.3.2-py2.py3-none-any.whl (7.6 kB)\
+Downloading aiosqlite-0.20.0-py3-none-any.whl (15 kB)\
+Downloading altair-5.5.0-py3-none-any.whl (731 kB)\
+   \cf7 \uc0\u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \cf2  \cf4 731.2/731.2 kB\cf2  \cf6 5.6 MB/s\cf2  eta \cf8 0:00:00\cf2 \
+Using cached annotated_types-0.7.0-py3-none-any.whl (13 kB)\
+Downloading anthropic-0.42.0-py3-none-any.whl (203 kB)\
+Downloading anyio-4.8.0-py3-none-any.whl (96 kB)\
+Downloading attrs-24.3.0-py3-none-any.whl (63 kB)\
+Downloading beautifulsoup4-4.12.3-py3-none-any.whl (147 kB)\
+Downloading blinker-1.9.0-py3-none-any.whl (8.5 kB)\
+Downloading cachetools-5.5.0-py3-none-any.whl (9.5 kB)\
+Downloading certifi-2024.12.14-py3-none-any.whl (164 kB)\
+Downloading cffi-1.17.1-cp313-cp313-macosx_11_0_arm64.whl (178 kB)\
+Downloading charset_normalizer-3.4.1-cp313-cp313-macosx_10_13_universal2.whl (195 kB)\
+Downloading click-8.1.8-py3-none-any.whl (98 kB)\
+Downloading colorama-0.4.6-py2.py3-none-any.whl (25 kB)\
+Downloading Crawl4AI-0.4.247-py3-none-any.whl (166 kB)\
+Downloading cryptography-44.0.0-cp39-abi3-macosx_10_9_universal2.whl (6.5 MB)\
+   \cf7 \uc0\u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \cf2  \cf4 6.5/6.5 MB\cf2  \cf6 13.0 MB/s\cf2  eta \cf8 0:00:00\cf2 \
+Downloading Deprecated-1.2.15-py2.py3-none-any.whl (9.9 kB)\
+Downloading deprecation-2.1.0-py2.py3-none-any.whl (11 kB)\
+Using cached distro-1.9.0-py3-none-any.whl (20 kB)\
+Downloading eval_type_backport-0.2.2-py3-none-any.whl (5.8 kB)\
+Downloading executing-2.1.0-py2.py3-none-any.whl (25 kB)\
+Downloading fake_http_header-0.3.5-py3-none-any.whl (14 kB)\
+Using cached filelock-3.16.1-py3-none-any.whl (16 kB)\
+Downloading frozenlist-1.5.0-cp313-cp313-macosx_11_0_arm64.whl (50 kB)\
+Downloading fsspec-2024.12.0-py3-none-any.whl (183 kB)\
+Downloading gitdb-4.0.12-py3-none-any.whl (62 kB)\
+Downloading GitPython-3.1.44-py3-none-any.whl (207 kB)\
+Downloading google_auth-2.37.0-py2.py3-none-any.whl (209 kB)\
+Downloading googleapis_common_protos-1.66.0-py2.py3-none-any.whl (221 kB)\
+Downloading gotrue-2.11.1-py3-none-any.whl (49 kB)\
+Downloading greenlet-3.1.1-cp313-cp313-macosx_11_0_universal2.whl (272 kB)\
+Downloading griffe-1.5.4-py3-none-any.whl (128 kB)\
+Downloading groq-0.15.0-py3-none-any.whl (109 kB)\
+Using cached h11-0.14.0-py3-none-any.whl (58 kB)\
+Using cached h2-4.1.0-py3-none-any.whl (57 kB)\
+Using cached hpack-4.0.0-py3-none-any.whl (32 kB)\
+Downloading httpcore-1.0.7-py3-none-any.whl (78 kB)\
+Using cached httpx-0.27.2-py3-none-any.whl (76 kB)\
+Downloading huggingface_hub-0.27.1-py3-none-any.whl (450 kB)\
+Using cached hyperframe-6.0.1-py3-none-any.whl (12 kB)\
+Using cached idna-3.10-py3-none-any.whl (70 kB)\
+Downloading importlib_metadata-8.5.0-py3-none-any.whl (26 kB)\
+Using cached iniconfig-2.0.0-py3-none-any.whl (5.9 kB)\
+Downloading jinja2-3.1.5-py3-none-any.whl (134 kB)\
+Downloading jiter-0.8.2-cp313-cp313-macosx_11_0_arm64.whl (309 kB)\
+Downloading joblib-1.4.2-py3-none-any.whl (301 kB)\
+Downloading jsonpath_python-1.0.6-py3-none-any.whl (7.6 kB)\
+Downloading jsonschema-4.23.0-py3-none-any.whl (88 kB)\
+Downloading jsonschema_specifications-2024.10.1-py3-none-any.whl (18 kB)\
+Downloading litellm-1.57.8-py3-none-any.whl (6.6 MB)\
+   \cf7 \uc0\u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \cf2  \cf4 6.6/6.6 MB\cf2  \cf6 19.9 MB/s\cf2  eta \cf8 0:00:00\cf2 \
+Downloading logfire-3.1.0-py3-none-any.whl (177 kB)\
+Downloading logfire_api-3.1.0-py3-none-any.whl (73 kB)\
+Downloading lxml-5.3.0-cp313-cp313-macosx_10_13_universal2.whl (8.2 MB)\
+   \cf7 \uc0\u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \cf2  \cf4 8.2/8.2 MB\cf2  \cf6 19.1 MB/s\cf2  eta \cf8 0:00:00\cf2 \
+Using cached markdown_it_py-3.0.0-py3-none-any.whl (87 kB)\
+Downloading MarkupSafe-3.0.2-cp313-cp313-macosx_11_0_arm64.whl (12 kB)\
+Using cached mdurl-0.1.2-py3-none-any.whl (10.0 kB)\
+Downloading mistralai-1.2.6-py3-none-any.whl (261 kB)\
+Downloading mockito-1.5.3-py3-none-any.whl (30 kB)\
+Downloading multidict-6.1.0-cp313-cp313-macosx_11_0_arm64.whl (29 kB)\
+Downloading mypy_extensions-1.0.0-py3-none-any.whl (4.7 kB)\
+Downloading narwhals-1.21.1-py3-none-any.whl (282 kB)\
+Downloading nltk-3.9.1-py3-none-any.whl (1.5 MB)\
+   \cf7 \uc0\u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \cf2  \cf4 1.5/1.5 MB\cf2  \cf6 15.8 MB/s\cf2  eta \cf8 0:00:00\cf2 \
+Downloading numpy-2.2.1-cp313-cp313-macosx_14_0_arm64.whl (5.1 MB)\
+   \cf7 \uc0\u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \cf2  \cf4 5.1/5.1 MB\cf2  \cf6 21.1 MB/s\cf2  eta \cf8 0:00:00\cf2 \
+Downloading openai-1.59.6-py3-none-any.whl (454 kB)\
+Downloading opentelemetry_api-1.29.0-py3-none-any.whl (64 kB)\
+Downloading opentelemetry_exporter_otlp_proto_common-1.29.0-py3-none-any.whl (18 kB)\
+Downloading opentelemetry_exporter_otlp_proto_http-1.29.0-py3-none-any.whl (17 kB)\
+Downloading opentelemetry_instrumentation-0.50b0-py3-none-any.whl (30 kB)\
+Downloading opentelemetry_proto-1.29.0-py3-none-any.whl (55 kB)\
+Downloading opentelemetry_sdk-1.29.0-py3-none-any.whl (118 kB)\
+Downloading opentelemetry_semantic_conventions-0.50b0-py3-none-any.whl (166 kB)\
+Downloading packaging-24.2-py3-none-any.whl (65 kB)\
+Downloading pandas-2.2.3-cp313-cp313-macosx_11_0_arm64.whl (11.3 MB)\
+   \cf7 \uc0\u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \cf2  \cf4 11.3/11.3 MB\cf2  \cf6 22.4 MB/s\cf2  eta \cf8 0:00:00\cf2 \
+Downloading pillow-10.4.0-cp313-cp313-macosx_11_0_arm64.whl (3.4 MB)\
+   \cf7 \uc0\u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \cf2  \cf4 3.4/3.4 MB\cf2  \cf6 19.1 MB/s\cf2  eta \cf8 0:00:00\cf2 \
+Downloading playwright-1.49.1-py3-none-macosx_11_0_arm64.whl (38.8 MB)\
+   \cf7 \uc0\u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \cf2  \cf4 38.8/38.8 MB\cf2  \cf6 22.4 MB/s\cf2  eta \cf8 0:00:00\cf2 \
+Using cached pluggy-1.5.0-py3-none-any.whl (20 kB)\
+Downloading postgrest-0.19.1-py3-none-any.whl (22 kB)\
+Downloading propcache-0.2.1-cp313-cp313-macosx_11_0_arm64.whl (44 kB)\
+Downloading protobuf-5.29.3-cp38-abi3-macosx_10_9_universal2.whl (417 kB)\
+Downloading psutil-6.1.1-cp36-abi3-macosx_11_0_arm64.whl (248 kB)\
+Downloading pyarrow-18.1.0-cp313-cp313-macosx_12_0_arm64.whl (29.5 MB)\
+   \cf7 \uc0\u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \cf2  \cf4 29.5/29.5 MB\cf2  \cf6 16.2 MB/s\cf2  eta \cf8 0:00:00\cf2 \
+Downloading pyasn1-0.6.1-py3-none-any.whl (83 kB)\
+Downloading pyasn1_modules-0.4.1-py3-none-any.whl (181 kB)\
+Downloading pycparser-2.22-py3-none-any.whl (117 kB)\
+Downloading pydantic-2.10.5-py3-none-any.whl (431 kB)\
+Downloading pydantic_ai-0.0.18-py3-none-any.whl (9.6 kB)\
+Downloading pydantic_ai_slim-0.0.18-py3-none-any.whl (82 kB)\
+Downloading pydantic_core-2.27.2-cp313-cp313-macosx_11_0_arm64.whl (1.8 MB)\
+   \cf7 \uc0\u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \cf2  \cf4 1.8/1.8 MB\cf2  \cf6 12.6 MB/s\cf2  eta \cf8 0:00:00\cf2 \
+Downloading pydeck-0.9.1-py2.py3-none-any.whl (6.9 MB)\
+   \cf7 \uc0\u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \cf2  \cf4 6.9/6.9 MB\cf2  \cf6 19.5 MB/s\cf2  eta \cf8 0:00:00\cf2 \
+Downloading pyee-12.0.0-py3-none-any.whl (14 kB)\
+Downloading pygments-2.19.1-py3-none-any.whl (1.2 MB)\
+   \cf7 \uc0\u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \cf2  \cf4 1.2/1.2 MB\cf2  \cf6 10.0 MB/s\cf2  eta \cf8 0:00:00\cf2 \
+Downloading pyOpenSSL-24.3.0-py3-none-any.whl (56 kB)\
+Downloading pytest-8.3.4-py3-none-any.whl (343 kB)\
+Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl (229 kB)\
+Using cached python_dotenv-1.0.1-py3-none-any.whl (19 kB)\
+Downloading pytz-2024.2-py2.py3-none-any.whl (508 kB)\
+Downloading PyYAML-6.0.2-cp313-cp313-macosx_11_0_arm64.whl (171 kB)\
+Downloading rank_bm25-0.2.2-py3-none-any.whl (8.6 kB)\
+Downloading realtime-2.1.0-py3-none-any.whl (21 kB)\
+Downloading referencing-0.35.1-py3-none-any.whl (26 kB)\
+Downloading regex-2024.11.6-cp313-cp313-macosx_11_0_arm64.whl (284 kB)\
+Using cached requests-2.32.3-py3-none-any.whl (64 kB)\
+Downloading rich-13.9.4-py3-none-any.whl (242 kB)\
+Downloading rpds_py-0.22.3-cp313-cp313-macosx_11_0_arm64.whl (341 kB)\
+Downloading rsa-4.9-py3-none-any.whl (34 kB)\
+Downloading six-1.17.0-py2.py3-none-any.whl (11 kB)\
+Downloading smmap-5.0.2-py3-none-any.whl (24 kB)\
+Using cached sniffio-1.3.1-py3-none-any.whl (10 kB)\
+Downloading snowballstemmer-2.2.0-py2.py3-none-any.whl (93 kB)\
+Downloading soupsieve-2.6-py3-none-any.whl (36 kB)\
+Downloading storage3-0.11.0-py3-none-any.whl (17 kB)\
+Downloading streamlit-1.41.1-py2.py3-none-any.whl (9.1 MB)\
+   \cf7 \uc0\u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \cf2  \cf4 9.1/9.1 MB\cf2  \cf6 17.7 MB/s\cf2  eta \cf8 0:00:00\cf2 \
+Downloading StrEnum-0.4.15-py3-none-any.whl (8.9 kB)\
+Downloading supabase-2.11.0-py3-none-any.whl (16 kB)\
+Downloading supafunc-0.9.0-py3-none-any.whl (7.6 kB)\
+Using cached tenacity-9.0.0-py3-none-any.whl (28 kB)\
+Downloading tf_playwright_stealth-1.1.0-py3-none-any.whl (33 kB)\
+Downloading tiktoken-0.8.0-cp313-cp313-macosx_11_0_arm64.whl (982 kB)\
+   \cf7 \uc0\u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \cf2  \cf4 982.8/982.8 kB\cf2  \cf6 18.5 MB/s\cf2  eta \cf8 0:00:00\cf2 \
+Downloading tokenizers-0.21.0-cp39-abi3-macosx_11_0_arm64.whl (2.6 MB)\
+   \cf7 \uc0\u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \u9473 \cf2  \cf4 2.6/2.6 MB\cf2  \cf6 22.1 MB/s\cf2  eta \cf8 0:00:00\cf2 \
+Downloading toml-0.10.2-py2.py3-none-any.whl (16 kB)\
+Downloading tornado-6.4.2-cp38-abi3-macosx_10_9_universal2.whl (436 kB)\
+Downloading tqdm-4.67.1-py3-none-any.whl (78 kB)\
+Downloading typing_inspect-0.9.0-py3-none-any.whl (8.8 kB)\
+Using cached typing_extensions-4.12.2-py3-none-any.whl (37 kB)\
+Downloading tzdata-2024.2-py2.py3-none-any.whl (346 kB)\
+Downloading urllib3-2.3.0-py3-none-any.whl (128 kB)\
+Downloading watchdog-6.0.0-cp313-cp313-macosx_11_0_arm64.whl (89 kB)\
+Downloading websockets-13.1-cp313-cp313-macosx_11_0_arm64.whl (155 kB)\
+Downloading wrapt-1.17.1-cp313-cp313-macosx_11_0_arm64.whl (38 kB)\
+Downloading xxhash-3.5.0-cp313-cp313-macosx_11_0_arm64.whl (30 kB)\
+Downloading yarl-1.18.3-cp313-cp313-macosx_11_0_arm64.whl (91 kB)\
+Downloading zipp-3.21.0-py3-none-any.whl (9.6 kB)\
+Building wheels for collected packages: pytest-mockito\
+  Building wheel for pytest-mockito (pyproject.toml) ... done\
+  Created wheel for pytest-mockito: filename=pytest_mockito-0.0.4-py3-none-any.whl size=3756 sha256=f5ef1d74b986cc5b2325494534f2cda3fff20e80c2e3349751acdbccb9e0a42e\
+  Stored in directory: /Users/dcs/Library/Caches/pip/wheels/06/81/9e/df61fa89a43c5d31466043f63b612b6434dcb9f4e846813595\
+Successfully built pytest-mockito\
+Installing collected packages: StrEnum, snowballstemmer, pytz, zipp, xxhash, wrapt, websockets, watchdog, urllib3, tzdata, typing_extensions, tqdm, tornado, toml, tenacity, soupsieve, sniffio, smmap, six, rpds-py, regex, PyYAML, python-dotenv, Pygments, pycparser, pyasn1, pyarrow, psutil, protobuf, propcache, pluggy, pillow, packaging, numpy, narwhals, mypy-extensions, multidict, mockito, mdurl, MarkupSafe, lxml, logfire-api, jsonpath-python, joblib, jiter, iniconfig, idna, hyperframe, hpack, h11, greenlet, fsspec, frozenlist, filelock, fake-http-header, executing, eval_type_backport, distro, colorama, click, charset-normalizer, certifi, cachetools, blinker, attrs, annotated-types, aiohappyeyeballs, aiofiles, yarl, typing-inspect, rsa, requests, referencing, rank-bm25, python-dateutil, pytest, pyee, pydantic_core, pyasn1_modules, opentelemetry-proto, nltk, markdown-it-py, Jinja2, importlib_metadata, httpcore, h2, griffe, googleapis-common-protos, gitdb, deprecation, Deprecated, cffi, beautifulsoup4, anyio, aiosqlite, aiosignal, tiktoken, rich, pytest-mockito, pydeck, pydantic, playwright, pandas, opentelemetry-exporter-otlp-proto-common, opentelemetry-api, jsonschema-specifications, huggingface-hub, httpx, google-auth, GitPython, cryptography, aiohttp, tokenizers, tf-playwright-stealth, realtime, pyOpenSSL, pydantic-ai-slim, opentelemetry-semantic-conventions, openai, mistralai, jsonschema, groq, anthropic, supafunc, storage3, postgrest, opentelemetry-sdk, opentelemetry-instrumentation, litellm, gotrue, altair, supabase, streamlit, pydantic-ai, opentelemetry-exporter-otlp-proto-http, Crawl4AI, logfire\
+Successfully installed Crawl4AI-0.4.247 Deprecated-1.2.15 GitPython-3.1.44 Jinja2-3.1.5 MarkupSafe-3.0.2 PyYAML-6.0.2 Pygments-2.19.1 StrEnum-0.4.15 aiofiles-24.1.0 aiohappyeyeballs-2.4.4 aiohttp-3.11.11 aiosignal-1.3.2 aiosqlite-0.20.0 altair-5.5.0 annotated-types-0.7.0 anthropic-0.42.0 anyio-4.8.0 attrs-24.3.0 beautifulsoup4-4.12.3 blinker-1.9.0 cachetools-5.5.0 certifi-2024.12.14 cffi-1.17.1 charset-normalizer-3.4.1 click-8.1.8 colorama-0.4.6 cryptography-44.0.0 deprecation-2.1.0 distro-1.9.0 eval_type_backport-0.2.2 executing-2.1.0 fake-http-header-0.3.5 filelock-3.16.1 frozenlist-1.5.0 fsspec-2024.12.0 gitdb-4.0.12 google-auth-2.37.0 googleapis-common-protos-1.66.0 gotrue-2.11.1 greenlet-3.1.1 griffe-1.5.4 groq-0.15.0 h11-0.14.0 h2-4.1.0 hpack-4.0.0 httpcore-1.0.7 httpx-0.27.2 huggingface-hub-0.27.1 hyperframe-6.0.1 idna-3.10 importlib_metadata-8.5.0 iniconfig-2.0.0 jiter-0.8.2 joblib-1.4.2 jsonpath-python-1.0.6 jsonschema-4.23.0 jsonschema-specifications-2024.10.1 litellm-1.57.8 logfire-3.1.0 logfire-api-3.1.0 lxml-5.3.0 markdown-it-py-3.0.0 mdurl-0.1.2 mistralai-1.2.6 mockito-1.5.3 multidict-6.1.0 mypy-extensions-1.0.0 narwhals-1.21.1 nltk-3.9.1 numpy-2.2.1 openai-1.59.6 opentelemetry-api-1.29.0 opentelemetry-exporter-otlp-proto-common-1.29.0 opentelemetry-exporter-otlp-proto-http-1.29.0 opentelemetry-instrumentation-0.50b0 opentelemetry-proto-1.29.0 opentelemetry-sdk-1.29.0 opentelemetry-semantic-conventions-0.50b0 packaging-24.2 pandas-2.2.3 pillow-10.4.0 playwright-1.49.1 pluggy-1.5.0 postgrest-0.19.1 propcache-0.2.1 protobuf-5.29.3 psutil-6.1.1 pyOpenSSL-24.3.0 pyarrow-18.1.0 pyasn1-0.6.1 pyasn1_modules-0.4.1 pycparser-2.22 pydantic-2.10.5 pydantic-ai-0.0.18 pydantic-ai-slim-0.0.18 pydantic_core-2.27.2 pydeck-0.9.1 pyee-12.0.0 pytest-8.3.4 pytest-mockito-0.0.4 python-dateutil-2.9.0.post0 python-dotenv-1.0.1 pytz-2024.2 rank-bm25-0.2.2 realtime-2.1.0 referencing-0.35.1 regex-2024.11.6 requests-2.32.3 rich-13.9.4 rpds-py-0.22.3 rsa-4.9 six-1.17.0 smmap-5.0.2 sniffio-1.3.1 snowballstemmer-2.2.0 soupsieve-2.6 storage3-0.11.0 streamlit-1.41.1 supabase-2.11.0 supafunc-0.9.0 tenacity-9.0.0 tf-playwright-stealth-1.1.0 tiktoken-0.8.0 tokenizers-0.21.0 toml-0.10.2 tornado-6.4.2 tqdm-4.67.1 typing-inspect-0.9.0 typing_extensions-4.12.2 tzdata-2024.2 urllib3-2.3.0 watchdog-6.0.0 websockets-13.1 wrapt-1.17.1 xxhash-3.5.0 yarl-1.18.3 zipp-3.21.0\
+(venv) dcs@Darrens-MacBook-Pro crawl4AI-agent % crawl_paladyne.co_docs.py\
+zsh: command not found: crawl_paladyne.co_docs.py\
+(venv) dcs@Darrens-MacBook-Pro crawl4AI-agent % python3 crawl_paladyne.co_docs.py\
+Error fetching sitemap: No connection adapters were found for 'file:///www.paladyne.co_sitemap.xml'\
+No URLs found to crawl\
+(venv) dcs@Darrens-MacBook-Pro crawl4AI-agent % python3 crawl_paladyne.co_docs.py\
+Error fetching sitemap: No connection adapters were found for 'file:///www.paladyne.co_sitemap.xml'\
+No URLs found to crawl\
+(venv) dcs@Darrens-MacBook-Pro crawl4AI-agent % python3 crawl_paladyne.co_docs.py\
+Error fetching sitemap: No connection adapters were found for 'file://www.paladyne.co_sitemap.xml'\
+No URLs found to crawl\
+(venv) dcs@Darrens-MacBook-Pro crawl4AI-agent % python3 crawl_paladyne.co_docs.py\
+Found 36 URLs to crawl\
+Traceback (most recent call last):\
+  File \cf9 "/Users/dcs/Dev/ai/ottomator-agents/crawl4AI-agent/crawl_paladyne.co_docs.py"\cf2 , line \cf9 264\cf2 , in \cf9 <module>\cf2 \
+    \cf6 asyncio.run
+\f1\b (main())
+\f0\b0 \cf2 \
+    \cf6 ~~~~~~~~~~~
+\f1\b ^^^^^^^^
+\f0\b0 \cf2 \
+  File \cf9 "/opt/homebrew/Cellar/python@3.13/3.13.1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/asyncio/runners.py"\cf2 , line \cf9 194\cf2 , in \cf9 run\cf2 \
+    return \cf6 runner.run
+\f1\b (main)
+\f0\b0 \cf2 \
+           \cf6 ~~~~~~~~~~
+\f1\b ^^^^^^
+\f0\b0 \cf2 \
+  File \cf9 "/opt/homebrew/Cellar/python@3.13/3.13.1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/asyncio/runners.py"\cf2 , line \cf9 118\cf2 , in \cf9 run\cf2 \
+    return \cf6 self._loop.run_until_complete
+\f1\b (task)
+\f0\b0 \cf2 \
+           \cf6 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+\f1\b ^^^^^^
+\f0\b0 \cf2 \
+  File \cf9 "/opt/homebrew/Cellar/python@3.13/3.13.1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/asyncio/base_events.py"\cf2 , line \cf9 720\cf2 , in \cf9 run_until_complete\cf2 \
+    return \cf6 future.result
+\f1\b ()
+\f0\b0 \cf2 \
+           \cf6 ~~~~~~~~~~~~~
+\f1\b ^^
+\f0\b0 \cf2 \
+  File \cf9 "/Users/dcs/Dev/ai/ottomator-agents/crawl4AI-agent/crawl_paladyne.co_docs.py"\cf2 , line \cf9 261\cf2 , in \cf9 main\cf2 \
+    await crawl_parallel(urls)\
+  File \cf9 "/Users/dcs/Dev/ai/ottomator-agents/crawl4AI-agent/crawl_paladyne.co_docs.py"\cf2 , line \cf9 208\cf2 , in \cf9 crawl_parallel\cf2 \
+    await crawler.start()\
+  File \cf9 "/Users/dcs/Dev/ai/ottomator-agents/crawl4AI-agent/venv/lib/python3.13/site-packages/crawl4ai/async_webcrawler.py"\cf2 , line \cf9 202\cf2 , in \cf9 start\cf2 \
+    await self.crawler_strategy.__aenter__()\
+  File \cf9 "/Users/dcs/Dev/ai/ottomator-agents/crawl4AI-agent/venv/lib/python3.13/site-packages/crawl4ai/async_crawler_strategy.py"\cf2 , line \cf9 750\cf2 , in \cf9 __aenter__\cf2 \
+    await self.start()\
+  File \cf9 "/Users/dcs/Dev/ai/ottomator-agents/crawl4AI-agent/venv/lib/python3.13/site-packages/crawl4ai/async_crawler_strategy.py"\cf2 , line \cf9 760\cf2 , in \cf9 start\cf2 \
+    await self.browser_manager.start()\
+  File \cf9 "/Users/dcs/Dev/ai/ottomator-agents/crawl4AI-agent/venv/lib/python3.13/site-packages/crawl4ai/async_crawler_strategy.py"\cf2 , line \cf9 382\cf2 , in \cf9 start\cf2 \
+    self.browser = 
+\f1\b \cf6 await self.playwright.chromium.launch(**browser_args)
+\f0\b0 \cf2 \
+                   
+\f1\b \cf6 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+\f0\b0 \cf2 \
+  File \cf9 "/Users/dcs/Dev/ai/ottomator-agents/crawl4AI-agent/venv/lib/python3.13/site-packages/playwright/async_api/_generated.py"\cf2 , line \cf9 14404\cf2 , in \cf9 launch\cf2 \
+    await self._impl_obj.launch(\
+    ...<17 lines>...\
+    )\
+  File \cf9 "/Users/dcs/Dev/ai/ottomator-agents/crawl4AI-agent/venv/lib/python3.13/site-packages/playwright/_impl/_browser_type.py"\cf2 , line \cf9 95\cf2 , in \cf9 launch\cf2 \
+    Browser, from_channel(
+\f1\b \cf6 await self._channel.send("launch", params)
+\f0\b0 \cf2 )\
+                          
+\f1\b \cf6 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+\f0\b0 \cf2 \
+  File \cf9 "/Users/dcs/Dev/ai/ottomator-agents/crawl4AI-agent/venv/lib/python3.13/site-packages/playwright/_impl/_connection.py"\cf2 , line \cf9 61\cf2 , in \cf9 send\cf2 \
+    return 
+\f1\b \cf6 await self._connection.wrap_api_call(
+\f0\b0 \cf2 \
+           
+\f1\b \cf6 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+\f0\b0 \cf2 \
+    ...<2 lines>...\
+    
+\f1\b \cf6 )
+\f0\b0 \cf2 \
+    
+\f1\b \cf6 ^
+\f0\b0 \cf2 \
+  File \cf9 "/Users/dcs/Dev/ai/ottomator-agents/crawl4AI-agent/venv/lib/python3.13/site-packages/playwright/_impl/_connection.py"\cf2 , line \cf9 528\cf2 , in \cf9 wrap_api_call\cf2 \
+    raise rewrite_error(error, f"\{parsed_st['apiName']\}: \{error\}") from None\
+
+\f1\b \cf9 playwright._impl._errors.Error
+\f0\b0 \cf2 : \cf9 BrowserType.launch: Executable doesn't exist at /Users/dcs/Library/Caches/ms-playwright/chromium-1148/chrome-mac/Chromium.app/Contents/MacOS/Chromium\cf2 \
+\cf9 \uc0\u9556 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9559 \cf2 \
+\cf9 \uc0\u9553  Looks like Playwright was just installed or updated.       \u9553 \cf2 \
+\cf9 \uc0\u9553  Please run the following command to download new browsers: \u9553 \cf2 \
+\cf9 \uc0\u9553                                                             \u9553 \cf2 \
+\cf9 \uc0\u9553      playwright install                                     \u9553 \cf2 \
+\cf9 \uc0\u9553                                                             \u9553 \cf2 \
+\cf9 \uc0\u9553  <3 Playwright Team                                         \u9553 \cf2 \
+\cf9 \uc0\u9562 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9565 \cf2 \
+(venv) dcs@Darrens-MacBook-Pro crawl4AI-agent %  playwright install   \
+Downloading Chromium 131.0.6778.33 (playwright build v1148)\cf10  from https://playwright.azureedge.net/builds/chromium/1148/chromium-mac-arm64.zip\cf2 \
+121.6 MiB [====================] 100% 0.0s\
+Chromium 131.0.6778.33 (playwright build v1148) downloaded to /Users/dcs/Library/Caches/ms-playwright/chromium-1148\
+Downloading Chromium Headless Shell 131.0.6778.33 (playwright build v1148)\cf10  from https://playwright.azureedge.net/builds/chromium/1148/chromium-headless-shell-mac-arm64.zip\cf2 \
+77.5 MiB [====================] 100% 0.0s\
+Chromium Headless Shell 131.0.6778.33 (playwright build v1148) downloaded to /Users/dcs/Library/Caches/ms-playwright/chromium_headless_shell-1148\
+Downloading Firefox 132.0 (playwright build v1466)\cf10  from https://playwright.azureedge.net/builds/firefox/1466/firefox-mac-arm64.zip\cf2 \
+81.6 MiB [====================] 100% 0.0s\
+Firefox 132.0 (playwright build v1466) downloaded to /Users/dcs/Library/Caches/ms-playwright/firefox-1466\
+Downloading Webkit 18.2 (playwright build v2104)\cf10  from https://playwright.azureedge.net/builds/webkit/2104/webkit-mac-15-arm64.zip\cf2 \
+62.8 MiB [====================] 100% 0.0s\
+Webkit 18.2 (playwright build v2104) downloaded to /Users/dcs/Library/Caches/ms-playwright/webkit-2104\
+Downloading FFMPEG playwright build v1010\cf10  from https://playwright.azureedge.net/builds/ffmpeg/1010/ffmpeg-mac-arm64.zip\cf2 \
+1.1 MiB [====================] 100% 0.0s\
+FFMPEG playwright build v1010 downloaded to /Users/dcs/Library/Caches/ms-playwright/ffmpeg-1010\
+(venv) dcs@Darrens-MacBook-Pro crawl4AI-agent % python3 crawl_paladyne.co_docs.py\
+Found 36 URLs to crawl\
+Successfully crawled: https://www.paladyne.co/\
+Successfully crawled: https://www.paladyne.co/about/\
+Successfully crawled: https://www.paladyne.co/service/\
+Successfully crawled: https://www.paladyne.co/home-three/\
+Successfully crawled: https://www.paladyne.co/home-two/\
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"\
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"\
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"\
+\'85\
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"\
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"\
+Successfully crawled: https://www.paladyne.co/ja/project/\
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"\
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"\
+INFO:httpx:HTTP Request: POST https://ggivxeeiaurbqmcmdsoj.supabase.co/rest/v1/site_pages "HTTP/2 401 Unauthorized"\
+Error inserting chunk: \{'code': '42501', 'details': None, 'hint': None, 'message': 'new row violates row-level security policy for table "site_pages"'\}\
+I\'85.\
+Error inserting chunk: \{'code': '42501', 'details': None, 'hint': None, 'message': 'new row violates row-level security policy for table "site_pages"'\}\
+(venv) dcs@Darrens-MacBook-Pro crawl4AI-agent % python3 crawl_paladyne.co_docs.py\
+Traceback (most recent call last):\
+  File \cf9 "/Users/dcs/Dev/ai/ottomator-agents/crawl4AI-agent/crawl_paladyne.co_docs.py"\cf2 , line \cf9 45\cf2 , in \cf9 <module>\cf2 \
+    supabase: Client = \cf6 authenticate_supabase
+\f1\b ()
+\f0\b0 \cf2 \
+                       \cf6 ~~~~~~~~~~~~~~~~~~~~~
+\f1\b ^^
+\f0\b0 \cf2 \
+  File \cf9 "/Users/dcs/Dev/ai/ottomator-agents/crawl4AI-agent/supabase_auth.py"\cf2 , line \cf9 17\cf2 , in \cf9 authenticate_supabase\cf2 \
+    user = 
+\f1\b \cf6 supabase.auth.sign_in
+\f0\b0 \cf2 (email=SUPABASE_EMAIL, password=SUPABASE_PASSWORD)\
+           
+\f1\b \cf6 ^^^^^^^^^^^^^^^^^^^^^
+\f0\b0 \cf2 \
+
+\f1\b \cf9 AttributeError
+\f0\b0 \cf2 : \cf9 'SyncSupabaseAuthClient' object has no attribute 'sign_in'. Did you mean: 'sign_up'?\cf2 \
+(venv) dcs@Darrens-MacBook-Pro crawl4AI-agent % python3 crawl_paladyne.co_docs.py\
+INFO:httpx:HTTP Request: POST https://ggivxeeiaurbqmcmdsoj.supabase.co/auth/v1/token?grant_type=password "HTTP/2 400 Bad Request"\
+Traceback (most recent call last):\
+  File \cf9 "/Users/dcs/Dev/ai/ottomator-agents/crawl4AI-agent/venv/lib/python3.13/site-packages/gotrue/_sync/gotrue_base_api.py"\cf2 , line \cf9 120\cf2 , in \cf9 _request\cf2 \
+    \cf6 response.raise_for_status
+\f1\b ()
+\f0\b0 \cf2 \
+    \cf6 ~~~~~~~~~~~~~~~~~~~~~~~~~
+\f1\b ^^
+\f0\b0 \cf2 \
+  File \cf9 "/Users/dcs/Dev/ai/ottomator-agents/crawl4AI-agent/venv/lib/python3.13/site-packages/httpx/_models.py"\cf2 , line \cf9 763\cf2 , in \cf9 raise_for_status\cf2 \
+    raise HTTPStatusError(message, request=request, response=self)\
+
+\f1\b \cf9 httpx.HTTPStatusError
+\f0\b0 \cf2 : \cf9 Client error '400 Bad Request' for url 'https://ggivxeeiaurbqmcmdsoj.supabase.co/auth/v1/token?grant_type=password'\cf2 \
+\cf9 For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400\cf2 \
+\
+During handling of the above exception, another exception occurred:\
+\
+Traceback (most recent call last):\
+  File \cf9 "/Users/dcs/Dev/ai/ottomator-agents/crawl4AI-agent/crawl_paladyne.co_docs.py"\cf2 , line \cf9 45\cf2 , in \cf9 <module>\cf2 \
+    supabase: Client = \cf6 authenticate_supabase
+\f1\b ()
+\f0\b0 \cf2 \
+                       \cf6 ~~~~~~~~~~~~~~~~~~~~~
+\f1\b ^^
+\f0\b0 \cf2 \
+  File \cf9 "/Users/dcs/Dev/ai/ottomator-agents/crawl4AI-agent/supabase_auth.py"\cf2 , line \cf9 17\cf2 , in \cf9 authenticate_supabase\cf2 \
+    user = supabase.auth.sign_in_with_password(\{\
+        "email": SUPABASE_EMAIL,\
+        "password": SUPABASE_PASSWORD\
+    \})\
+  File \cf9 "/Users/dcs/Dev/ai/ottomator-agents/crawl4AI-agent/venv/lib/python3.13/site-packages/gotrue/_sync/gotrue_client.py"\cf2 , line \cf9 258\cf2 , in \cf9 sign_in_with_password\cf2 \
+    response = self._request(\
+        "POST",\
+    ...<12 lines>...\
+        xform=parse_auth_response,\
+    )\
+  File \cf9 "/Users/dcs/Dev/ai/ottomator-agents/crawl4AI-agent/venv/lib/python3.13/site-packages/gotrue/_sync/gotrue_base_api.py"\cf2 , line \cf9 125\cf2 , in \cf9 _request\cf2 \
+    raise handle_exception(e)\
+
+\f1\b \cf9 gotrue.errors.AuthApiError
+\f0\b0 \cf2 : \cf9 Invalid login credentials\cf2 \
+(venv) dcs@Darrens-MacBook-Pro crawl4AI-agent % python3 crawl_paladyne.co_docs.py\
+INFO:httpx:HTTP Request: POST https://ggivxeeiaurbqmcmdsoj.supabase.co/auth/v1/token?grant_type=password "HTTP/2 400 Bad Request"\
+Traceback (most recent call last):\
+  File \cf9 "/Users/dcs/Dev/ai/ottomator-agents/crawl4AI-agent/venv/lib/python3.13/site-packages/gotrue/_sync/gotrue_base_api.py"\cf2 , line \cf9 120\cf2 , in \cf9 _request\cf2 \
+    \cf6 response.raise_for_status
+\f1\b ()
+\f0\b0 \cf2 \
+    \cf6 ~~~~~~~~~~~~~~~~~~~~~~~~~
+\f1\b ^^
+\f0\b0 \cf2 \
+  File \cf9 "/Users/dcs/Dev/ai/ottomator-agents/crawl4AI-agent/venv/lib/python3.13/site-packages/httpx/_models.py"\cf2 , line \cf9 763\cf2 , in \cf9 raise_for_status\cf2 \
+    raise HTTPStatusError(message, request=request, response=self)\
+
+\f1\b \cf9 httpx.HTTPStatusError
+\f0\b0 \cf2 : \cf9 Client error '400 Bad Request' for url 'https://ggivxeeiaurbqmcmdsoj.supabase.co/auth/v1/token?grant_type=password'\cf2 \
+\cf9 For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400\cf2 \
+\
+During handling of the above exception, another exception occurred:\
+\
+Traceback (most recent call last):\
+  File \cf9 "/Users/dcs/Dev/ai/ottomator-agents/crawl4AI-agent/crawl_paladyne.co_docs.py"\cf2 , line \cf9 45\cf2 , in \cf9 <module>\cf2 \
+    supabase: Client = \cf6 authenticate_supabase
+\f1\b ()
+\f0\b0 \cf2 \
+                       \cf6 ~~~~~~~~~~~~~~~~~~~~~
+\f1\b ^^
+\f0\b0 \cf2 \
+  File \cf9 "/Users/dcs/Dev/ai/ottomator-agents/crawl4AI-agent/supabase_auth.py"\cf2 , line \cf9 17\cf2 , in \cf9 authenticate_supabase\cf2 \
+    user = supabase.auth.sign_in_with_password(\{\
+        "email": SUPABASE_EMAIL,\
+        "password": SUPABASE_PASSWORD\
+    \})\
+  File \cf9 "/Users/dcs/Dev/ai/ottomator-agents/crawl4AI-agent/venv/lib/python3.13/site-packages/gotrue/_sync/gotrue_client.py"\cf2 , line \cf9 258\cf2 , in \cf9 sign_in_with_password\cf2 \
+    response = self._request(\
+        "POST",\
+    ...<12 lines>...\
+        xform=parse_auth_response,\
+    )\
+  File \cf9 "/Users/dcs/Dev/ai/ottomator-agents/crawl4AI-agent/venv/lib/python3.13/site-packages/gotrue/_sync/gotrue_base_api.py"\cf2 , line \cf9 125\cf2 , in \cf9 _request\cf2 \
+    raise handle_exception(e)\
+
+\f1\b \cf9 gotrue.errors.AuthApiError
+\f0\b0 \cf2 : \cf9 Invalid login credentials\cf2 \
+(venv) dcs@Darrens-MacBook-Pro crawl4AI-agent % python3 crawl_paladyne.co_docs.py\
+INFO:httpx:HTTP Request: POST https://ggivxeeiaurbqmcmdsoj.supabase.co/auth/v1/token?grant_type=password "HTTP/2 200 OK"\
+Found 8 URLs to crawl\
+Successfully crawled: http://shian.co.jp/contact.html\
+Successfully crawled: http://shian.co.jp/index.html\
+Successfully crawled: http://shian.co.jp/ci_vi_one.html\
+Successfully crawled: http://shian.co.jp/\
+Successfully crawled: http://shian.co.jp/company.html\
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"\
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"\
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"\
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"\
+INFO:httpx:HTTP Request: POST https://ggivxeeiaurbqmcmdsoj.supabase.co/rest/v1/site_pages "HTTP/2 201 Created"\
+Inserted chunk 0 for http://shian.co.jp/ci_vi_one.html\
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"\
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"\
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"\
+INFO:httpx:HTTP Request: POST https://ggivxeeiaurbqmcmdsoj.supabase.co/rest/v1/site_pages "HTTP/2 201 Created"\
+Inserted chunk 0 for http://shian.co.jp/index.html\
+INFO:httpx:HTTP Request: POST https://ggivxeeiaurbqmcmdsoj.supabase.co/rest/v1/site_pages "HTTP/2 201 Created"\
+Inserted chunk 0 for http://shian.co.jp/company.html\
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"\
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"\
+INFO:httpx:HTTP Request: POST https://ggivxeeiaurbqmcmdsoj.supabase.co/rest/v1/site_pages "HTTP/2 201 Created"\
+Inserted chunk 0 for http://shian.co.jp/contact.html\
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"\
+INFO:httpx:HTTP Request: POST https://ggivxeeiaurbqmcmdsoj.supabase.co/rest/v1/site_pages "HTTP/2 201 Created"\
+Inserted chunk 0 for http://shian.co.jp/\
+Successfully crawled: http://shian.co.jp/ci_vi_two.html\
+Successfully crawled: http://shian.co.jp/ci_vi_three.html\
+Successfully crawled: http://shian.co.jp/privacy.html\
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"\
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"\
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"\
+INFO:httpx:HTTP Request: POST https://ggivxeeiaurbqmcmdsoj.supabase.co/rest/v1/site_pages "HTTP/2 201 Created"\
+Inserted chunk 0 for http://shian.co.jp/privacy.html\
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"\
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"\
+INFO:httpx:HTTP Request: POST https://ggivxeeiaurbqmcmdsoj.supabase.co/rest/v1/site_pages "HTTP/2 201 Created"\
+Inserted chunk 0 for http://shian.co.jp/ci_vi_two.html\
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"\
+INFO:httpx:HTTP Request: POST https://ggivxeeiaurbqmcmdsoj.supabase.co/rest/v1/site_pages "HTTP/2 201 Created"\
+Inserted chunk 0 for http://shian.co.jp/ci_vi_three.html\
+(venv) dcs@Darrens-MacBook-Pro crawl4AI-agent % \
+}

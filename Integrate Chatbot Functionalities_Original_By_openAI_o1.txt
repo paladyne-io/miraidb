@@ -1,0 +1,208 @@
+Steps to Integrate Chatbot Functionalities into DPM Backend
+Identify Functionalities to Integrate:
+
+From packages/chatbot/backend/server.js, the key functionalities to integrate include:
+
+Helper Functions:
+createOpenAIClient
+getClientBasedOnID
+getClientBasedOnThreadID
+API Endpoints:
+/chat-gpt/translate
+/chat-gpt-asst*
+Middleware:
+Rate limiting (chatGptLimiter)
+Session Management:
+activeSessions Map
+Session cleanup interval
+Integrate Helper Functions:
+
+Add the following helper functions from the Chatbot backend to the DPM backend (apps/platform/backend/server.js):
+
+// Helper Functions from Chatbot backend/server.js
+
+function createOpenAIClient(assistantRecord) {
+  const MAX_ACTIVE_CLIENTS = 50;
+  let activeClientsCount = 0;
+  if (activeClientsCount >= MAX_ACTIVE_CLIENTS) {
+    console.error('Maximum number of active OpenAI clients reached.');
+    throw new Error('Too many active clients. Please try again later.');
+  }
+  const newClient = new OpenAI({ apiKey: assistantRecord.API_Key });
+  assistantRecord.client = newClient;
+  activeClientsCount++;
+  return newClient;
+}
+
+function getClientBasedOnID(botID) {
+  if (!botID) {
+    console.log('No botID was provided');
+    return null;
+  }
+  console.log('Looking up client for bot ID: ' + botID);
+  const asstRecord = assistantTable.find(record => record.botID === botID);
+  if (asstRecord) {
+    console.log('Found Asst record: ' + JSON.stringify(asstRecord));
+    return asstRecord.client;
+  }
+  console.log('No assistant found for botID: ' + botID);
+  return null; // Return null if no record is found
+}
+
+function getClientBasedOnThreadID(threadID) {
+  if (!threadID) {
+    console.log('No threadID was provided');
+    return null;
+  }
+  const threadRecord = threadTable.find(record => record.threadID === threadID);
+  if (threadRecord) {
+    const asstRecord = assistantTable.find(
+      record => record.openAIAsstID === threadRecord.openAIAsstID
+    );
+    if (asstRecord) {
+      console.log('Asst record from thread: ' + JSON.stringify(asstRecord));
+      return asstRecord.client;
+    }
+  }
+  console.log('No assistant found for threadID: ' + threadID);
+  return null; // Return null if no record is found
+}
+Integrate API Endpoints:
+
+Add the following API endpoints from the Chatbot backend to the DPM backend (apps/platform/backend/server.js):
+
+// Chatbot Translation Endpoint
+app.post('/chat-gpt/translate', chatGptLimiter, async (req, res) => {
+  try {
+    const inputText = req.body.message;
+
+    if (!validateTranslationInput(inputText)) {
+      return res.status(400).send(`The query is too long. ${shortVersion}`);
+    }
+
+    console.log('Translating: ' + JSON.stringify(inputText));
+
+    // Translation logic here (omitted for brevity)
+
+    res.status(200).send({
+      bot: responseMessage
+    });
+  } catch (error) {
+    console.error(error);
+    // Error handling logic here (omitted for brevity)
+  }
+});
+
+// Chatbot Assistant Endpoint
+app.post('/chat-gpt-asst*', [
+  query('id').notEmpty(),
+  body('message').isString().trim().escape(),
+  // Additional validators if needed
+], chatGptLimiter, async (req, res) => {
+  try {
+    const { message, threadID, lastMessageID } = req.body;
+
+    if (!validateQuestion(message)) {
+      throw {
+        type: 'ChatBotQueryError',
+        message: 'Message was rejected (too long?)'
+      };
+    }
+
+    const asstBotID = req.query.id;
+    if (!asstBotID) {
+      throw {
+        type: 'ChatBotQueryError',
+        message: 'No Assistant ID provided'
+      };
+    }
+
+    const assistantRecord = assistantTable.find(record => record.botID === asstBotID);
+    if (!assistantRecord) {
+      return res.status(404).send(`Assistant not found for ID: ${asstBotID}`);
+    }
+
+    let openaiClient = assistantRecord.client || getClientBasedOnID(asstBotID) || getClientBasedOnThreadID(threadID);
+    if (!openaiClient) {
+      openaiClient = createOpenAIClient(assistantRecord);
+    }
+
+    // Assistant interaction logic here (omitted for brevity)
+
+    res.status(200).send({
+      bot: assistantResponseText,
+      threadID: threadId,
+      lastMessageID: lastAsstMessageID
+    });
+  } catch (error) {
+    console.error('Error:', error);
+    // Error handling logic here (omitted for brevity)
+  }
+});
+Integrate Middleware:
+
+Ensure that the Chatbot rate limiting middleware is added to the DPM backend:
+
+// Add Chatbot Rate Limiting Middleware
+app.use(chatGptLimiter);
+Session Management:
+
+Incorporate session management from the Chatbot backend into the DPM backend:
+
+// In-memory session store
+const activeSessions = new Map();
+
+// Session cleanup interval (every 15 minutes)
+setInterval(() => {
+  const now = Date.now();
+  for (const [sessionId, session] of activeSessions.entries()) {
+    if (now > session.expiresAt) {
+      activeSessions.delete(sessionId);
+    }
+  }
+}, 15 * 60 * 1000);
+Update Environment Variables:
+
+Review packages/chatbot/backend/server.js for any new environment variables and update your .env file accordingly. Based on the provided server.js, you might need to add:
+
+JAPANESE_TRANSLATION_BOT_OPENAI_API_KEY=your_openai_api_key_here
+Please review the server.js for any additional environment variables required and add them as needed.
+
+Finalize Integration:
+
+After integrating the helper functions, middleware, and API endpoints, ensure that:
+
+All imports are correctly referenced.
+There are no duplicate or conflicting functionalities.
+The server starts without errors by running pnpm run dev.
+Verification Steps
+Run Installation and Start the Server:
+
+pnpm install
+pnpm run dev
+Test the Integrated Functionalities:
+
+Health Check:
+Navigate to http://localhost:8080/api/health to ensure the backend is running.
+Chatbot Endpoints:
+Test the /chat-gpt/translate and /chat-gpt-asst* endpoints using tools like Postman or curl to verify they are functioning as expected.
+Check Logs for Errors:
+
+Monitor the terminal output for any error messages during server startup or API requests.
+Review .env Entries:
+
+Ensure all necessary environment variables are correctly set and loaded.
+Additional Recommendations
+Modularize Shared Components:
+
+Consider moving shared functionalities between DPM and Chatbot into the packages/shared/ directory to promote code reuse.
+
+Documentation:
+
+Update your project documentation to reflect the new integrations and any changes made to the backend structure.
+
+Testing:
+
+Implement automated tests for the newly integrated endpoints to ensure they work seamlessly with the existing DPM functionalities.
+
+Please follow these steps to integrate the Chatbot functionalities into your DPM backend. Let me know if you need specific code snippets or further assistance with any part of the integration.
